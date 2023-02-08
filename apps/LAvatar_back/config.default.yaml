@@ -1,0 +1,25 @@
+port: 10501
+
+databases:
+  mongodb:
+    lavatar:
+      hostname: "localhost:10801"
+      database: "lavatar_devel"
+      user: "toy_admin"
+      pass: "toy_password"
+
+authentication:
+  jwt_secret: "usd"
+  jwt_expireIn: "15 days"
+
+log:
+  file_level: "debug"
+  console_level: "debug"
+
+lostarkAPI:
+  authentication:
+    keys: [
+      "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IktYMk40TkRDSTJ5NTA5NWpjTWk5TllqY2lyZyIsImtpZCI6IktYMk40TkRDSTJ5NTA5NWpjTWk5TllqY2lyZyJ9.eyJpc3MiOiJodHRwczovL2x1ZHkuZ2FtZS5vbnN0b3ZlLmNvbSIsImF1ZCI6Imh0dHBzOi8vbHVkeS5nYW1lLm9uc3RvdmUuY29tL3Jlc291cmNlcyIsImNsaWVudF9pZCI6IjEwMDAwMDAwMDAwMDEzMDYifQ.o_Smu13ngkexSgncJsg6R5nI8KaQ2cNhMCopvAe5bo0EDGzEHje42hd0Ukqk4uPX0QXRe0yLed48k3SH6soSys3a_VXpXuLz0dzLtYv4FMVCnMQnOHpSImaS2Hk1hpT2sbw3LnjNFOYawfAtnYU5ZmSs-4ZjNaCWPThrltNmdgIabLfMWREWOcSsF8kZVByrbos-CXTHr5_cbzMjMLVY-QNP7mtwmGmwIvI3xJaKRg_h7_UxCgHCnxnZljMfop3wyUNNbFowk7Eb-PyyYuJtaTFVGoGTo3sek5qgNfF-L4qOuL5vHvR-cQ36Qgeb8QFOKjllOSatWYMPsu_5dfOHPw"
+    ]
+cache:
+  TTL: 60000

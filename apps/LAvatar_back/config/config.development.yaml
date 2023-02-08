@@ -1,0 +1,6 @@
+# use default as development environment
+databases:
+  mongodb:
+    lavatar:
+      hostname: "localhost:27017"
+      database: "lavatar_devel"
