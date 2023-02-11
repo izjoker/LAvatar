@@ -1,8 +1,8 @@
-import path from 'path'
-import fs from 'fs'
-import _ from 'lodash'
-import YAML from 'js-yaml'
-import process from 'process'
+import path from 'path';
+import fs from 'fs';
+import _ from 'lodash';
+import YAML from 'js-yaml';
+import process from 'process';
 
 interface FulguriteConfigOptions {
     configDir: string;
@@ -26,7 +26,7 @@ export default class FulguriteConfig {
         this.defaultDir = process.env.Fulgurite_DEFAULT_DIR || process.cwd();
         this.configDir = process.env.Fulgurite || path.join(process.cwd(), 'config');
         this.buildTarget = buildTarget || process.env.NODE_ENV || 'development';
-        
+
         this.load();
 
         return this;
@@ -37,12 +37,10 @@ export default class FulguriteConfig {
     }
 
     prepareDefault() {
-        
-        
         const defaultFileName = FulguriteConfig.fileName(this.moduleName, 'default') + '.yaml';
         const defaultFilePath = path.join(this.defaultDir, defaultFileName);
         const configDefaultPath = path.join(this.configDir, defaultFileName);
-        
+
         // load both origin default file and default configuration file
         /**
          * @type {Buffer}
@@ -86,7 +84,7 @@ export default class FulguriteConfig {
 
     static loadFile(filePath: string) {
         try {
-            return YAML.load(fs.readFileSync(filePath, 'utf8'), { json: true, filename: filePath });
+            return YAML.load(fs.readFileSync(filePath, 'utf8'), {json: true, filename: filePath});
         } catch (e) {
             console.warn('load configuration file failed', filePath);
             console.error(e);
@@ -121,7 +119,6 @@ export default class FulguriteConfig {
         return this;
     }
 
-    
 
     /**
      * return config value in path

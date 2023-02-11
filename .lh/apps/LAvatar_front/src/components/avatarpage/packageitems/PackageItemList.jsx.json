@@ -1,0 +1,18 @@
+{
+    "sourceFile": "apps/LAvatar_front/src/components/avatarpage/packageitems/PackageItemList.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1675998099776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1675998099776,
+            "name": "Commit-0",
+            "content": "import _ from 'lodash';\nimport {useRecoilState} from 'recoil';\nimport PackageContents from './PackageContents';\nimport {packageItems, selectedPackageIdState} from '../../../stores/itemPackageStore.atom';\n\nfunction PackageItemList(props) {\n    const [items, setItems] = useRecoilState(packageItems);\n    const [selectedPackageId, setSelectedPackageId] = useRecoilState(selectedPackageIdState);\n    const selectedPackage = items[selectedPackageId];\n\n\n    return (\n        <div style={{textAlign: 'left'}}>\n            {/* type1: 상자 포함 패키지\n                type2: 상자 미포함 패키지\n                type3: 상자 포함, 상자 외 단품아이템 존재\n            */}\n            {selectedPackage['type'] === 'package_type1' && <PackageContents type={1} />}\n            {selectedPackage['type'] === 'package_type2' && <PackageContents type={2} />}\n            {selectedPackage['type'] === 'package_type3' && <PackageContents type={3} />}\n        </div>\n\n    );\n}\n\nexport default PackageItemList;\n"
+        }
+    ]
+}

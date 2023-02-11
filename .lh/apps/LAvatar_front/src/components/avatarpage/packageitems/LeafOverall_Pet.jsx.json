@@ -1,0 +1,26 @@
+{
+    "sourceFile": "apps/LAvatar_front/src/components/avatarpage/packageitems/LeafOverall_Pet.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1675998104908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1675998210707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import _ from 'lodash';\n import ItemCard from './ItemCard';\n-export default function LeafOverall_Pet({pets}) {\n+export default function LeafOverallPet({pets}) {\n     return (\n         <div className=\"LeafOverallCategory\" id=\"pet\">\n             <span className=\"Title\">Pet</span>\n \n"
+                },
+                {
+                    "date": 1675998221948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n             <span className=\"Title\">Pet</span>\n \n             <div className=\"Contents\">\n                 <div className=\"LeafCard\" id=\"pet\">\n-                    {pets.map((pet_obj) => (\n-                        <div id=\"pet\" key={pet_obj['id']}>\n-                            <ItemCard itemSpec={pet_obj}/>\n+                    {pets.map((petObj) => (\n+                        <div id=\"pet\" key={petObj['id']}>\n+                            <ItemCard itemSpec={petObj}/>\n                         </div>\n \n                     ))}\n                 </div>\n"
+                }
+            ],
+            "date": 1675998104908,
+            "name": "Commit-0",
+            "content": "import _ from 'lodash';\nimport ItemCard from './ItemCard';\nexport default function LeafOverall_Pet({pets}) {\n    return (\n        <div className=\"LeafOverallCategory\" id=\"pet\">\n            <span className=\"Title\">Pet</span>\n\n            <div className=\"Contents\">\n                <div className=\"LeafCard\" id=\"pet\">\n                    {pets.map((pet_obj) => (\n                        <div id=\"pet\" key={pet_obj['id']}>\n                            <ItemCard itemSpec={pet_obj}/>\n                        </div>\n\n                    ))}\n                </div>\n            </div>\n        </div>\n    );\n}\n"
+        }
+    ]
+}

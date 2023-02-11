@@ -1,0 +1,26 @@
+{
+    "sourceFile": "apps/LAvatar_front/src/components/avatarpage/packageitems/LeafOverallMount.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1675998052836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1675998066452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,11 @@\n             <span className=\"Title\">Mount</span>\n             <div className=\"Contents\">\n                 <div className=\"LeafCard\" id=\"mount\">\n \n-                    {mounts.map((mount_obj) => (\n-                        <div key={mount_obj['id']}>\n-                            <ItemCard itemSpec={mount_obj}/>\n+                    {mounts.map((mountObj) => (\n+                        <div key={mountObj['id']}>\n+                            <ItemCard itemSpec={mountObj}/>\n                         </div>\n                     ))}\n                 </div>\n             </div>\n"
+                },
+                {
+                    "date": 1675998072379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-import _ from 'lodash';\n import ItemCard from './ItemCard';\n export default function LeafOverallMount({mounts}) {\n     return (\n         <div className=\"LeafOverallCategory\" id=\"mount\">\n"
+                }
+            ],
+            "date": 1675998052836,
+            "name": "Commit-0",
+            "content": "import _ from 'lodash';\nimport ItemCard from './ItemCard';\nexport default function LeafOverallMount({mounts}) {\n    return (\n        <div className=\"LeafOverallCategory\" id=\"mount\">\n            <span className=\"Title\">Mount</span>\n            <div className=\"Contents\">\n                <div className=\"LeafCard\" id=\"mount\">\n\n                    {mounts.map((mount_obj) => (\n                        <div key={mount_obj['id']}>\n                            <ItemCard itemSpec={mount_obj}/>\n                        </div>\n                    ))}\n                </div>\n            </div>\n        </div>\n    );\n}\n"
+        }
+    ]
+}

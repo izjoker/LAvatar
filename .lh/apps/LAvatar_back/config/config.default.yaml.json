@@ -1,0 +1,18 @@
+{
+    "sourceFile": "apps/LAvatar_back/config/config.default.yaml",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1675962070484,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1675962070484,
+            "name": "Commit-0",
+            "content": "port: 10501\n\ndatabases:\n  mongodb:\n    lavatar:\n      hostname: \"localhost:10801\"\n      database: \"lavatar_devel\"\n      user: \"toy_admin\"\n      pass: \"toy_password\"\n\nauthentication:\n  jwt_secret: \"usd\"\n  jwt_expireIn: \"15 days\"\n\nlog:\n  file_level: \"debug\"\n  console_level: \"debug\"\n\nlostarkAPI:\n  authentication:\n    keys: [\n      \"eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IktYMk40TkRDSTJ5NTA5NWpjTWk5TllqY2lyZyIsImtpZCI6IktYMk40TkRDSTJ5NTA5NWpjTWk5TllqY2lyZyJ9.eyJpc3MiOiJodHRwczovL2x1ZHkuZ2FtZS5vbnN0b3ZlLmNvbSIsImF1ZCI6Imh0dHBzOi8vbHVkeS5nYW1lLm9uc3RvdmUuY29tL3Jlc291cmNlcyIsImNsaWVudF9pZCI6IjEwMDAwMDAwMDAwMDEzMDYifQ.o_Smu13ngkexSgncJsg6R5nI8KaQ2cNhMCopvAe5bo0EDGzEHje42hd0Ukqk4uPX0QXRe0yLed48k3SH6soSys3a_VXpXuLz0dzLtYv4FMVCnMQnOHpSImaS2Hk1hpT2sbw3LnjNFOYawfAtnYU5ZmSs-4ZjNaCWPThrltNmdgIabLfMWREWOcSsF8kZVByrbos-CXTHr5_cbzMjMLVY-QNP7mtwmGmwIvI3xJaKRg_h7_UxCgHCnxnZljMfop3wyUNNbFowk7Eb-PyyYuJtaTFVGoGTo3sek5qgNfF-L4qOuL5vHvR-cQ36Qgeb8QFOKjllOSatWYMPsu_5dfOHPw\"\n    ]\ncache:\n  TTL: 60000"
+        }
+    ]
+}

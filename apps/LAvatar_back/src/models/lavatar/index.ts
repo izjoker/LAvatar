@@ -1,5 +1,5 @@
-import DailyLAConnection from '../../core/DLMongoConnection'
-import userModel from './User.model'
+import DailyLAConnection from '../../core/DLMongoConnection';
+import userModel from './User.model';
 
 userModel(DailyLAConnection);
 

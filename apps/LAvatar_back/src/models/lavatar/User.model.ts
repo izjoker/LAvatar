@@ -1,11 +1,9 @@
-import crypto from 'crypto'
-import _ from 'lodash'
-import mongoose, { Connection, Schema, Model, Document } from 'mongoose'
-import bcrypt from 'bcrypt'
-import ERR from 'http-errors'
-import jwtHelper from '../../utils/jwtHelper'
+import _ from 'lodash';
+import mongoose, {Connection, Schema, Model, Document} from 'mongoose';
+import bcrypt from 'bcrypt';
+import ERR from 'http-errors';
+import jwtHelper from '../../utils/jwtHelper';
 import log from '../../utils/logger';
-
 
 
 const SALT_WORK_FACTOR = 10;
@@ -14,17 +12,17 @@ const schemaName = 'User';
 
 const schema = new Schema<UserDocument, UserModel>(
     {
-        email: {        type: String,   unique: true,   required: true },
-        username: {     type: String },
-        password: {     type: String,   select: false },
-        last_login: {   type: Date },
-        profile_img: {  type: String },
-        settings: {     type: Object },
-        permissions: {  type: [String], select: false }
+        email: {type: String, unique: true, required: true},
+        username: {type: String},
+        password: {type: String, select: false},
+        last_login: {type: Date},
+        profile_img: {type: String},
+        settings: {type: Object},
+        permissions: {type: [String], select: false},
     },
     {
-        timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' },
-        toJSON: { virtuals: true },
+        timestamps: {createdAt: 'created_at', updatedAt: 'updated_at'},
+        toJSON: {virtuals: true},
     },
 );
 
@@ -43,7 +41,7 @@ interface UserSettings {
     timezone?: string;
 }
 export interface UserDocument extends User, Document {
-    
+
     comparePassword(candidatePassword: string): Promise<boolean>;
 
     createAuthToken(withPermission?: any): string;
@@ -57,15 +55,15 @@ export interface UserModel extends Model<UserDocument> {
 
 
 // Instance methods
-schema.methods.comparePassword = async function (candidatePassword: string) {
+schema.methods.comparePassword = async function(candidatePassword: string) {
     console.log('check password', candidatePassword, this.password);
-    let isMatch = await bcrypt.compare(candidatePassword, this.password as string);
+    const isMatch = await bcrypt.compare(candidatePassword, this.password as string);
     console.log('isMatch', isMatch);
 
     return isMatch;
 };
 
-schema.methods.createAuthToken = function (withPermission: string) {
+schema.methods.createAuthToken = function(withPermission: string) {
     const omitList = ['password'];
     if (!withPermission) {
         omitList.push('permissions');
@@ -77,8 +75,8 @@ schema.methods.createAuthToken = function (withPermission: string) {
 };
 
 // Static methods
-schema.statics.getUser = async function (email, password) {
-    let user = await this.jwt_authenticate(email, password);
+schema.statics.getUser = async function(email, password) {
+    const user = await this.jwt_authenticate(email, password);
     if (!user) {
         throw ERR(404, 'cannot found user');
     } else {
@@ -86,8 +84,8 @@ schema.statics.getUser = async function (email, password) {
     }
 };
 
-schema.statics.jwt_authenticate = async function (email, password) {
-    let user = await this.findOne({ email: email }).select('password');
+schema.statics.jwt_authenticate = async function(email, password) {
+    const user = await this.findOne({email: email}).select('password');
     if (!user) {
         throw ERR(400, 'cannot found user by email');
     }
@@ -99,10 +97,10 @@ schema.statics.jwt_authenticate = async function (email, password) {
     }
 };
 
-schema.statics.createGuestUser = async function (req) {
+schema.statics.createGuestUser = async function(req) {
     const ip = _.get(req, 'originalUrl');
     if (ip) {
-        const existGuest = await this.findOne({ isGuest: ip });
+        const existGuest = await this.findOne({isGuest: ip});
         const pass = Math.random().toString(36).substring(8);
         if (existGuest) {
             return null;
@@ -115,7 +113,7 @@ schema.statics.createGuestUser = async function (req) {
             });
             let guest: UserDocument | null = await newGuest.save();
             guest = await this.findById(guest._id);
-            let guestInfo: any = _.pick(guest, ['email', 'username']);
+            const guestInfo: any = _.pick(guest, ['email', 'username']);
             guestInfo.password = pass;
             return {
                 guest: guestInfo,
@@ -127,8 +125,8 @@ schema.statics.createGuestUser = async function (req) {
 
 // Hooks
 // @see: http://devsmash.com/blog/password-authentication-with-mongoose-and-bcrypt
-schema.pre('save', function (next) {
-    let user: UserDocument = this;
+schema.pre('save', function(next) {
+    const user: UserDocument = this;
     if (!user.username) {
         user.username = _.get(user.email.match(/^([^@]*)@/), '1')!;
     }
@@ -137,11 +135,11 @@ schema.pre('save', function (next) {
     if (!user.isModified('password')) return next();
 
     // generate a salt
-    bcrypt.genSalt(SALT_WORK_FACTOR, function (err, salt) {
+    bcrypt.genSalt(SALT_WORK_FACTOR, function(err, salt) {
         if (err) return next(err);
 
         // hash the password along with our new salt
-        bcrypt.hash(user.password!, salt, function (err, hash) {
+        bcrypt.hash(user.password!, salt, function(err, hash) {
             if (err) return next(err);
 
             // override the cleartext password with the hashed one
@@ -150,6 +148,6 @@ schema.pre('save', function (next) {
         });
     });
 });
-export default function (connection: Connection) {
+export default function(connection: Connection) {
     return (connection || mongoose).model<UserDocument, UserModel>(schemaName, schema, schemaName);
 }

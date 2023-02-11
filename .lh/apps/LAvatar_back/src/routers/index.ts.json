@@ -1,0 +1,30 @@
+{
+    "sourceFile": "apps/LAvatar_back/src/routers/index.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1675955638766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1675959738757,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,6 +10,6 @@\n // rootRouter.use('/auth', authRouter);\n // rootRouter.use('/dev', devRouter);\n // rootRouter.use('/users', usersRouter);\n rootRouter.use('/packageDict', packageDictRouter)\n-\n+console.log()\n export default rootRouter;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675999218368,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,6 +10,6 @@\n // rootRouter.use('/auth', authRouter);\n // rootRouter.use('/dev', devRouter);\n // rootRouter.use('/users', usersRouter);\n rootRouter.use('/packageDict', packageDictRouter)\n-console.log()\n+\n export default rootRouter;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675999303452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,15 @@\n \n-import express from 'express'\n+import express from 'express';\n // import authRouter from './auth.router'\n // import devRouter from './dev.router';\n // import usersRouter from './users.router'\n-import packageDictRouter from './packageDict.router'\n+import packageDictRouter from './packageDict.router';\n \n \n const rootRouter = express.Router();\n // rootRouter.use('/auth', authRouter);\n // rootRouter.use('/dev', devRouter);\n // rootRouter.use('/users', usersRouter);\n-rootRouter.use('/packageDict', packageDictRouter)\n\\ No newline at end of file\n+rootRouter.use('/packageDict', packageDictRouter);\n \n-export default rootRouter;\n+export default rootRouter;\n"
+                }
+            ],
+            "date": 1675955638766,
+            "name": "Commit-0",
+            "content": "\nimport express from 'express'\n// import authRouter from './auth.router'\n// import devRouter from './dev.router';\n// import usersRouter from './users.router'\nimport packageDictRouter from './packageDict.router'\n\n\nconst rootRouter = express.Router();\n// rootRouter.use('/auth', authRouter);\n// rootRouter.use('/dev', devRouter);\n// rootRouter.use('/users', usersRouter);\nrootRouter.use('/packageDict', packageDictRouter)\n\nexport default rootRouter;"
+        }
+    ]
+}

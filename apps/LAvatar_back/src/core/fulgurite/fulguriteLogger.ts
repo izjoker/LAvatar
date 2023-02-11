@@ -1,7 +1,7 @@
 
-import _ from 'lodash'
-import winston from 'winston'
-import winstonDailyRotateFile from 'winston-daily-rotate-file'
+import _ from 'lodash';
+import winston from 'winston';
+import winstonDailyRotateFile from 'winston-daily-rotate-file';
 import Transport from 'winston-transport';
 /**
  * @typedef {object}    CONFIG_LOG
@@ -17,14 +17,13 @@ import Transport from 'winston-transport';
  */
 
 
-
 function createLogger(userTransports: Transport[] | null, config: any = {}) {
     const transports = userTransports || [];
 
     // Winston Daily Rotate File : https://github.com/winstonjs/winston-daily-rotate-file
     const LOG_FILE_LEVEL = config.file_level || 'debug';
     if (LOG_FILE_LEVEL !== 'disable') {
-        let defaultOptions = {
+        const defaultOptions = {
             level: LOG_FILE_LEVEL,
             dirname: config.logPath || './log',
             filename: `${process.env.npm_package_name}-%DATE%.log`,
@@ -33,11 +32,11 @@ function createLogger(userTransports: Transport[] | null, config: any = {}) {
             maxFiles: '50',
             format: winston.format.combine(winston.format.timestamp(), winston.format.json()),
         };
-        let rotatedTransport = new winstonDailyRotateFile(_.assign({}, defaultOptions, config));
+        const rotatedTransport = new winstonDailyRotateFile(_.assign({}, defaultOptions, config));
         /**
          * @property {function} winston.transports.DailyRotateFile.prototype.on - rotate hook
          */
-        rotatedTransport.on('rotate', function (oldFilename, newFilename) {
+        rotatedTransport.on('rotate', function(oldFilename, newFilename) {
             logger.info('logfile rotated, oldFileName: ' + oldFilename + ', newFileName' + newFilename);
         });
         transports.push(rotatedTransport);
@@ -47,13 +46,13 @@ function createLogger(userTransports: Transport[] | null, config: any = {}) {
     const LOG_CONSOLE_LEVEL = config.console_level || 'debug';
     if (LOG_CONSOLE_LEVEL !== 'disabled') {
         // https://github.com/winstonjs/winston/blob/master/docs/transports.md
-        let consoleTransport = new winston.transports.Console({
+        const consoleTransport = new winston.transports.Console({
             format: winston.format.combine(
                 winston.format.colorize(),
                 winston.format.align(),
                 winston.format.timestamp(),
                 winston.format.printf((info) => {
-                    const { timestamp, level, message, ...args } = info;
+                    const {timestamp, level, message, ...args} = info;
                     const ts = timestamp.replace('T', ' ');
                     return `${ts} [${level}]: ${message} ${Object.keys(args).length ? '\n' + prettyJ(args) : ''}`;
                 }),
@@ -75,7 +74,7 @@ function createLogger(userTransports: Transport[] | null, config: any = {}) {
         }
         return json.replace(
             /("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+-]?\d+)?)/g,
-            function (match: string) {
+            function(match: string) {
                 let cls = '\x1b[36m';
                 if (/^"/.test(match)) {
                     if (/:$/.test(match)) {
