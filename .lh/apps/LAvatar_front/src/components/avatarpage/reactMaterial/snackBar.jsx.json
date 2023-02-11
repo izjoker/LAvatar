@@ -1,0 +1,18 @@
+{
+    "sourceFile": "apps/LAvatar_front/src/components/avatarpage/reactMaterial/snackBar.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1676085211551,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1676085211551,
+            "name": "Commit-0",
+            "content": "import * as React from 'react';\nimport Snackbar from '@mui/material/Snackbar';\nimport MuiAlert from '@mui/material/Alert';\n\nconst Alert = React.forwardRef(function Alert(props, ref) {\n    return <MuiAlert elevation={6} ref={ref} variant=\"filled\" {...props} />;\n});\n\nexport default function CumstomSnackbar({msg, severity, setVisibility}) {\n    const handleClose = (event, reason) => {\n        if (reason === 'clickaway') {\n            return;\n        }\n        setVisibility(false);\n    };\n\n    return (\n        <Snackbar open={true} autoHideDuration={3000} onClose={handleClose}>\n            <Alert onClose={handleClose} severity={severity} sx={{ width: '100%' }}>\n                {msg}\n            </Alert>\n        </Snackbar>\n    );\n}"
+        }
+    ]
+}

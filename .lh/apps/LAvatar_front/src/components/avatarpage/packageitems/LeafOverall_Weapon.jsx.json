@@ -1,0 +1,26 @@
+{
+    "sourceFile": "apps/LAvatar_front/src/components/avatarpage/packageitems/LeafOverall_Weapon.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1675998104308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1675998161747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,43 +1,43 @@\n import _ from 'lodash';\n import ItemCard from './ItemCard';\n \n-export default function LeafOverall_Weapon({weapons}) {\n-    const weapons_obj = rearrangeWeapons(weapons);\n+export default function LeafOverallWeapon({weapons}) {\n+    const weaponsObj = rearrangeWeapons(weapons);\n     return (\n         <div className=\"LeafOverallCategory\" id=\"weapon\">\n             <span className=\"Title\">Weapon</span>\n             <div className=\"Contents\">\n-                {Object.keys(weapons_obj).map((className) =>\n+                {Object.keys(weaponsObj).map((className) =>\n                     <div className=\"LeafCard\" id=\"weapon\" key={className} >\n                         <span className=\"LeafCardClassName\">{className}</span>\n-                        <DesignLayer designs_obj={weapons_obj[className]}/>\n+                        <DesignLayer designsObj={weaponsObj[className]}/>\n                     </div>\n                 )}\n             </div>\n         </div>\n     );\n }\n-function DesignLayer({designs_obj}) {\n+function DesignLayer({designsObj}) {\n     return (\n         <div className=\"DesignLayer\" id=\"weapon\">\n-            {Object.keys(designs_obj).map((designName) =>\n+            {Object.keys(designsObj).map((designName) =>\n                 (\n                     <div key={designName}>\n                         {/* <span style={{color:'green'}}>{designName}</span> */}\n-                        <WeaponCard weapon_obj={designs_obj[designName]}/>\n+                        <WeaponCard weaponObj={designsObj[designName]}/>\n                     </div>\n                 )\n             )}\n \n         </div>\n \n     );\n }\n-function WeaponCard({weapon_obj}) {\n+function WeaponCard({weaponObj}) {\n     return (\n         <div className=\"WeaponCard\">\n-            <ItemCard itemSpec={weapon_obj}/>\n+            <ItemCard itemSpec={weaponObj}/>\n         </div>\n \n     );\n }\n"
+                },
+                {
+                    "date": 1675998166788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-import _ from 'lodash';\n import ItemCard from './ItemCard';\n \n export default function LeafOverallWeapon({weapons}) {\n     const weaponsObj = rearrangeWeapons(weapons);\n"
+                }
+            ],
+            "date": 1675998104308,
+            "name": "Commit-0",
+            "content": "import _ from 'lodash';\nimport ItemCard from './ItemCard';\n\nexport default function LeafOverall_Weapon({weapons}) {\n    const weapons_obj = rearrangeWeapons(weapons);\n    return (\n        <div className=\"LeafOverallCategory\" id=\"weapon\">\n            <span className=\"Title\">Weapon</span>\n            <div className=\"Contents\">\n                {Object.keys(weapons_obj).map((className) =>\n                    <div className=\"LeafCard\" id=\"weapon\" key={className} >\n                        <span className=\"LeafCardClassName\">{className}</span>\n                        <DesignLayer designs_obj={weapons_obj[className]}/>\n                    </div>\n                )}\n            </div>\n        </div>\n    );\n}\nfunction DesignLayer({designs_obj}) {\n    return (\n        <div className=\"DesignLayer\" id=\"weapon\">\n            {Object.keys(designs_obj).map((designName) =>\n                (\n                    <div key={designName}>\n                        {/* <span style={{color:'green'}}>{designName}</span> */}\n                        <WeaponCard weapon_obj={designs_obj[designName]}/>\n                    </div>\n                )\n            )}\n\n        </div>\n\n    );\n}\nfunction WeaponCard({weapon_obj}) {\n    return (\n        <div className=\"WeaponCard\">\n            <ItemCard itemSpec={weapon_obj}/>\n        </div>\n\n    );\n}\n\nconst rearrangeWeapons = (weapons) => {\n    const r = {};\n    for (const weapon of weapons) {\n        assignWeapon(r, weapon);\n    }\n    return r;\n};\nconst assignWeapon = (obj, weapon) => {\n    const keys = [weapon['target'][0], weapon['design']];\n    const lastKeyIdx = keys.length-1;\n    for (let i=0; i < keys.length-1; i++) {\n        const key = keys[i];\n        if (!obj[key]) {\n            obj[key] = {};\n        }\n        obj = obj[key];\n    }\n    obj[keys[lastKeyIdx]] = weapon;\n};\n"
+        }
+    ]
+}

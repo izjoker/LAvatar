@@ -53,7 +53,3 @@ export const getEncryptedMemberNo = async (member_no): Promise<string> => {
 }
 
 export default getStoveIntroduceFromURL
-// const url = "https://timeline.onstove.com/160768383"
-// getStoveIntroduceFromURL(url)
-// const member_no = "160768383"
-// getEncryptedMemberNo(member_no)

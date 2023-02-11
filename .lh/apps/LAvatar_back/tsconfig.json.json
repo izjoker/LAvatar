@@ -1,0 +1,34 @@
+{
+    "sourceFile": "apps/LAvatar_back/tsconfig.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 4,
+            "patches": [
+                {
+                    "date": 1676018508813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1676018529476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,6 +10,5 @@\n       \"outDir\": \"dist\",\n       \"allowSyntheticDefaultImports\": true\n     },\n     \"lib\": [\"es2015\"]\n-  }\n-}\n\\ No newline at end of file\n+}\n"
+                },
+                {
+                    "date": 1676018697287,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,6 @@\n       \"sourceMap\": true,\n       \"outDir\": \"dist\",\n       \"allowSyntheticDefaultImports\": true\n     },\n-    \"lib\": [\"es2015\"]\n+    \"lib\": [\"es2015\"],\n }\n"
+                },
+                {
+                    "date": 1676018968787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,8 @@\n       \"outDir\": \"dist\",\n       \"allowSyntheticDefaultImports\": true\n     },\n     \"lib\": [\"es2015\"],\n+    \"include\": [\n+      \"assets/**/*\"\n+],\n }\n"
+                },
+                {
+                    "date": 1676018986550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,6 @@\n       \"outDir\": \"dist\",\n       \"allowSyntheticDefaultImports\": true\n     },\n     \"lib\": [\"es2015\"],\n-    \"include\": [\n-      \"assets/**/*\"\n-],\n+    \n }\n"
+                }
+            ],
+            "date": 1676018508813,
+            "name": "Commit-0",
+            "content": "{\n    \"compilerOptions\": {\n      \"module\": \"commonjs\",\n      \"esModuleInterop\": true,\n      \"target\": \"es6\",\n      \"moduleResolution\": \"node\",\n      \"resolveJsonModule\": true,\n       \n      \"sourceMap\": true,\n      \"outDir\": \"dist\",\n      \"allowSyntheticDefaultImports\": true\n    },\n    \"lib\": [\"es2015\"]\n  }\n}"
+        }
+    ]
+}

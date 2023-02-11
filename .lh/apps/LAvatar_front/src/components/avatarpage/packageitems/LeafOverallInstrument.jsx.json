@@ -1,0 +1,18 @@
+{
+    "sourceFile": "apps/LAvatar_front/src/components/avatarpage/packageitems/LeafOverallInstrument.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1675998021460,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1675998021460,
+            "name": "Commit-0",
+            "content": "import ItemCard from './ItemCard';\nexport default function LeafOverallInstrument({instruments}) {\n    const instrumentsObj = rearrangeInstruments(instruments);\n    return (\n        <div className=\"LeafOverallCategory\" id=\"instrument\">\n            <pre className=\"Title\">Instrument</pre>\n            <div className=\"Contents\">\n                {Object.keys(instrumentsObj).map((className) =>\n                    (\n                        <div className=\"LeafCard\" id=\"instrument\" key={className} >\n                            <span className=\"LeafCardClassName\">{className}</span>\n                            <DesignLayer designsObj={instrumentsObj[className]}/>\n                        </div>\n                    )\n                )}\n            </div>\n        </div>\n    );\n}\nfunction DesignLayer({designsObj}) {\n    return (\n        <div className=\"DesignLayer\" id=\"instrument\">\n            {Object.keys(designsObj).map((designName) =>\n                (\n                    <div key={designName}>\n                        {/* <span style={{color:'green'}}>{designName}</span> */}\n                        <InstrumentCard instrumentObj={designsObj[designName]}/>\n                    </div>\n                )\n            )}\n\n        </div>\n\n    );\n}\nfunction InstrumentCard({instrumentObj}) {\n    return (\n        <div className=\"IntrumentCard\">\n            <ItemCard itemSpec={instrumentObj} />\n        </div>\n\n    );\n}\n\nconst rearrangeInstruments = (instruments) => {\n    const r = {};\n    for (const instrument of instruments) {\n        assigninstrument(r, instrument);\n    }\n    return r;\n};\nconst assigninstrument = (obj, instrument) => {\n    const keys = [instrument['target'][0], instrument['design']];\n    const lastKeyIdx = keys.length-1;\n    for (let i=0; i < keys.length-1; i++) {\n        const key = keys[i];\n        if (!obj[key]) {\n            obj[key] = {};\n        }\n        obj = obj[key];\n    }\n    obj[keys[lastKeyIdx]] = instrument;\n};\n"
+        }
+    ]
+}

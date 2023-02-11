@@ -1,0 +1,22 @@
+{
+    "sourceFile": "apps/LAvatar_front/src/components/avatarpage/packageitems/PackageContents.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1675998090554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1675998514216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,10 @@\n     if (type===1) {\n \n     }\n     switch (type) {\n+    default:\n+        return <div>Package Type Error!</div>;\n     case 1:\n         return <div className=\"PackageType1\">\n             <PackageItemBoxes type={1} />\n             <PackageLeafTitle/>\n"
+                }
+            ],
+            "date": 1675998090554,
+            "name": "Commit-0",
+            "content": "import {useRecoilState} from 'recoil';\nimport {packageItems, selectedLeafItemIdState, selectedPackageIdState} from '../../../stores/itemPackageStore.atom';\nimport PackageItemBoxes from './PackageItemBoxes';\nimport PackageLeaf from './PackageLeaf';\nimport LeafOverall from './LeafOverall';\nimport IconButton from '@mui/material/IconButton';\nimport ArrowBackSharpIcon from '@mui/icons-material/ArrowBackSharp';\nimport {blueGrey} from '@mui/material/colors';\n\nfunction PackageContents({type}) {\n    const [items, setItems] = useRecoilState(packageItems);\n    const [selectedLeafItemId, setSelectedLeafItemId] = useRecoilState(selectedLeafItemIdState);\n\n    if (type===1) {\n\n    }\n    switch (type) {\n    case 1:\n        return <div className=\"PackageType1\">\n            <PackageItemBoxes type={1} />\n            <PackageLeafTitle/>\n            {selectedLeafItemId ? <PackageLeaf /> : <LeafOverall />}\n        </div>;\n    case 2:\n        return <div className=\"PackageType2\">\n            <PackageLeafTitle/>\n            <LeafOverall />\n        </div>;\n    case 3:\n        return <div className=\"PackageType3\">\n            <PackageItemBoxes type={3} />\n            <PackageLeafTitle/>\n            {selectedLeafItemId ? <PackageLeaf /> : <LeafOverall />}\n        </div>;\n    }\n}\nexport default PackageContents;\n\n\nfunction PackageLeafTitle() {\n    const [selectedLeafId, setSelectedLeafId] = useRecoilState(selectedLeafItemIdState);\n    const [selectedPackageId, setSelectedPackageId] = useRecoilState(selectedPackageIdState);\n    if (selectedLeafId) {\n        return <div className=\"PackageBoxName\">\n            <IconButton className=\"ReturnToOverallButton\" onClick={() => {\n                setSelectedLeafId(null);\n            }}>\n                <ArrowBackSharpIcon sx={{fontSize: 15, textAlign: 'middle', color: blueGrey[50]}} />\n            </IconButton>\n\n            <span className=\"SelectedLeafId\">\n                {selectedLeafId}\n            </span>\n        </div>;\n    }\n    return <div className=\"PackageBoxName\">\n        <span className=\"SelectedLeafId\" style={{marginLeft: '10px'}}>패키지 - {selectedPackageId}</span>\n    </div>;\n}\n"
+        }
+    ]
+}

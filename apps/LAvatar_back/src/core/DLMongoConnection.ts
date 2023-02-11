@@ -1,8 +1,8 @@
 
-import _  from 'lodash'
-import mongoose, { Connection, ConnectOptions } from 'mongoose'
-import logger from '../utils/logger'
-import config from '../utils/config'
+import _ from 'lodash';
+import mongoose, {Connection, ConnectOptions} from 'mongoose';
+import logger from '../utils/logger';
+import config from '../utils/config';
 
 
 const mongoConfig = config.get('databases.mongodb.lavatar');
@@ -22,8 +22,8 @@ if (url) {
     const mongoUser = _.get(mongoConfig, 'user');
     const mongoPass = _.get(mongoConfig, 'pass');
     const mongoURL = `mongodb://${mongoHostname}`;
-    const opt: ConnectOptions = { ..._.get(mongoConfig, 'opts') };
-    
+    const opt: ConnectOptions = {..._.get(mongoConfig, 'opts')};
+
     if (mongoUser && mongoPass) {
         opt.user = mongoUser;
         opt.pass = mongoPass;
