@@ -86,7 +86,7 @@ function PopperContents({itemSpec}) {
                 <div key={`${itemSpec['id']}_${idx}`}>
                     {idx}회 거래 가능:
                     <span className="DisplayItemPrice">{price}</span>
-                </div>
+                </div>,
             )}
         </div>;
     }
