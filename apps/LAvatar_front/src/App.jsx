@@ -13,6 +13,9 @@ function App() {
             <div className="App">
                 <Avatarpage/>
             </div>
+            <div className="footer">
+                Contact Me
+            </div>
         </RecoilRoot>
     )
 }

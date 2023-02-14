@@ -44,3 +44,10 @@
     padding-left: 5px;
     background-color: rgb(247, 188, 217);
 }
+
+.footer{
+    text-align: center;
+    background-color: #c3e8e8;
+    height: 50px;
+    line-height: 50px;
+}
