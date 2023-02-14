@@ -1,6 +1,8 @@
+import _ from 'lodash';
 import fs from 'fs';
 import LostarkAPI from './lostarkAPI.model';
 import CacheLocal from './../../cache/cache';
+
 
 export class PackageDict {
     lostarkAPI: LostarkAPI;
@@ -12,10 +14,7 @@ export class PackageDict {
 
         this.constItems = require('./../../../assets/packageDict/packageItems_const.json');
         // await this.debug()
-        if (CacheLocal.get('pricedItems')) {
-            this.pricedItems = CacheLocal.get('pricedItems');
-            console.log('got datas from cache');
-        }
+        this.pricedItems = CacheLocal.get('pricedItems') || {};
     }
 
     async debug() {
@@ -46,7 +45,7 @@ export class PackageDict {
         this.pricedItems = mergedItems;
     }
     async getItems() {
-        if (!this.pricedItems) {
+        if (_.isEmpty(this.pricedItems)) {
             console.log('returning constItems');
             return this.constItems;
         } else {
@@ -54,12 +53,12 @@ export class PackageDict {
             return this.pricedItems;
         }
     }
-
     async mainRoutine() {
         // 60분마다 LostarkAPI에 요청하여 가격정보 획득 - 파일, 캐시로 출력
         try {
             const prices = await this.lostarkAPI.getItemPriceData();
-            this.pricedItems = await this.assignmentItems(this.constItems, prices);
+            this.pricedItems['datas'] = await this.assignmentItems(this.constItems['datas'], prices);
+            this.pricedItems['updatedAt'] = new Date().toJSON();
 
             // 캐시입력
             CacheLocal.set('pricedItems', this.pricedItems);
@@ -83,7 +82,7 @@ export class PackageDict {
                 try {
                     r[id] = Object.assign(constItems[id], itemsWithPrice[id]);
                 } catch (e) {
-                    // console.log(`no Data for this id: ${id}`)
+                    console.log(`no Data for this id: ${id}`);
                 }
             }
         }
