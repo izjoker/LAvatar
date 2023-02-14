@@ -2,6 +2,9 @@
     font-weight: bold;
     padding-left: 5px;
 }
+.DataUpdatedAt{
+    background-color: rgb(248 232 242);
+}
 .AvatarPage{
     /* color: white;
     background-color: black; */
