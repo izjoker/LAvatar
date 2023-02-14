@@ -12,7 +12,7 @@ function LeafOverallAvatar({avatars}) {
                             <span className="LeafCardClassName">{className}</span>
                             <DesignLayer designsObj={avatarsObj[className]}/>
                         </div>
-                    )
+                    ),
                 )}
             </div>
         </div>
@@ -27,7 +27,7 @@ function DesignLayer({designsObj}) {
                 <span style={{color: 'green'}}>{k}</span>
                 <AvatarCard avatarObj={designsObj[k]}/>
             </div>
-        )
+        ),
 
         )}
     </div>;
@@ -38,7 +38,7 @@ function AvatarCard({avatarObj}) {
         {Object.keys(avatarObj).map((key)=>
             <div key={avatarObj[key]['id']}>
                 <ItemCard itemSpec={avatarObj[key]} />
-            </div>
+            </div>,
         )}
     </div>;
 }

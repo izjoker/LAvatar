@@ -11,7 +11,7 @@ export default function LeafOverallInstrument({instruments}) {
                             <span className="LeafCardClassName">{className}</span>
                             <DesignLayer designsObj={instrumentsObj[className]}/>
                         </div>
-                    )
+                    ),
                 )}
             </div>
         </div>
@@ -26,7 +26,7 @@ function DesignLayer({designsObj}) {
                         {/* <span style={{color:'green'}}>{designName}</span> */}
                         <InstrumentCard instrumentObj={designsObj[designName]}/>
                     </div>
-                )
+                ),
             )}
 
         </div>

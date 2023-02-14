@@ -16,7 +16,7 @@ export default function CumstomSnackbar({msg, severity, setVisibility}) {
 
     return (
         <Snackbar open={true} autoHideDuration={3000} onClose={handleClose}>
-            <Alert onClose={handleClose} severity={severity} sx={{ width: '100%' }}>
+            <Alert onClose={handleClose} severity={severity} sx={{width: '100%'}}>
                 {msg}
             </Alert>
         </Snackbar>
