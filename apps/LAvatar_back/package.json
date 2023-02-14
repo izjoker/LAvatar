@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=development nodemon --exec ts-node --resolveJsonModule -e ts,tsx,js index.ts",
+    "start": "NODE_ENV=development nodemon --exec ts-node -e ts,tsx,js index.ts",
     "debug": "NODE_ENV=development nodemon --exec ts-node -e ts,tsx,js index.ts --mode debug"
   },
   "author": "",
@@ -23,6 +23,7 @@
     "jsdom": "^20.0.2",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.21",
+    "moment": "^2.29.4",
     "mongodb": "^4.11.0",
     "mongoose": "^6.7.0",
     "node-cache": "^5.1.2",
