@@ -82,7 +82,7 @@ export class PackageDict {
                 try {
                     r[id] = Object.assign(constItems[id], itemsWithPrice[id]);
                 } catch (e) {
-                    console.log(`no Data for this id: ${id}`);
+                    // console.log(`no Data for this id: ${id}`);
                 }
             }
         }
