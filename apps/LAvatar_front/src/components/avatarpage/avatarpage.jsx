@@ -7,7 +7,7 @@ import PackageItemList from './packageitems/PackageItemList';
 import './avatarpage.css';
 import CustomSnackbar from './reactMaterial/snackBar';
 import PackageList from './PackageList/PackageList';
-import {convertMsToTime} from './utils.js';
+import {convertMsToTime} from '../../utils/utils.js';
 
 function Avatarpage(props) {
     const [date, setDate] = useState(null);
@@ -59,6 +59,7 @@ function Avatarpage(props) {
     };
     useEffect(() => {
         const reqAPI = async () => {
+            // const resp = await axios.get('http://localhost:10501/packageDict');
             const resp = await axios.get('http://localhost:10501/packageDict');
             setItems(resp.data['datas']);
             setPackages(getPackages(resp.data['datas']));
