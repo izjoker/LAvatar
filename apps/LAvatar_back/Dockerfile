@@ -1,11 +1,11 @@
-FROM node:18.9.1 as builder
+FROM node:18-alpine as builder
 
 RUN mkdir /app
 COPY . /app
 WORKDIR /app
 RUN npm install
 # Production environment
-FROM node:18.9.1
+FROM node:18-alpine
 
 COPY --from=builder /app /app
 WORKDIR /app
