@@ -30,7 +30,7 @@ const server = HTTP.createServer(app);
 app.use('/', rootRouter);
 
 const port = process.env.PORT || config.get('port') || 7000;
-
+console.log('port:', port)
 
 server.listen(port);
 
