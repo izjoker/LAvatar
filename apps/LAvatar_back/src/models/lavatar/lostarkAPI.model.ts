@@ -39,7 +39,7 @@ export default class LostarkAPI {
     async reqController() {
         this.reqCount++;
         if (this.reqCount > 95) {
-            await sleep(60000);
+            await sleep(70000);
             this.reqCount = 0;
         }
     }
