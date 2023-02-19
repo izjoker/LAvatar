@@ -51,8 +51,6 @@ export default class LostarkAPI {
         }
     }
     async reqController() {
-        console.log("config.get('lostarkAPI.reqDelay'):", config.get('lostarkAPI.reqDelay'))
-        console.log("config.get('packageDict.routineInterval')", config.get('packageDict.routineInterval'))
         let reqCount = this.authTokens[this.tokenIdx]['reqCount']++
         if (reqCount > 93) {
             this.switchAuthToken();
@@ -63,8 +61,6 @@ export default class LostarkAPI {
                 }
             }
         }
-        console.log('reqController is working.')
-        console.log('this.tokenIdx: ', this.tokenIdx)
     }
     async getMarketItemList(categoryCode, pageNum) {
         
