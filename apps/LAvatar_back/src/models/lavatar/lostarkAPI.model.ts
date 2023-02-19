@@ -29,21 +29,45 @@ const getStringId = (idNum:number, itemName:string) => {
 };
 
 export default class LostarkAPI {
-    authToken: string;
-    reqCount: number;
+    authTokens: Array<object>;
+    currAuthToken: string;
+    tokenIdx: number;
+    reqCounts: Array<number>;
 
     constructor() {
-        this.authToken = config.get('lostarkAPI.authentication.keys')[0];
-        this.reqCount = 0;
+        this.authTokens = []
+        for(let authKey of config.get('lostarkAPI.authentication.keys')){
+            this.authTokens.push({
+                key: authKey,
+                reqCount: 0,
+            })
+        }
+        this.tokenIdx = 0;
     }
-    async reqController() {
-        this.reqCount++;
-        if (this.reqCount > 95) {
-            await sleep(70000);
-            this.reqCount = 0;
+    async switchAuthToken(){
+        this.tokenIdx++;
+        if (this.tokenIdx > this.authTokens.length-1){
+            this.tokenIdx = 0;
         }
     }
+    async reqController() {
+        console.log("config.get('lostarkAPI.reqDelay'):", config.get('lostarkAPI.reqDelay'))
+        console.log("config.get('packageDict.routineInterval')", config.get('packageDict.routineInterval'))
+        let reqCount = this.authTokens[this.tokenIdx]['reqCount']++
+        if (reqCount > 93) {
+            this.switchAuthToken();
+            if (this.tokenIdx === 0){
+                await sleep(config.get('lostarkAPI.reqDelay'));
+                for (let tokenObj of this.authTokens){
+                    tokenObj['reqCount'] = 0;
+                }
+            }
+        }
+        console.log('reqController is working.')
+        console.log('this.tokenIdx: ', this.tokenIdx)
+    }
     async getMarketItemList(categoryCode, pageNum) {
+        
         let r = {};
         const url = 'https://developer-lostark.game.onstove.com/markets/items';
         const body = {
@@ -57,39 +81,42 @@ export default class LostarkAPI {
         try {
             const resp = await axios.post(url, body, {
                 headers: {
-                    authorization: `bearer ${this.authToken}`,
+                    authorization: `bearer ${this.authTokens[this.tokenIdx]['key']}`,
                 },
             });
 
             r = resp.data;
         } catch (e) {
-            if (e.response.statusCode === 429) {
-                console.log('Reached Request Limitation.');
-            } else if (e.hasOwnProperty('response')) {
-                console.log('error with response', e.response.status, e.response.statusCode, JSON.stringify(e.response.data, null, 4));
-            } else {
-                console.log('error without response', e);
-            }
-            r = {};
+            throw(e)
         }
         return r;
     }
 
     async getBulkMarketItemList(categoryCodes) {
         let data = [];
-        // let count = 0
+        let errorCount = 0
         for (const code of categoryCodes) {
             let page = 1;
 
             while (true) {
                 await this.reqController();
-                const lastResp = await this.getMarketItemList(code, page);
-                data = data.concat(lastResp['Items']);
-                if (lastResp['Items'].length === 0) {
-                    break;
-                } else {
-                    page++;
+                try{
+                    const lastResp = await this.getMarketItemList(code, page);
+                    data = data.concat(lastResp['Items']);
+                    if (lastResp['Items'].length === 0) {
+                        break;
+                    } else {
+                        page++;
+                    }
+                }catch{
+                    if (errorCount > 3){
+                        throw ('Failed to get data from Lostark API')
+                    }else{
+                        errorCount++
+                        this.switchAuthToken()
+                    }
                 }
+                
             }
         }
 

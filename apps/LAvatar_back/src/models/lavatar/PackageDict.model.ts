@@ -2,6 +2,7 @@ import _ from 'lodash';
 import fs from 'fs';
 import LostarkAPI from './lostarkAPI.model';
 import CacheLocal from './../../cache/cache';
+import config from './../../utils/config';
 
 
 export class PackageDict {
@@ -67,12 +68,12 @@ export class PackageDict {
             fs.writeFileSync(__dirname+`/../../../assets/logs/packageItems_priced_${new Date().toJSON().slice(0, 13)}.json`, JSON.stringify(prices, null, 4));
         } catch (e) {
             console.log(e);
-            console.log('Failed to receive Priced item datas. will retry after 60s.');
-            setTimeout(()=>this.mainRoutine(), 60 * 1000);
+            console.log(`Failed to receive Priced item datas. will retry after ${config.get('lostarkAPI.reqDelay') / 1000}s.`);
+            setTimeout(()=>this.mainRoutine(), config.get('lostarkAPI.reqDelay'));
             return;
         }
 
-        setTimeout(()=>this.mainRoutine(), 60 * 60 * 1000);
+        setTimeout(()=>this.mainRoutine(), config.get('packageDict.routineInterval'));
     }
 
     async assignmentItems(constItems: object, itemsWithPrice: object) {
