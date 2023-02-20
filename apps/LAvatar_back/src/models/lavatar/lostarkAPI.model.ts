@@ -98,7 +98,6 @@ export default class LostarkAPI {
             while (true) {
                 await this.reqController();
                 try{
-                    console.log('req for page ', page)
                     const lastResp = await this.getMarketItemList(code, page);
                     data = data.concat(lastResp['Items']);
                     if (lastResp['Items'].length === 0) {
@@ -106,10 +105,12 @@ export default class LostarkAPI {
                     } else {
                         page++;
                     }
-                }catch{
-                    if (errorCount > 3){
+                }catch(e){
+                    if (errorCount > 5){
                         throw ('Failed to get data from Lostark API')
                     }else{
+                        console.log(e);
+                        console.log('Failed to request. Retrying..')
                         errorCount++
                         this.switchAuthToken()
                     }
