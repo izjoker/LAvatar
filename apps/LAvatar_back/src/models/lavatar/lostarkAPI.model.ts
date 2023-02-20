@@ -97,6 +97,7 @@ export default class LostarkAPI {
             while (true) {
                 await this.reqController();
                 try{
+                    console.log('req for page ', page)
                     const lastResp = await this.getMarketItemList(code, page);
                     data = data.concat(lastResp['Items']);
                     if (lastResp['Items'].length === 0) {

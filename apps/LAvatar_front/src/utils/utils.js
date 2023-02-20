@@ -18,5 +18,7 @@ export function convertMsToTime(milliseconds) {
     r['days'] = days;
     r['hours'] = hours;
     r['minutes'] = minutes;
+
+    r['seconds'] = seconds;
     return r;
 }
