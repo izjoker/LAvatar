@@ -79,6 +79,7 @@ export default class LostarkAPI {
                 headers: {
                     authorization: `bearer ${this.authTokens[this.tokenIdx]['key']}`,
                 },
+                timeout: 5000
             });
 
             r = resp.data;
