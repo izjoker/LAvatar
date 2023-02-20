@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=development nodemon --exec ts-node -e ts,tsx,js index.ts",
-    "debug": "NODE_ENV=development nodemon --exec ts-node -e ts,tsx,js index.ts --mode debug"
+    "start": "nodemon --exec ts-node -e ts,tsx,js index.ts",
+    "start:dev": "NODE_ENV=development nodemon --exec ts-node -e ts,tsx,js index.ts"
   },
   "author": "",
   "license": "ISC",

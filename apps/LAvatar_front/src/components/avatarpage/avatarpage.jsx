@@ -50,7 +50,7 @@ function Avatarpage(props) {
         const periodMap = convertMsToTime(sub);
         for (const key in periodMap) {
             if (periodMap.hasOwnProperty(key)) {
-                if (periodMap[key] !== 0) {
+                if (periodMap[key] !== 0 || key === "seconds") {
                     return `${periodMap[key].toString()} ${key} ago`;
                 }
             }
