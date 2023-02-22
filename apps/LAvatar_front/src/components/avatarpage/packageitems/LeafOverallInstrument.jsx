@@ -36,7 +36,7 @@ function DesignLayer({designsObj}) {
 function InstrumentCard({instrumentObj}) {
     return (
         <div className="IntrumentCard">
-            <ItemCard itemSpec={instrumentObj} />
+            <ItemCard id={'Leaf'} itemSpec={instrumentObj} />
         </div>
 
     );

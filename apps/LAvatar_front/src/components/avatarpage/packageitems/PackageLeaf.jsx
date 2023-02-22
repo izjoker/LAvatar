@@ -35,7 +35,7 @@ function ItemBox({containedItem}) {
 
         {containedItem['itemIdLst'].map((itemId) =>
             <span key={itemId} className="ItemCard">
-                <ItemCard itemSpec={items[itemId]} />
+                <ItemCard id={'Leaf'} itemSpec={items[itemId]} />
             </span>
         )}
     </div>;

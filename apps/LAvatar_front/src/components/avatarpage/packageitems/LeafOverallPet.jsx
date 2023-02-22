@@ -8,7 +8,7 @@ export default function LeafOverallPet({pets}) {
                 <div className="LeafCard" id="pet">
                     {pets.map((petObj) => (
                         <div id="pet" key={petObj['id']}>
-                            <ItemCard itemSpec={petObj}/>
+                            <ItemCard id={'Leaf'} itemSpec={petObj}/>
                         </div>
 
                     ))}

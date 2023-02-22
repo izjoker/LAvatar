@@ -4,67 +4,44 @@ import {useState} from 'react';
 
 function ItemCard({itemSpec, id}) {
     const [anchorEl, setAnchorEl] = useState(null);
-
-    const handlePopoverOpen = (event) => {
+    const [placement, setPlacement] = useState();
+    const handlePopoverOpen = (newPlacement) => (event) => {
         setAnchorEl(event.currentTarget);
+        setPlacement(newPlacement);
     };
 
     const handlePopoverClose = () => {
         setAnchorEl(null);
     };
-
     const open = Boolean(anchorEl);
 
-    const displayItemPrice = (itemSpec) => {
-        let r = 0;
-        if ('CurrentMinPrice' in itemSpec) {
-            r = itemSpec['CurrentMinPrice'];
-        } else if (itemSpec['TradeCount'] && 'CurrentMinPrice_3' in
-            itemSpec) {
-            r = itemSpec['CurrentMinPrice_3'];
-        } else if (itemSpec['TradeCount']) {
-            r = '*';
-        } else {
-            r = 'S/O';
-        }
-
-        return r.toLocaleString('en-US');
-    };
-    return (
-        <div className="ItemCard" id={id}>
-            <div
+    
+    return <div 
+                className="ItemCard" id={id}
                 aria-owns={open ? 'mouse-over-popover' : undefined}
                 aria-haspopup="true"
-                onMouseEnter={handlePopoverOpen}
+                onMouseEnter={handlePopoverOpen('bottom-end')}
                 onMouseLeave={handlePopoverClose}
             >
-                {/* <span className='ItemIcon'>{printIcon(itemSpec)}</span> */}
-                <span className='DisplayItemName' style={{marginRight: '5px'}}>
+                <span key={'DisplayItemName'} className='DisplayItemName' id={id} style={{marginRight: '5px'}}>
                     {itemSpec['name']}
                 </span>
-                <span className='DisplayItemPrice' style={
-                    {
-                        width: '100%',
-                        textAlign: 'right',
-                        fontWeight: 'bold',
-                        color: 'rgb(150, 130, 0)',
-                    }
-                }>
-                    {displayItemPrice(itemSpec)}
+                <span key={'DisplayItemPrice'} className='DisplayItemPrice' id={id}>
+                    {displayItemPrice(null, itemSpec)}
                 </span>
+                <Popper
+                    open={open}
+                    anchorEl={anchorEl}
+                    placement={placement}
+                    onClose={handlePopoverClose}
+                    style={{maxWidth: '600px', fontSize: 'small'}}>
+                    <Box sx={{border: 1, p: 1, bgcolor: 'background.paper'}}>
+                        <PopperContents
+                            style={{overflow: 'hidden'}} itemSpec={itemSpec} />
+                    </Box>
+                </Popper>
             </div>
-            <Popper
-                open={open}
-                anchorEl={anchorEl}
-                onClose={handlePopoverClose}
-                style={{maxWidth: '550px', fontSize: 'small'}}>
-                <Box sx={{border: 1, p: 1, bgcolor: 'background.paper'}}>
-                    <PopperContents
-                        style={{overflow: 'hidden'}} itemSpec={itemSpec} />
-                </Box>
-            </Popper>
-        </div>
-    );
+
 }
 export default ItemCard;
 
@@ -73,70 +50,39 @@ function PopperContents({itemSpec}) {
     const r = [];
 
     function displayWholePrices(itemSpec) {
-        const priceLst = [];
-        for (let i = 0; i <= 3; i++) {
-            try {
-                priceLst.push(itemSpec[`CurrentMinPrice_${i}`].toString());
-            } catch {
-                priceLst.push('S/O');
-            }
-        }
-        return <div key="prices">
-            {priceLst.map((price, idx) =>
+        let r = []
+        if (itemSpec['TradeCount']){
+            r.push(<div key="prices">
+            {[...Array(4).keys()].map((idx) =>
                 <div key={`${itemSpec['id']}_${idx}`}>
-                    {idx}회 거래 가능:
-                    <span className="DisplayItemPrice">{price}</span>
+                {`${idx}회 거래 가능: `}
+                    <span className="DisplayItemPrice">{displayItemPrice(idx, itemSpec)}</span>
+                    
                 </div>,
             )}
-        </div>;
+        </div>);
+    
+        }else if('CurrentMinPrice' in itemSpec){
+            r.push(displayItemPrice(null, itemSpec))
+            r.push(<div>거래횟수 무제한</div>)
+        }else{
+            r.push(displayItemPrice(null, itemSpec))
+        }
+        return r
     }
-
     r.push(printIcon(itemSpec));
-    if (itemSpec['type'].split('-')[0] === 'avatar' ||
-        itemSpec['type'] === 'weapon' ||
-        itemSpec['type'] === 'instrument') {
+    if (itemSpec['type'].includes('avatar') ||
+        itemSpec['type'].includes('weapon') ||
+        itemSpec['type'].includes('instrument') ){
+        
         r.push(<div key="targetClass" style={{color: 'red'}}>
             <span className="TargetClass">{itemSpec['target'][0]}</span>
             <span> 사용 가능</span>
 
         </div>);
-        if (itemSpec['TradeCount'] === true) {
-            const contents = <div key="prices">{displayWholePrices(itemSpec)}</div>;
-            r.push(contents);
-        } else if (itemSpec['TradeCount'] === undefined) {
-            const contents = <div key="prices">{'재고없음'}</div>;
-            r.push(contents);
-        } else {
-            const contents = <div key="prices">{'거래횟수 무제한'}</div>;
-            r.push(contents);
-        }
-    } else {
-        function stringifyTargetLst(target) {
-            let r = '';
-
-            if (target.length !== 0) {
-                for (const className of target) {
-                    r = r+className+', ';
-                }
-                r = r.slice(0, -2) + ' 사용 가능';
-            }
-            return r;
-        }
-        r.push(<div key="targetClass" style={{color: 'red'}}>
-            <span className="TargetClass">{
-                stringifyTargetLst(itemSpec['target'])
-            }</span>
-
-        </div>);
-
-        if (itemSpec['TradeCount'] !== undefined) {
-            const contents = <div key="prices">{'거래횟수 무제한'}</div>;
-            r.push(contents);
-        } else {
-            const contents = <div key="prices">{'재고없음'}</div>;
-            r.push(contents);
-        }
     }
+    const contents = <div key="prices">{displayWholePrices(itemSpec)}</div>;
+    r.push(contents);
     return r;
 }
 
@@ -174,3 +120,74 @@ const printIcon = (itemSpec) => {
 
     return <img key='itemImage' style={style} src={itemSpec['icon'] ? itemSpec['icon'] : '/image/noStock.png'} alt=""/>;
 };
+const displayItemPrice = (idx, itemSpec) => {
+    let style = {}
+    let r = [];
+    let priceFlag = true
+    let price
+    if (idx === null){
+        if ('CurrentMinPrice' in itemSpec) {
+            price = itemSpec['CurrentMinPrice'];
+        } else if (itemSpec['TradeCount'] && 'CurrentMinPrice_3' in
+            itemSpec) {
+            price = itemSpec['CurrentMinPrice_3'];
+        } else if (itemSpec['TradeCount']) {
+            price = '*';
+            priceFlag = false
+        } else {
+            price = '재고없음';
+            priceFlag = false
+            style['color'] = '#c9c5c5'
+        }
+    }else{
+        if (itemSpec['TradeCount'] && itemSpec[`CurrentMinPrice_${idx}`]){
+            price = itemSpec[`CurrentMinPrice_${idx}`]
+        }else{
+            price = '재고없음';
+            priceFlag = false
+            style['color'] = '#c9c5c5'
+        }
+    }
+    r.push(<span key='price' style={style}>{price.toLocaleString('en-US')}</span>)
+    if (priceFlag){
+        r.push(
+            <span key='GoldIcon' className="GoldIcon" style={{marginLeft: '2px'}}>
+                <GoldIcon size={12}/>
+            </span>
+        )
+    }
+    
+    return r
+};
+
+function GoldIcon({size}){
+    const unit = 'px'
+    const defaultSize = 15
+    let width = 15
+    let height = 15
+    let backgroundSize = [155.5, 128.6]
+    let backgroundPosition = [-15.78, -112.1]
+    
+    if (size){
+        const ratio = size / defaultSize
+        width = width*ratio
+        height = height*ratio
+        backgroundSize = backgroundSize.map(e=>e*ratio)
+        backgroundPosition = backgroundPosition.map(e=>e*ratio)
+    }
+
+    let style = {
+        width: width+unit,
+        height: height+unit,
+        background: 'url(https://cdn-lostark.game.onstove.com/2018/obt/assets/images/pc/sprite/sprite_deal.png) no-repeat 0 0',
+        // backgroundSize: 'cover',
+        backgroundSize: `${backgroundSize[0]+unit} ${backgroundSize[1]+unit}`,
+        display: 'inline-block',
+        verticalAlign: 'middle',
+        backgroundPosition: `${backgroundPosition[0]+unit} ${backgroundPosition[1]+unit}`,
+    }
+    return <span 
+            className='GoldIcon'
+            style={style}/>
+        
+}

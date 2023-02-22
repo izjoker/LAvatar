@@ -77,9 +77,12 @@ export default function PackageItemBoxes({type}) {
                 e.stopPropagation();
             }}>
                 <div>
-                    <ItemCard {...(checkSetCondition(itemSpec['id']) ? {id: 'UnfoldableBox'} : {})} itemSpec={itemSpec} />
+                    {}
+                    <div {...(checkSetCondition(itemSpec['id']) ? {className: 'UnfoldableBox'} : {})}>
+                        <ItemCard id={'Box'} itemSpec={itemSpec}/>
+                    </div>
                     {_.map(children, (c) =>
-                        <div key={`${c['id']}_${itemSpec['id']}`} style={{marginLeft: '20px'}}>
+                        <div key={`${c['id']}_${itemSpec['id']}`} style={{marginLeft: '15px'}}>
                             <ItemView itemSpec={c} depth={depth + 1} />
                         </div>
                     )}
