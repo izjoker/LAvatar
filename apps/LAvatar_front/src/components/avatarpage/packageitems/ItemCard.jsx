@@ -68,8 +68,6 @@ export default ItemCard;
 
 
 function PopperContents({itemSpec}) {
-    const r = [];
-
     function displayWholePrices(itemSpec) {
         let r = []
         if (itemSpec['TradeCount']){
@@ -91,11 +89,18 @@ function PopperContents({itemSpec}) {
         }
         return r
     }
+    function stringifyTargetLst(lst){
+        let r = ""
+        for (const target of lst){
+            r += target + ", "
+        }
+        return r.slice(0,-2)
+    }
+    const r = [];
     r.push(printIcon(itemSpec));
     if (itemSpec['target'].length){
-        
         r.push(<div key="targetClass" style={{color: 'red'}}>
-            <span className="TargetClass">{`${JSON.stringify(itemSpec['target'])} 사용 가능`} </span>
+            <span className="TargetClass">{`${stringifyTargetLst(itemSpec['target'])} 사용 가능`} </span>
         </div>);
     }
     const contents = <div key="prices">{displayWholePrices(itemSpec)}</div>;
