@@ -77,7 +77,6 @@ export default function PackageItemBoxes({type}) {
                 e.stopPropagation();
             }}>
                 <div>
-                    {}
                     <div {...(checkSetCondition(itemSpec['id']) ? {className: 'UnfoldableBox'} : {})}>
                         <ItemCard id={'Box'} itemSpec={itemSpec}/>
                     </div>
