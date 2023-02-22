@@ -6,3 +6,6 @@ assets/logs/
 
 # datas
 assets/debug/
+
+# local config
+config/config.development.yaml
