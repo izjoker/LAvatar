@@ -50,6 +50,7 @@ export default function PackageList({ packages, handler }) {
                     className='PackageCard'
                     value={id}
                     key={id}
+                    style={{'fontSize': '12px'}}
                 >
                     {items[id]['name']}
                 </BorderLessToggleButton>

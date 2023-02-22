@@ -109,10 +109,11 @@ export default class LostarkAPI {
                     if (errorCount > 5){
                         throw ('Failed to get data from Lostark API')
                     }else{
-                        console.log(e);
+                        console.log('error', e.message);
                         console.log('Failed to request. Retrying..')
                         errorCount++
                         this.switchAuthToken()
+                        sleep(2000)
                     }
                 }
                 

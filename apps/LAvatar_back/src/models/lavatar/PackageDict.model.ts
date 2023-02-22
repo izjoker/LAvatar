@@ -63,9 +63,7 @@ export class PackageDict {
 
             // 캐시입력
             CacheLocal.set('pricedItems', this.pricedItems);
-            // 로컬저장
-            fs.mkdirSync(__dirname+'/../../../assets/packageDict/', {recursive: true});
-            fs.writeFileSync(__dirname+`/../../../assets/logs/packageItems_priced_${new Date().toJSON().slice(0, 13)}.json`, JSON.stringify(prices, null, 4));
+            
         } catch (e) {
             console.log(e);
             console.log(`Failed to receive Priced item datas. will retry after ${config.get('lostarkAPI.reqDelay') / 1000}s.`);

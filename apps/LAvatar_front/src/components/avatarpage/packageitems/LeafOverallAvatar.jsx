@@ -36,9 +36,7 @@ function DesignLayer({designsObj}) {
 function AvatarCard({avatarObj}) {
     return <div className="AvatarLayer" >
         {Object.keys(avatarObj).map((key)=>
-            <div key={avatarObj[key]['id']}>
-                <ItemCard itemSpec={avatarObj[key]} />
-            </div>,
+            <ItemCard id={'Leaf'} key={avatarObj[key]['id']} itemSpec={avatarObj[key]} />
         )}
     </div>;
 }
