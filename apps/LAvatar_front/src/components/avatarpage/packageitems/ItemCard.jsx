@@ -4,7 +4,10 @@ import {useState} from 'react';
 
 function ItemCard({itemSpec, id}) {
     const [anchorEl, setAnchorEl] = useState(null);
+    const [position, setPosition] = useState({ x: 0, y: 0 });
     const [placement, setPlacement] = useState();
+    
+
     const handlePopoverOpen = (newPlacement) => (event) => {
         setAnchorEl(event.currentTarget);
         setPlacement(newPlacement);
@@ -20,7 +23,8 @@ function ItemCard({itemSpec, id}) {
                 className="ItemCard" id={id}
                 aria-owns={open ? 'mouse-over-popover' : undefined}
                 aria-haspopup="true"
-                onMouseEnter={handlePopoverOpen('bottom-end')}
+                onMouseOver={e => setPosition({ x: e.clientX, y: e.clientY })}
+                onMouseEnter={handlePopoverOpen('bottom-start')}
                 onMouseLeave={handlePopoverClose}
             >
                 <span key={'DisplayItemName'} className='DisplayItemName' id={id} style={{marginRight: '5px'}}>
@@ -31,13 +35,30 @@ function ItemCard({itemSpec, id}) {
                 </span>
                 <Popper
                     open={open}
-                    anchorEl={anchorEl}
-                    placement={placement}
+                    anchorEl= {{
+                        clientHeight: 0,
+                        clientWidth: 0,
+                        getBoundingClientRect: () => ({
+                            top: position.y,
+                            left: position.x+10,
+                            // top: 0,
+                            // left: 100,
+                            // right: position.x,
+                            // bottom: position.y,
+                            width: 0,
+                            height: 0,
+                        })
+                    }}
+                    placement={placement} 
                     onClose={handlePopoverClose}
                     style={{maxWidth: '600px', fontSize: 'small'}}>
                     <Box sx={{border: 1, p: 1, bgcolor: 'background.paper'}}>
                         <PopperContents
-                            style={{overflow: 'hidden'}} itemSpec={itemSpec} />
+                            
+                            style={{overflow: 'hidden'}} 
+                            itemSpec={itemSpec} 
+                            
+                        />
                     </Box>
                 </Popper>
             </div>
@@ -64,21 +85,17 @@ function PopperContents({itemSpec}) {
     
         }else if('CurrentMinPrice' in itemSpec){
             r.push(displayItemPrice(null, itemSpec))
-            r.push(<div>거래횟수 무제한</div>)
+            r.push(<div key='tradeCount'>거래횟수 무제한</div>)
         }else{
             r.push(displayItemPrice(null, itemSpec))
         }
         return r
     }
     r.push(printIcon(itemSpec));
-    if (itemSpec['type'].includes('avatar') ||
-        itemSpec['type'].includes('weapon') ||
-        itemSpec['type'].includes('instrument') ){
+    if (itemSpec['target'].length){
         
         r.push(<div key="targetClass" style={{color: 'red'}}>
-            <span className="TargetClass">{itemSpec['target'][0]}</span>
-            <span> 사용 가능</span>
-
+            <span className="TargetClass">{`${JSON.stringify(itemSpec['target'])} 사용 가능`} </span>
         </div>);
     }
     const contents = <div key="prices">{displayWholePrices(itemSpec)}</div>;

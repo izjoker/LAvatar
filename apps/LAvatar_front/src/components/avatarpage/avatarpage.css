@@ -5,10 +5,9 @@
 }
 .DataUpdatedAt{
     background-color: rgb(248 232 242);
+    text-align: center;
 }
 .AvatarPage{
-    /* color: white;
-    background-color: black; */
     display: block;
     font-size: 12px;
     overflow: visible;
@@ -136,6 +135,7 @@
     flex-wrap: wrap;   
     width: 100%;
     float: left;         
+    line-height: 15px;
 }
 .DisplayItemName#Leaf{
     width: 163px;
@@ -146,10 +146,9 @@
 .DisplayItemPrice{    
     white-space: nowrap;   
     display: 'block';
+    vertical-align: middle; 
     width: 82px;
     text-align: right;
-    align-items: right;
-    font-weight: 'bold';
     color: rgb(150, 130, 0)   
 }
 
@@ -197,7 +196,10 @@
     width: calc(96vw - 82px);
 }
 .DisplayItemName#Box{
-    width: calc(90vw - 107px);
+    width: calc(90vw - 97px);
+}
+.DisplayItemName#BoxStratified{
+    width: calc(90vw - 97px);
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
@@ -223,6 +225,6 @@
         width: 160px;
     }
     .DisplayItemName#Box{
-        width: 250px;
+        width: 230px;
     }
 }
