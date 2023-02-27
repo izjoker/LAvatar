@@ -8,7 +8,7 @@ export default function LeafOverallMount({mounts}) {
 
                     {mounts.map((mountObj) => (
                         <div key={mountObj['id']}>
-                            <ItemCard id={'Leaf'} itemSpec={mountObj}/>
+                            <ItemCard fontSize={'12px'} id={'Leaf'} itemSpec={mountObj}/>
                         </div>
                     ))}
                 </div>

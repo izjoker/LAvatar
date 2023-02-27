@@ -14,3 +14,8 @@ export const selectedLeafItemIdState = atom({
     key: 'item_package_selected_leaf_item_id',
     default: null,
 });
+
+export const popperStateRecoil = atom({
+    key: 'popper_state',
+    default: null,
+})

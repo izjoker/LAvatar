@@ -24,7 +24,7 @@ function DesignLayer({designsObj}) {
 
         {Object.keys(designsObj).map((k) => (
             <div key={`${k}_${designsObj[k]['id']}`}>
-                <span style={{color: 'green'}}>{k}</span>
+                <span className="DesignName">{k}</span>
                 <AvatarCard avatarObj={designsObj[k]}/>
             </div>
         ),
@@ -36,7 +36,7 @@ function DesignLayer({designsObj}) {
 function AvatarCard({avatarObj}) {
     return <div className="AvatarLayer" >
         {Object.keys(avatarObj).map((key)=>
-            <ItemCard id={'Leaf'} key={avatarObj[key]['id']} itemSpec={avatarObj[key]} />
+            <ItemCard fontSize={'12px'} id={'Leaf'} key={avatarObj[key]['id']} itemSpec={avatarObj[key]} />
         )}
     </div>;
 }

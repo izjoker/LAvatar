@@ -77,9 +77,7 @@ export default function PackageItemBoxes({type}) {
                 e.stopPropagation();
             }}>
                 <div>
-                    <div {...(checkSetCondition(itemSpec['id']) ? {className: 'UnfoldableBox'} : {})}>
-                        <ItemCard id={'Box'} itemSpec={itemSpec}/>
-                    </div>
+                        <ItemCard fontSize={'12px'} {...(checkSetCondition(itemSpec['id']) ?  {className: 'UnfoldableBox'} : {})} id={'Box'} itemSpec={itemSpec}/>
                     {_.map(children, (c) =>
                         <div key={`${c['id']}_${itemSpec['id']}`} style={{marginLeft: '15px'}}>
                             <ItemView itemSpec={c} depth={depth + 1} />
@@ -98,7 +96,7 @@ export default function PackageItemBoxes({type}) {
     return (
         <div className="PackageBoxes">
             {Object.keys(categorizedBoxes).map((category) =>
-                <div key={category} className="PackageBox" id={category} style={{padding: 5, borderRadius: 8}}>
+                <div key={category} className="PackageBox" id={category}>
                     <pre style={{fontWeight: 'bold'}}>
                         {capitalizeFirstChar(category)}
                     </pre>
