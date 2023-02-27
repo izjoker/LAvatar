@@ -357,7 +357,7 @@ const Build_kinder = (obj) => {
             `${design} 아바타 세트`,
         ]));
     }
-    obj['모코코 유치원 아바타 선택 상자'] = new LAItem('모코코 유치원 아바타 선택 상자', 'avatarSetPackage', rootClasses_, containedItems, true);
+    obj['모코코 유치원 아바타 선택 상자'] = new LAItem('모코코 유치원 아바타 선택 상자', 'avatarSetPackage', [], containedItems, true);
 
 
     for (const design of designs) {
@@ -1597,7 +1597,7 @@ const Build_3rdAnnivData = (obj) => {
         for (const design of designs) {
             containedItems.push(new ContainedItem(rootClass, design, 'avatar', [`${design} 아바타 세트 [${rootClass}]`]));
         }
-        obj[`함께한 시간 아바타 상자 [${rootClass}]`] = new LAItem(`함께한 시간 아바타 상자 [${rootClass}]`, 'avatarSetPackage', [rootClass], containedItems, true);
+        obj[`함께한 시간 아바타 상자 [${rootClass}]`] = new LAItem(`함께한 시간 아바타 상자 [${rootClass}]`, 'avatarSetPackage', [], containedItems, true);
     }
 
     // 아바타실물팩
@@ -1616,7 +1616,7 @@ const Build_3rdAnnivData = (obj) => {
         const facetype = partsMap[rootClass];
         for (const design of designs) {
             containedItems = [];
-            containedItems.push(new ContainedItem('', design, 'avatar', [
+            containedItems.push(new ContainedItem(rootClass, design, 'avatar', [
                 `${design} 머리_${rootClass}`,
                 `${design} ${facetype}_${rootClass}`,
                 `${design} 상의_${rootClass}`,
@@ -1713,7 +1713,7 @@ const Build_3rdAnnivData = (obj) => {
 
     for (const design of designs) {
         containedItems = [];
-        containedItems.push(new ContainedItem(className, design, 'avatar', [
+        containedItems.push(new ContainedItem(rootClass, design, 'avatar', [
             `${design} 머리_${rootClass}`,
             `${design} 얼굴2_${rootClass}`,
             `${design} 상의_${rootClass}`,
@@ -2885,7 +2885,7 @@ const Build_anniv2ndData = (obj) => {
     for (const rootClass of rootClasses_) {
         containedItems.push(new ContainedItem(rootClass, '', 'weapon', [`모험가의 무기 상자 [${rootclassBracketFormatter(rootClass)}]`] ));
     }
-    obj['모험가의 무기 상자'] = new LAItem('모험가의 무기 상자', 'weaponPackage', Object.keys(weapons_), containedItems, true);
+    obj['모험가의 무기 상자'] = new LAItem('모험가의 무기 상자', 'weaponSetPackage', [], containedItems, true);
 
     const wDesignMap_root = {
         '전사': [
@@ -2952,11 +2952,20 @@ const Build_anniv2ndData = (obj) => {
         '스카우터': '컴파운드',
         '건슬링어': '컴파운드',
     };
+    const leafClassLstfromRoot = {
+        '전사': ['버서커', '디스트로이어', '워로드', '홀리나이트'],
+        '마법사': ['아르카나', '서머너', '바드'],
+        '무도가-여': ['배틀마스터', '인파이터', '기공사', '창술사'],
+        '무도가-남': ['스트라이커'],
+        '암살자': ['블레이드', '데모닉', '리퍼'],
+        '헌터-남': ['호크아이', '데빌헌터', '블래스터', '스카우터'],
+        '헌터-여': ['건슬링어']
+    };
 
     for (const rootClass of rootClasses_) {
         containedItems = [];
-        for (const leafClass in wDesignMap_leafClass) {
-            for (const design of wDesignMap_root[getRootClass(leafClass)]) {
+        for (const leafClass of leafClassLstfromRoot[rootClass]) {
+            for (const design of wDesignMap_root[rootClass]) {
                 containedItems.push(new ContainedItem(leafClass, design, 'weapon', [`${design} ${wDesignMap_leafClass[leafClass]} ${weapons_id[leafClass]}`]));
             }
         }
@@ -3698,7 +3707,7 @@ const Build_runnerData = (obj) => {
         containedItems.push(new ContainedItem('', design, 'avatar', [`${design} 얼굴 장식 세트`]));
     }
 
-    obj[`러너 얼굴 장식 세트`] = new LAItem(`러너 얼굴 장식 세트`, 'avatarSetPackage', rootClasses_, containedItems, true);
+    obj[`러너 얼굴 장식 세트`] = new LAItem(`러너 얼굴 장식 세트`, 'avatarSetPackage', [], containedItems, true);
 
     for (const design of designs) {
         containedItems = [];

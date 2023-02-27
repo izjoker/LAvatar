@@ -23,7 +23,6 @@ function DesignLayer({designsObj}) {
             {Object.keys(designsObj).map((designName) =>
                 (
                     <div key={designName}>
-                        {/* <span style={{color:'green'}}>{designName}</span> */}
                         <InstrumentCard instrumentObj={designsObj[designName]}/>
                     </div>
                 ),
@@ -36,7 +35,7 @@ function DesignLayer({designsObj}) {
 function InstrumentCard({instrumentObj}) {
     return (
         <div className="IntrumentCard">
-            <ItemCard id={'Leaf'} itemSpec={instrumentObj} />
+            <ItemCard fontSize={'12px'} id={'Leaf'} itemSpec={instrumentObj} />
         </div>
 
     );

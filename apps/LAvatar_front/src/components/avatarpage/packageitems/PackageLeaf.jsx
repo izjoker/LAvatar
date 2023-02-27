@@ -1,6 +1,5 @@
 import {useRecoilState} from 'recoil';
-import {packageItems, selectedLeafItemIdState, selectedPackageIdState} from '../../../stores/itemPackageStore.atom';
-import {useState} from 'react';
+import {packageItems, selectedLeafItemIdState} from '../../../stores/itemPackageStore.atom';
 import ItemCard from './ItemCard';
 
 export default function PackageLeaf() {

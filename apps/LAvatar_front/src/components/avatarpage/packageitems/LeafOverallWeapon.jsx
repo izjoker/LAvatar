@@ -34,7 +34,7 @@ function DesignLayer({designsObj}) {
 function WeaponCard({weaponObj}) {
     return (
         <div className="WeaponCard">
-            <ItemCard id={'Leaf'} itemSpec={weaponObj}/>
+            <ItemCard fontSize={'12px'} id={'Leaf'} itemSpec={weaponObj}/>
         </div>
 
     );

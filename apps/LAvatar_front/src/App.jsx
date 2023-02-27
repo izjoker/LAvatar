@@ -3,27 +3,32 @@ import Avatarpage from './components/avatarpage/avatarpage'
 import {
     RecoilRoot
 } from 'recoil';
-import { Router, Link, Navigate, BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Link, Navigate, BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
     return (
-        <RecoilRoot>
-            <BrowserRouter>
-                <Link to={'/'}>
+        <div className="BodyWrapper">
+            <RecoilRoot>
+                <BrowserRouter>
                     <div className="NavBar">
-                        LAvatar
+                        <Link className={"HomeLogo"} to={'/'}>
+                            LAvatar
+                        </Link>
                     </div>
-                </Link>
-				<Routes>        
-                    <Route path="/" element={<Navigate to={'/packageDict'}/>}></Route>
-                    <Route path="/packageDict/" element={<Avatarpage/>}> </Route>
-                    <Route path="*" element={'Not Found'}></Route>
-                </Routes>
-            </BrowserRouter>
-            <div className="footer">
-                Contact Me
-            </div>
-        </RecoilRoot>
+                    <div className="MainContents">
+                        <Routes>        
+                            <Route path="/" element={<Navigate to={'/packageDict'}/>}></Route>
+                            <Route path="/packageDict/" element={<Avatarpage/>}> </Route>
+                            <Route path="*" element={'Not Found'}></Route>
+                        </Routes>
+                    </div>
+                    
+                </BrowserRouter>
+                <div className="footer">
+                    <a href='https://open.kakao.com/o/glkOZj6e' className='Contact'>Contact Me</a>
+                </div>
+            </RecoilRoot>
+        </div>
     )
 }
 

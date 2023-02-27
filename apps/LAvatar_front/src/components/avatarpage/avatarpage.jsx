@@ -1,11 +1,9 @@
 import {useRef, useEffect, useState} from 'react';
 import {useRecoilState} from 'recoil';
-import axios from 'axios';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 import {packageItems, selectedLeafItemIdState, selectedPackageIdState} from '../../stores/itemPackageStore.atom';
 import PackageItemList from './packageitems/PackageItemList';
 import './avatarpage.css';
-import CustomSnackbar from './reactMaterial/snackBar';
 import PackageList from './PackageList/PackageList';
 import {convertMsToTime} from '../../utils/utils.js';
 import {httpClient} from '../../utils/http.js'
@@ -17,6 +15,7 @@ function Avatarpage(props) {
     const [selectedPackageId, setSelectedPackageId_] = useRecoilState(selectedPackageIdState);
     const [selectedLeafId, setSelectedLeafId] = useRecoilState(selectedLeafItemIdState);
     const [popupVisible, setPopupVisible] = useState(false);
+    
 
     const setSelectedPackageId = (selectedPackageId) => {
         setSelectedLeafId(null);
@@ -87,10 +86,7 @@ function Avatarpage(props) {
         <div className="AvatarPage">
             {date && <div className='DataUpdatedAt'>Data Update: {periodFrom(date)}</div>}
             <PackageList packages={packages} handler={handlePackage}/>
-            <div className="ItemDisplay" ref={ref}>
-                {popupVisible && <CustomSnackbar msg='No Data on this Package' severity='error' setVisibility={setPopupVisible}/>}
-                {items[selectedPackageId] !== undefined && <PackageItemList/>}
-            </div>
+            {items[selectedPackageId] !== undefined && <PackageItemList ref_={ref}/>}
             <KeyboardDoubleArrowUpIcon className="TopButton" onClick={()=>{
                 window.scrollTo({top: 0,
                     behavior: 'smooth'});
