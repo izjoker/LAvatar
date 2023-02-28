@@ -96,13 +96,15 @@ export default function PackageItemBoxes({type}) {
     return (
         <div className="PackageBoxes">
             {Object.keys(categorizedBoxes).map((category) =>
-                <div key={category} className="PackageBox" id={category}>
-                    <pre style={{fontWeight: 'bold'}}>
+                <div key={category} className="BoxCategory">
+                    <div key={'categoryName'} style={{fontWeight: 'bold', marginLeft: '5px'}}>
                         {capitalizeFirstChar(category)}
-                    </pre>
-                    {categorizedBoxes[category].map((boxId) =>
-                        <ItemView key={boxId} itemSpec={items[boxId]} depth={0} />
-                    )}
+                    </div>    
+                    <div key={'contents'} className="PackageBox" id={category}>
+                        {categorizedBoxes[category].map((boxId) =>
+                            <ItemView key={boxId} itemSpec={items[boxId]} depth={0} />
+                        )}
+                    </div>
                 </div>
 
             )}

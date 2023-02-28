@@ -7,18 +7,17 @@ export default function PackageLeaf() {
     const [selectedLeafId, setSelectedLeafId] = useRecoilState(selectedLeafItemIdState);
     const selectedBox = items[selectedLeafId];
     return <div className="PackageLeaf">
-        <div className="PackageContents">
+        <div className="BoxContents">
             {selectedBox['contain'].map((containedItem, idx) =>
-                <div className="ItemBox" key={idx}>
-                    <ItemBox containedItem={containedItem} />
-                </div>
+                <ItemBox key={idx} containedItem={containedItem} />
+                
             )}
         </div>
     </div>;
 }
 function ItemBox({containedItem}) {
     const [items, setItems] = useRecoilState(packageItems);
-    return <div>
+    return <div className="ItemBox">
         {
             (containedItem['category'] === 'avatar' || containedItem['category'] === 'weapon' || containedItem['category'] === 'instrument') &&
             <div>
@@ -29,12 +28,10 @@ function ItemBox({containedItem}) {
                     {containedItem['design']}
                 </span>
             </div>
-
         }
-
         {containedItem['itemIdLst'].map((itemId) =>
             <span key={itemId} className="ItemCard">
-                <ItemCard id={'Leaf'} itemSpec={items[itemId]} />
+                <ItemCard fontSize={'12px'}id={'Leaf'} itemSpec={items[itemId]} />
             </span>
         )}
     </div>;

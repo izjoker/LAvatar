@@ -42,7 +42,10 @@ pre{
             flex-wrap: wrap;
             background-color: rgb(248, 239, 241);
         }
-
+        .BoxCategory{
+            display: flex;
+            flex-direction: column;
+        }
         .PackageBox{
             margin: 3px;
             background-color: rgb(246, 252, 252);
@@ -51,8 +54,11 @@ pre{
             border-width: 1px;
             border-radius: 10px;
         }
+
+        
             .PackageLeaf{
                 background-image:linear-gradient(180deg, #f0e4ca, #f5eddd);
+                flex: 1 
             }
             .PackageBoxName{
                 height:30px;
@@ -65,7 +71,10 @@ pre{
                 margin: 0px;
                 font-weight: bold;
             }
-            
+            .BoxContents{
+                display: flex;
+                flex-wrap: wrap;
+            }
             .DesignName{
                 color:rgb(163, 211, 142)
             }
@@ -78,7 +87,7 @@ pre{
             border-color: rgb(238, 202, 202);
             border-width: 1px;
             border-radius: 10px;
-            
+            width: 226px;
         }
 
     .LeafOverall{
@@ -209,7 +218,7 @@ pre{
     width: calc(96vw - 82px);
 }
 .DisplayItemName#Box{
-    width: calc(90vw - 97px);
+    width: calc(92vw - 97px);
 }
 .DisplayItemName#BoxStratified{
     width: calc(90vw - 97px);
@@ -234,13 +243,15 @@ pre{
     .PackageBoxes{
         display: flex;
         flex-direction: row;
+        margin: 2px 0px;
     }
     .PackageBox{
         width: fit-content;
-        margin: 5px 2px;
+        margin: 2px;
         padding: 2px;
         border-width: 1px;
     }
+
 
     .DisplayItemName#Leaf{
         width: 165px;
