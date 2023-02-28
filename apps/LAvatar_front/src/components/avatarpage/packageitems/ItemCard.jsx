@@ -9,36 +9,16 @@ function ItemCard({itemSpec, id, fontSize}) {
     const [anchorEl, setAnchorEl] = useState(null);
     const [placement, setPlacement] = useState();
     const [popperState, setPopperState] = useRecoilState(popperStateRecoil);
-    
-
     const handlePopoverOpen = (newPlacement) => (event) => {
+        setPopperState(event.currentTarget)
         setAnchorEl(event.currentTarget);
         setPlacement(newPlacement);
-        if (!popperState){
-            setPopperState(true)
-        }
     };
-
     const handlePopoverClose = () => {
-        setAnchorEl(null);
-        // setPopperState(false)
+        setPopperState(null)
+        setAnchorEl(null)
     };
-    const open = Boolean(anchorEl);
-    
-    useEffect(()=>{
-        setTimeout(() => {
-            setAnchorEl(null);
-        }, 3000);
-        
-    }, [popperState])
-    // useEffect(() => {
-    //     if (!selectedPackageId) {
-    //         return;
-    //     }
-    //     ref.current.scrollIntoView({
-    //         behavior: 'smooth'});
-    // }, [selectedPackageId]);
-
+    const open = popperState === anchorEl && popperState !== null 
     function PopperContents({itemSpec}) {
         function displayWholePrices(itemSpec) {
             let r = []
@@ -77,6 +57,10 @@ function ItemCard({itemSpec, id, fontSize}) {
         }
         const contents = <div key="prices">{displayWholePrices(itemSpec)}</div>;
         r.push(contents);
+        
+        if (checkSetCondition(itemSpec)){
+            r.push(<div key="clickSign" style={{color:'brown'}}>내용물을 보려면 클릭</div>)
+        }
         return r;
     }
     const printIcon = (itemSpec) => {
@@ -199,9 +183,9 @@ function ItemCard({itemSpec, id, fontSize}) {
                 </span>
                 <Popper
                     open={open}
-                    anchorEl={anchorEl}
+                    // anchorEl={anchorEl}
+                    anchorEl={popperState}
                     placement={placement} 
-                    onClose={handlePopoverClose}
                     onMouseEnter={handlePopoverClose}
                     style={{maxWidth: '600px', fontSize: fontSize}}>
                     <Box sx={{border: 1, p: 1, bgcolor: 'background.paper'}}>
@@ -214,3 +198,16 @@ function ItemCard({itemSpec, id, fontSize}) {
             </div>
 }
 export default ItemCard;
+
+const checkSetCondition = (itemSpec) => {
+    if (
+        itemSpec['type'] === 'avatarPackage' ||
+        itemSpec['type'] === 'weaponPackage' ||
+        itemSpec['type'] === 'instrumentPackage' ||
+        itemSpec['type'] === 'mountPackage' ||
+        itemSpec['type'] === 'petPackage'
+    ) {
+        return true;
+    }
+    return false;
+};
