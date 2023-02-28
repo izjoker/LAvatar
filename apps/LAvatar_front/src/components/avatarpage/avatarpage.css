@@ -47,6 +47,7 @@ pre{
             flex-direction: column;
         }
         .PackageBox{
+            flex: 1;
             margin: 3px;
             background-color: rgb(246, 252, 252);
             border: solid;
