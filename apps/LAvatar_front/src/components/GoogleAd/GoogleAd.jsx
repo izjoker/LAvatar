@@ -1,36 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect  } from 'react';
 
-export default function GoogleAd({
-    className = "adsbygoogle",
-    client = "",
-    slot = "",
-    format = "",
-    responsive = "",
-    layoutKey = ""
-}) {
+export default function GoogleAd (props) {
+    const { dataAdSlot } = props;  
+
     useEffect(() => {
         try {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-        console.log("Advertise is pushed");
-        } catch (e) {
-        if (process.env.NODE_ENV !== "production")
-            console.error("AdvertiseError", e);
+            (window.adsbygoogle = window.adsbygoogle || []).push({});
         }
-    }, []);
+        catch (e) {
+
+        }
+    },[]);
     return (
-        <ins
-        className={className}
-        style={{
-            overflowX: "auto",
-            overflowY: "hidden",
-            display: "block",
-            textAlign: "center"
-        }}
-        data-ad-client={client}
-        data-ad-slot={slot}
-        data-ad-format={format}
-        data-full-width-responsive={responsive}
-        data-ad-layout-key={layoutKey}
-        />
+        <>
+            <ins className="adsbygoogle"
+                style={{ display: "block" }}
+                data-ad-client="ca-pub-XXXXXXXXXXXXXXX"
+                data-ad-slot={dataAdSlot}
+                data-ad-format="auto"
+                data-full-width-responsive="true">
+            </ins>
+        </>
     );
 };
