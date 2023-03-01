@@ -23,6 +23,7 @@ function App() {
                     </div>
                     
                 </BrowserRouter>
+                {/* <GoogleAd/> */}
                 <div className="footer">
                     <a href='https://open.kakao.com/o/glkOZj6e' className='Contact'>Contact Me</a>
                 </div>
