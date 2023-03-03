@@ -1,0 +1,105 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.autoClosingBrackets": "never",
+    "editor.autoClosingDelete": "never",
+    "editor.autoClosingOvertype": "never",
+    "editor.autoClosingQuotes": "never",
+    "editor.accessibilitySupport": "off",
+    "editor.autoSurround": "never",
+    "javascript.suggest.includeAutomaticOptionalChainCompletions": false,
+    "javascript.suggest.enabled": false,
+    "javascript.suggest.autoImports": false,
+    "javascript.suggest.includeCompletionsForImportStatements": false,
+    "typescript.autoClosingTags": false,
+    "typescript.check.npmIsInstalled": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.autoClosingTags": false,
+    "html.autoClosingTags": false,
+    "less.completion.triggerPropertyValueCompletion": false,
+    "scss.completion.triggerPropertyValueCompletion": false,
+    "less.completion.completePropertyWithSemicolon": false,
+    "scss.completion.completePropertyWithSemicolon": false,
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.fontFamily": "Consolas, 'Malgun Gothic', 'monospace'",
+    "diffEditor.wordWrap": "off",
+    "editor.wordWrap": "on",
+    "editor.detectIndentation": false,
+    "workbench.editorAssociations": {
+        "*.json": "default"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.zoomLevel": 1,
+    "eslint.alwaysShowStatus": true,
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "typescript.format.semicolons": "insert",
+    "editor.formatOnType": false, // required
+    "editor.formatOnSaveMode": "file", // required to format on save
+    "files.autoSave": "onFocusChange", // optional but recommended
+
+    "eslint.enable": true,
+    "eslint.lintTask.enable": true,
+    "eslint.options": {
+        "useEslintrc": false,
+        "overrideConfig": {
+            "env": {
+                "commonjs": true,
+                "node": true,
+                "browser": true,
+                "es6": true,
+                "jest": true
+            },
+            "parser": "@babel/eslint-parser",
+            "parserOptions": {
+                "ecmaFeatures": {
+                    "jsx": true
+                },
+                "sourceType": "module",
+                "ecmaVersion": 2020,
+                "requireConfigFile": false,
+                "babelOptions": {
+                    "presets": ["@babel/react"]
+                }
+            },
+            "extends": [
+                "google",
+                "plugin:@typescript-eslint/recommended",
+                "eslint:recommended"
+            ],
+            "rules": {
+                "indent": ["error", 4],
+                "semi": [2, "always"],
+                "require-jsdoc": 0,
+                "max-len": [
+                    "error",
+                    {
+                        "code": 150,
+                        "tabWidth": 4,
+                        "ignoreComments": true,
+                        "ignoreUrls": true,
+                        "ignoreStrings": true,
+                        "ignoreTemplateLiterals": true
+                    }
+                ],
+                "new-cap": 0,
+                "@typescript-eslint/no-this-alias": 0,
+                "no-invalid-this": 0,
+                "camelcase": "off",
+                "no-prototype-builtins": "off",
+                "no-unused-vars": "warn"
+            }
+        }
+    },
+    "javascript.format.semicolons": "insert"
+}

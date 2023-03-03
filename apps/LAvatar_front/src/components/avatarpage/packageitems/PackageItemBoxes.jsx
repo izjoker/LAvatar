@@ -1,24 +1,32 @@
-import {useRecoilState} from 'recoil';
-import {packageItems, selectedLeafItemIdState, selectedPackageIdState} from '../../../stores/itemPackageStore.atom';
+import { useRecoilState } from 'recoil';
+import {
+    packageItems,
+    selectedLeafItemIdState,
+    selectedPackageIdState,
+} from '../../../stores/itemPackageStore.atom';
 import ItemCard from './ItemCard';
 import _ from 'lodash';
 
-export default function PackageItemBoxes({type}) {
+export default function PackageItemBoxes({ type }) {
     const [items, setItems] = useRecoilState(packageItems);
-    const [selectedPackageId, setSelectedPackageId] = useRecoilState(selectedPackageIdState);
+    const [selectedPackageId, setSelectedPackageId] = useRecoilState(
+        selectedPackageIdState
+    );
     const selectedPackage = items[selectedPackageId];
     const categories = ['avatar', 'weapon', 'instrument', 'mount', 'pet'];
-    const categorizedBoxes = function(packageSpec, categories) {
+    const categorizedBoxes = (function (packageSpec, categories) {
         const r = {};
         for (const containedItem of packageSpec['contain']) {
             if (r[containedItem['category']] === undefined) {
                 r[containedItem['category']] = [];
             }
-            r[containedItem['category']] = r[containedItem['category']].concat(containedItem['itemIdLst']);
+            r[containedItem['category']] = r[containedItem['category']].concat(
+                containedItem['itemIdLst']
+            );
         }
 
         return r;
-    }(selectedPackage, categories);
+    })(selectedPackage, categories);
 
     function getChild(itemSpec) {
         return _.map(itemSpec.contain, (container) => {
@@ -29,8 +37,10 @@ export default function PackageItemBoxes({type}) {
         });
     }
 
-    function ItemView({itemSpec, depth}) {
-        const [selectedLeafItemId, setSelectedLeafItemId] = useRecoilState(selectedLeafItemIdState);
+    function ItemView({ itemSpec, depth }) {
+        const [selectedLeafItemId, setSelectedLeafItemId] = useRecoilState(
+            selectedLeafItemIdState
+        );
         const checkBoxLeaf = (itemSpec) => {
             if (type === 1) {
                 if (itemSpec['contain'].length === 0 && depth > 0) {
@@ -67,47 +77,66 @@ export default function PackageItemBoxes({type}) {
             }
 
             if (depth === 0) {
-
             }
             let children = _.compact(_.flatten(getChild(itemSpec)));
             children = [...new Set(children)];
 
-            return <div onClick={(e) => {
-                onPackageId(itemSpec.id);
-                e.stopPropagation();
-            }}>
-                <div>
-                        <ItemCard fontSize={'12px'} {...(checkSetCondition(itemSpec['id']) ?  {className: 'UnfoldableBox'} : {})} id={'Box'} itemSpec={itemSpec}/>
-                    {_.map(children, (c) =>
-                        <div key={`${c['id']}_${itemSpec['id']}`} style={{marginLeft: '15px'}}>
-                            <ItemView itemSpec={c} depth={depth + 1} />
-                        </div>
-                    )}
+            return (
+                <div
+                    onClick={(e) => {
+                        onPackageId(itemSpec.id);
+                        e.stopPropagation();
+                    }}
+                >
+                    <div>
+                        <ItemCard
+                            fontSize={'12px'}
+                            {...(checkSetCondition(itemSpec['id'])
+                                ? { className: 'UnfoldableBox' }
+                                : {})}
+                            id={'Box'}
+                            itemSpec={itemSpec}
+                        />
+                        {_.map(children, (c) => (
+                            <div
+                                key={`${c['id']}_${itemSpec['id']}`}
+                                style={{ marginLeft: '15px' }}
+                            >
+                                <ItemView itemSpec={c} depth={depth + 1} />
+                            </div>
+                        ))}
+                    </div>
                 </div>
-            </div>;
+            );
         } catch (e) {
             console.log(e);
-            return <div>
-                failed to render itemSpec {JSON.stringify(itemSpec)}
-            </div>;
+            return (
+                <div>failed to render itemSpec {JSON.stringify(itemSpec)}</div>
+            );
         }
     }
 
     return (
         <div className="PackageBoxes">
-            {Object.keys(categorizedBoxes).map((category) =>
+            {Object.keys(categorizedBoxes).map((category) => (
                 <div key={category} className="BoxCategory">
-                    <div key={'categoryName'} style={{fontWeight: 'bold', marginLeft: '5px'}}>
+                    <div
+                        key={'categoryName'}
+                        style={{ fontWeight: 'bold', marginLeft: '5px' }}
+                    >
                         {capitalizeFirstChar(category)}
-                    </div>    
+                    </div>
                     <div key={'contents'} className="PackageBox" id={category}>
-                        {categorizedBoxes[category].map((boxId) =>
-                            <ItemView key={boxId} itemSpec={items[boxId]} depth={0} />
-                        )}
+                        {categorizedBoxes[category].map((boxId) => (
+                            <ItemView
+                                key={boxId}
+                                itemSpec={items[boxId]}
+                                depth={0}
+                            />
+                        ))}
                     </div>
                 </div>
-
-            )}
+            ))}
         </div>
     );
 }

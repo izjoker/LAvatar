@@ -184,8 +184,6 @@ pre{
     border: solid;
     border-color: black;
     border-radius: 5px;
-    height: 27px;
-    width: 27px;
 }
 .TopButton:hover{
     background-color: rgb(196, 191, 191);

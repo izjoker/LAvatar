@@ -1,6 +1,6 @@
-import DailyLAConnection from '../../core/DLMongoConnection';
-import userModel from './User.model';
+import DBConnection from '../../core/dbConnection';
+import PriceHistory from './PriceHistory.model';
 
-userModel(DailyLAConnection);
+// userModel(DailyLAConnection);
 
-export default DailyLAConnection;
+// export default DailyLAConnection;

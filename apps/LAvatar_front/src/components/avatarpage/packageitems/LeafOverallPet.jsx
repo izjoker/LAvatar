@@ -1,5 +1,5 @@
 import ItemCard from './ItemCard';
-export default function LeafOverallPet({pets}) {
+export default function LeafOverallPet({ pets }) {
     return (
         <div className="LeafOverallCategory" id="pet">
             <span className="Title">Pet</span>
@@ -8,9 +8,12 @@ export default function LeafOverallPet({pets}) {
                 <div className="LeafCard" id="pet">
                     {pets.map((petObj) => (
                         <div id="pet" key={petObj['id']}>
-                            <ItemCard fontSize={'12px'} id={'Leaf'} itemSpec={petObj}/>
+                            <ItemCard
+                                fontSize={'12px'}
+                                id={'Leaf'}
+                                itemSpec={petObj}
+                            />
                         </div>
-
                     ))}
                 </div>
             </div>
