@@ -91,7 +91,6 @@ function Avatarpage(props) {
                 window.scrollTo({top: 0,
                     behavior: 'smooth'});
             }}/>
-
         </div>
     );
 }

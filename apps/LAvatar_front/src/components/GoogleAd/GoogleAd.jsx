@@ -14,8 +14,8 @@ export default function GoogleAd (props) {
     return (
         <>
             <ins className="adsbygoogle"
-                style={{ display: "block" }}
-                data-ad-client="ca-pub-XXXXXXXXXXXXXXX"
+                style={{ display:"inline-block", minWidth:"400px", maxWidth:"970px", width:"100%", height:"90px" }}
+                data-ad-client="ca-pub-4635784520000757"
                 data-ad-slot={dataAdSlot}
                 data-ad-format="auto"
                 data-full-width-responsive="true">

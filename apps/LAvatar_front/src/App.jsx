@@ -16,14 +16,14 @@ function App() {
                     </div>
                     <div className="MainContents">
                         <Routes>        
-                            <Route path="/" element={<Navigate to={'/packageDict'}/>}></Route>
+                            <Route path="/" element={<Avatarpage/>}></Route>
                             <Route path="/packageDict/" element={<Avatarpage/>}> </Route>
                             <Route path="*" element={'Not Found'}></Route>
                         </Routes>
                     </div>
                     
                 </BrowserRouter>
-                {/* <GoogleAd/> */}
+                {/* <GoogleAd data-ad-slot='3631939853'/> */}
                 <div className="footer">
                     <a href='https://open.kakao.com/o/glkOZj6e' className='Contact'>Contact Me</a>
                 </div>
