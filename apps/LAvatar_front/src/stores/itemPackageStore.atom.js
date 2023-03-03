@@ -1,4 +1,4 @@
-import {atom} from 'recoil'
+import { atom } from 'recoil';
 
 export const packageItems = atom({
     key: 'item_specs_contained_in_packages',
@@ -18,4 +18,4 @@ export const selectedLeafItemIdState = atom({
 export const popperStateRecoil = atom({
     key: 'popper_state',
     default: null,
-})
+});

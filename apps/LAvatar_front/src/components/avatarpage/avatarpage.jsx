@@ -1,21 +1,28 @@
-import {useRef, useEffect, useState} from 'react';
-import {useRecoilState} from 'recoil';
+import { useRef, useEffect, useState } from 'react';
+import { useRecoilState } from 'recoil';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
-import {packageItems, selectedLeafItemIdState, selectedPackageIdState} from '../../stores/itemPackageStore.atom';
+import {
+    packageItems,
+    selectedLeafItemIdState,
+    selectedPackageIdState,
+} from '../../stores/itemPackageStore.atom';
 import PackageItemList from './packageitems/PackageItemList';
 import './avatarpage.css';
 import PackageList from './PackageList/PackageList';
-import {convertMsToTime} from '../../utils/utils.js';
-import {httpClient} from '../../utils/http.js'
+import { convertMsToTime } from '../../utils/utils.js';
+import { httpClient } from '../../utils/http.js';
 
 function Avatarpage(props) {
     const [date, setDate] = useState(null);
     const [items, setItems] = useRecoilState(packageItems);
     const [packages, setPackages] = useState(null);
-    const [selectedPackageId, setSelectedPackageId_] = useRecoilState(selectedPackageIdState);
-    const [selectedLeafId, setSelectedLeafId] = useRecoilState(selectedLeafItemIdState);
+    const [selectedPackageId, setSelectedPackageId_] = useRecoilState(
+        selectedPackageIdState
+    );
+    const [selectedLeafId, setSelectedLeafId] = useRecoilState(
+        selectedLeafItemIdState
+    );
     const [popupVisible, setPopupVisible] = useState(false);
-    
 
     const setSelectedPackageId = (selectedPackageId) => {
         setSelectedLeafId(null);
@@ -49,7 +56,7 @@ function Avatarpage(props) {
         const periodMap = convertMsToTime(sub);
         for (const key in periodMap) {
             if (periodMap.hasOwnProperty(key)) {
-                if (periodMap[key] !== 0 || key === "seconds") {
+                if (periodMap[key] !== 0 || key === 'seconds') {
                     return `${periodMap[key].toString()} ${key} ago`;
                 }
             }
@@ -59,14 +66,13 @@ function Avatarpage(props) {
     };
     useEffect(() => {
         const reqAPI = async () => {
-            const resp = await httpClient.get('/packageDict')
+            const resp = await httpClient.get('/packageDict');
             setItems(resp.data['datas']);
             setPackages(getPackages(resp.data['datas']));
             setDate(resp.data['updatedAt']);
         };
         reqAPI();
-    }, [setItems],
-    );
+    }, [setItems]);
 
     const ref = useRef(null);
 
@@ -75,24 +81,35 @@ function Avatarpage(props) {
             return;
         }
         ref.current.scrollIntoView({
-            behavior: 'smooth'});
+            behavior: 'smooth',
+        });
     }, [selectedPackageId]);
 
     if (!items) {
         return <>Loading..</>;
     }
     return (
-
         <div className="AvatarPage">
-            {date && <div className='DataUpdatedAt'>Data Update: {periodFrom(date)}</div>}
-            <PackageList packages={packages} handler={handlePackage}/>
-            {items[selectedPackageId] !== undefined && <PackageItemList ref_={ref}/>}
-            <KeyboardDoubleArrowUpIcon className="TopButton" onClick={()=>{
-                window.scrollTo({top: 0,
-                    behavior: 'smooth'});
-            }}/>
+            {date && (
+                <div className="DataUpdatedAt">
+                    Data Update: {periodFrom(date)}
+                </div>
+            )}
+            <PackageList packages={packages} handler={handlePackage} />
+            {items[selectedPackageId] !== undefined && (
+                <PackageItemList ref_={ref} />
+            )}
+            <KeyboardDoubleArrowUpIcon
+                className="TopButton"
+                onClick={() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+                sx={{
+                    height: '25px',
+                    width: '25px',
+                }}
+            />
         </div>
     );
 }
 export default Avatarpage;
-

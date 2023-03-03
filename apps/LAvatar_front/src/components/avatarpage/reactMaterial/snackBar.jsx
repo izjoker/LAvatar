@@ -6,7 +6,7 @@ const Alert = React.forwardRef(function Alert(props, ref) {
     return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
 });
 
-export default function CumstomSnackbar({msg, severity, setVisibility}) {
+export default function CumstomSnackbar({ msg, severity, setVisibility }) {
     const handleClose = (event, reason) => {
         if (reason === 'clickaway') {
             return;
@@ -16,7 +16,11 @@ export default function CumstomSnackbar({msg, severity, setVisibility}) {
 
     return (
         <Snackbar open={true} autoHideDuration={3000} onClose={handleClose}>
-            <Alert onClose={handleClose} severity={severity} sx={{width: '100%'}}>
+            <Alert
+                onClose={handleClose}
+                severity={severity}
+                sx={{ width: '100%' }}
+            >
                 {msg}
             </Alert>
         </Snackbar>

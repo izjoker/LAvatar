@@ -1,9 +1,25 @@
 {
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.53.0",
-    "eslint-config-google": "^0.14.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0"
-  }
+    "dependencies": {
+        "@babel/eslint-parser": "^7.19.1",
+        "@babel/runtime": "^7.21.0",
+        "@typescript-eslint/eslint-plugin": "^5.53.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-plugin-react": "^7.32.2",
+        "mysql": "^2.18.1",
+        "typeorm": "^0.3.12"
+    },
+    "devDependencies": {
+        "@babel/preset-react": "^7.18.6",
+        "babel-preset-react-app": "^10.0.1",
+        "eslint": "^7.32.0"
+    },
+    "scripts": {
+        "format": "prettier --write {,*/**/}*.{js,jsx,json}"
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": true,
+        "singleQuote": true
+    }
 }

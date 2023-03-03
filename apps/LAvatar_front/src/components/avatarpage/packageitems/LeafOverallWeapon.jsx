@@ -1,42 +1,37 @@
 import ItemCard from './ItemCard';
 
-export default function LeafOverallWeapon({weapons}) {
+export default function LeafOverallWeapon({ weapons }) {
     const weaponsObj = rearrangeWeapons(weapons);
     return (
         <div className="LeafOverallCategory" id="weapon">
             <span className="Title">Weapon</span>
             <div className="Contents">
-                {Object.keys(weaponsObj).map((className) =>
-                    <div className="LeafCard" id="weapon" key={className} >
+                {Object.keys(weaponsObj).map((className) => (
+                    <div className="LeafCard" id="weapon" key={className}>
                         <span className="LeafCardClassName">{className}</span>
-                        <DesignLayer designsObj={weaponsObj[className]}/>
+                        <DesignLayer designsObj={weaponsObj[className]} />
                     </div>
-                )}
+                ))}
             </div>
         </div>
     );
 }
-function DesignLayer({designsObj}) {
+function DesignLayer({ designsObj }) {
     return (
         <div className="DesignLayer" id="weapon">
-            {Object.keys(designsObj).map((designName) =>
-                (
-                    <div key={designName}>
-                        <WeaponCard weaponObj={designsObj[designName]}/>
-                    </div>
-                )
-            )}
-
+            {Object.keys(designsObj).map((designName) => (
+                <div key={designName}>
+                    <WeaponCard weaponObj={designsObj[designName]} />
+                </div>
+            ))}
         </div>
-
     );
 }
-function WeaponCard({weaponObj}) {
+function WeaponCard({ weaponObj }) {
     return (
         <div className="WeaponCard">
-            <ItemCard fontSize={'12px'} id={'Leaf'} itemSpec={weaponObj}/>
+            <ItemCard fontSize={'12px'} id={'Leaf'} itemSpec={weaponObj} />
         </div>
-
     );
 }
 
@@ -49,8 +44,8 @@ const rearrangeWeapons = (weapons) => {
 };
 const assignWeapon = (obj, weapon) => {
     const keys = [weapon['target'][0], weapon['design']];
-    const lastKeyIdx = keys.length-1;
-    for (let i=0; i < keys.length-1; i++) {
+    const lastKeyIdx = keys.length - 1;
+    for (let i = 0; i < keys.length - 1; i++) {
         const key = keys[i];
         if (!obj[key]) {
             obj[key] = {};

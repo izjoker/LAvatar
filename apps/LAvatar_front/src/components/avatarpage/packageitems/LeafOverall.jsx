@@ -1,6 +1,8 @@
-
-import {useRecoilState} from 'recoil';
-import {packageItems, selectedPackageIdState} from '../../../stores/itemPackageStore.atom';
+import { useRecoilState } from 'recoil';
+import {
+    packageItems,
+    selectedPackageIdState,
+} from '../../../stores/itemPackageStore.atom';
 import LeafOverallAvatar from './LeafOverallAvatar';
 import LeafOverallWeapon from './LeafOverallWeapon';
 import LeafOverallInstrument from './LeafOverallInstrument';
@@ -9,7 +11,9 @@ import LeafOverallPet from './LeafOverallPet';
 
 function LeafOverall(props) {
     const [items, setItems] = useRecoilState(packageItems);
-    const [selectedPackageId, setSelectedPackageId] = useRecoilState(selectedPackageIdState);
+    const [selectedPackageId, setSelectedPackageId] = useRecoilState(
+        selectedPackageIdState
+    );
     const leafItems = [...new Set(searchLeafs(items[selectedPackageId], []))];
     const leafMap = categorizeLeafs(leafItems);
 
@@ -35,11 +39,11 @@ function LeafOverall(props) {
     }
     function categorizeLeafs(leafItems) {
         const r = {
-            'avatar': [],
-            'weapon': [],
-            'instrument': [],
-            'mount': [],
-            'pet': [],
+            avatar: [],
+            weapon: [],
+            instrument: [],
+            mount: [],
+            pet: [],
         };
 
         for (const leafItem of leafItems) {
@@ -60,11 +64,21 @@ function LeafOverall(props) {
 
     return (
         <div className="LeafOverall">
-            {leafMap['avatar'].length !== 0 && <LeafOverallAvatar avatars={leafMap['avatar']} />}
-            {leafMap['weapon'].length !== 0 && <LeafOverallWeapon weapons={leafMap['weapon']} />}
-            {leafMap['instrument'].length !== 0 && <LeafOverallInstrument instruments={leafMap['instrument']} />}
-            {leafMap['mount'].length !== 0 && <LeafOverallMount mounts={leafMap['mount']} />}
-            {leafMap['pet'].length !== 0 && <LeafOverallPet pets={leafMap['pet']} />}
+            {leafMap['avatar'].length !== 0 && (
+                <LeafOverallAvatar avatars={leafMap['avatar']} />
+            )}
+            {leafMap['weapon'].length !== 0 && (
+                <LeafOverallWeapon weapons={leafMap['weapon']} />
+            )}
+            {leafMap['instrument'].length !== 0 && (
+                <LeafOverallInstrument instruments={leafMap['instrument']} />
+            )}
+            {leafMap['mount'].length !== 0 && (
+                <LeafOverallMount mounts={leafMap['mount']} />
+            )}
+            {leafMap['pet'].length !== 0 && (
+                <LeafOverallPet pets={leafMap['pet']} />
+            )}
         </div>
     );
 }
