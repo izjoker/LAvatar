@@ -5,7 +5,7 @@ import { useRecoilState } from 'recoil';
 import SegmentIcon from '@mui/icons-material/Segment';
 import { popperStateRecoil } from '../../../stores/itemPackageStore.atom';
 
-function ItemCard({ itemSpec, id, fontSize }) {
+function ItemCard({ itemSpec, id, fontSize, className }) {
     const [anchorEl, setAnchorEl] = useState(null);
     const [placement, setPlacement] = useState();
     const [popperState, setPopperState] = useRecoilState(popperStateRecoil);
@@ -205,7 +205,7 @@ function ItemCard({ itemSpec, id, fontSize }) {
 
     return (
         <div
-            className="ItemCard"
+            className={`ItemCard ${className}`}
             id={id}
             aria-owns={open ? 'mouse-over-popover' : undefined}
             aria-haspopup="true"

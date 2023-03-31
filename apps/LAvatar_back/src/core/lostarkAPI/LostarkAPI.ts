@@ -2,10 +2,7 @@ import fs from "fs";
 import axios from "axios";
 import config from "../../utils/config";
 import logger from "../../utils/logger";
-
-function sleep(ms: number) {
-	return new Promise((resolve) => setTimeout(resolve, ms));
-}
+import { sleep } from "../../utils/utils";
 
 class LostarkAPI {
 	authTokens: Array<object>;
@@ -76,7 +73,7 @@ class LostarkAPI {
 					logger.info(`Failed to request. Retrying.. (${e.message})`);
 					errorCount++;
 					this.switchAuthToken();
-					sleep(2000);
+					await sleep(2000);
 				}
 			}
 		}
@@ -109,7 +106,7 @@ class LostarkAPI {
 					logger.info(`Failed to request. Retrying.. (${e.message})`);
 					errorCount++;
 					this.switchAuthToken();
-					sleep(2000);
+					await sleep(2000);
 				}
 			}
 		}

@@ -1,17 +1,17 @@
 /* HTTP */
-pre{
+pre {
     margin: 2px 0 2px 0;
 }
 /* General */
-.Title{
+.Title {
     font-weight: bold;
     padding-left: 5px;
 }
-.DataUpdatedAt{
+.DataUpdatedAt {
     background-color: rgb(248 232 242);
     text-align: center;
 }
-.AvatarPage{
+.AvatarPage {
     flex: 1;
     min-height: 100%;
     display: flex;
@@ -19,163 +19,161 @@ pre{
     font-size: 12px;
     overflow: visible;
 }
-    .Packages{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }       
-        .PackageCard{
-            background-color: rgb(243, 222, 225);
-            height: 50px;
-            width: 50%;
-            align-items: center;
-        }
-        .PackageContents{
-            flex: 1;
-            height: 100%;
-            display:flex;
-            flex-direction: column;
-        }
-
-        .PackageBoxes{
-            display: flex;
-            flex-wrap: wrap;
-            background-color: rgb(248, 239, 241);
-        }
-        .BoxCategory{
-            display: flex;
-            flex-direction: column;
-        }
-        .PackageBox{
-            flex: 1;
-            margin: 3px;
-            background-color: rgb(246, 252, 252);
-            border: solid;
-            border-color: rgb(212, 206, 169);
-            border-width: 1px;
-            border-radius: 10px;
-        }
-
-        
-            .PackageLeaf{
-                background-image:linear-gradient(180deg, #f0e4ca, #f5eddd);
-                flex: 1 
-            }
-            .PackageBoxName{
-                height:30px;
-                line-height: 30px;
-                background-color: rgb(213, 245, 161);
-                background-image: linear-gradient(135deg, rgb(46, 18, 60), rgb(72, 13, 93));
-                color: white;
-                
-                vertical-align: middle;
-                margin: 0px;
-                font-weight: bold;
-            }
-            .BoxContents{
-                display: flex;
-                flex-wrap: wrap;
-            }
-            .DesignName{
-                color:rgb(163, 211, 142)
-            }
-        
-        .ItemBox{
-            padding: 2px;
-            background-color:#ffffff;
-            margin: 2px;
-            border: solid;
-            border-color: rgb(238, 202, 202);
-            border-width: 1px;
-            border-radius: 10px;
-            width: 226px;
-        }
-
-    .LeafOverall{
-        flex: 1;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;             
-        background-image:linear-gradient(180deg, #f0dcf7, rgb(248, 245, 245));
-    }
-    .LeafOverallCategory{
-        margin: 5px 0px 5px 0px;
-        height: 100%;
-
-    }
-        .LeafOverallCategory#avatar .Contents{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            border-radius: 10px;
-        }
-        .DesignLayer{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;    
-        }
-        .LeafOverallCategory#weapon .Contents{
-            display: flex;
-            flex-direction: row;    
-            flex-wrap: wrap;;
-            border-radius: 10px;
-        } 
-        .LeafWeaponCard { 
-            display: flex;
-            flex-direction: row;    
-            border-radius: 10px;    
-        }
-        .LeafOverallCategory#instrument .Contents{
-            display: flex;
-            flex-direction: row;    
-            flex-wrap: wrap;
-            border-radius: 10px;
-        } 
-        .LeafCardClassName{
-            font-weight:bold;
-        }
-        .LeafCard{
-            display: flex;
-            flex-direction: column;
-            width: 226px;
-            padding: 2px;
-            background-color:#ffffff;
-            margin: 2px;
-            border: solid;
-            border-color: rgb(235, 182, 236);
-            border-width: 1px;
-            border-radius: 10px;
-        }
-.ItemCard{
+.Packages {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;   
-    width: 100%;
-    float: left;         
-    line-height: 15px;
+    flex-wrap: wrap;
 }
-.DisplayItemName#Leaf{
-    width: 163px;
+.PackageCard {
+    background-color: rgb(243, 222, 225);
+    height: 50px;
+    width: 50%;
+    align-items: center;
 }
-.DisplayItemName#Box{
-    width: 250px;
-}
-.DisplayItemPrice{    
-    white-space: nowrap;   
-    display: 'block';
-    vertical-align: middle; 
-    width: 80px;
-    text-align: right;
-    color: rgb(150, 130, 0)   
+.PackageContents {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.SelectedLeafId{
+.PackageBoxes {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(248, 239, 241);
+}
+.BoxCategory {
+    display: flex;
+    flex-direction: column;
+}
+.PackageBox {
+    flex: 1;
+    margin: 3px;
+    background-color: rgb(246, 252, 252);
+    border: solid;
+    border-color: rgb(212, 206, 169);
+    border-width: 1px;
+    border-radius: 10px;
+}
+
+.PackageLeaf {
+    background-image: linear-gradient(180deg, #f0e4ca, #f5eddd);
+    flex: 1;
+}
+.PackageBoxName {
+    height: 30px;
+    line-height: 30px;
+    background-color: rgb(213, 245, 161);
+    background-image: linear-gradient(135deg, rgb(46, 18, 60), rgb(72, 13, 93));
+    color: white;
+
+    vertical-align: middle;
+    margin: 0px;
+    font-weight: bold;
+}
+.BoxContents {
+    display: flex;
+    flex-wrap: wrap;
+}
+.DesignName {
+    color: rgb(163, 211, 142);
+}
+
+.ItemBox {
+    padding: 2px;
+    background-color: #ffffff;
+    margin: 2px;
+    border: solid;
+    border-color: rgb(238, 202, 202);
+    border-width: 1px;
+    border-radius: 10px;
+    width: 226px;
+}
+
+.LeafOverall {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: linear-gradient(180deg, #f0dcf7, rgb(248, 245, 245));
+}
+.LeafOverallCategory {
+    margin: 5px 0px 5px 0px;
+    height: 100%;
+}
+.LeafOverallCategory#avatar .Contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.DesignLayer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.LeafOverallCategory#weapon .Contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.LeafWeaponCard {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+.LeafOverallCategory#instrument .Contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.LeafCardClassName {
+    font-weight: bold;
+}
+.LeafCard {
+    display: flex;
+    flex-direction: column;
+    width: 226px;
+    padding: 2px;
+    background-color: #ffffff;
+    margin: 2px;
+    border: solid;
+    border-color: rgb(235, 182, 236);
+    border-width: 1px;
+    border-radius: 10px;
+}
+.ItemCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    float: left;
+    line-height: 15px;
+}
+.DisplayItemName#Leaf {
+    width: 163px;
+}
+.DisplayItemName#Box {
+    width: 250px;
+}
+.DisplayItemPrice {
+    white-space: nowrap;
+    display: 'block';
+    vertical-align: middle;
+    width: 80px;
+    text-align: right;
+    color: rgb(150, 130, 0);
+}
+
+.SelectedLeafId {
     margin-right: 5px;
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
 }
-.TopButton{
+.TopButton {
     position: fixed;
     font-size: 30;
     bottom: 1rem;
@@ -185,79 +183,78 @@ pre{
     border-color: black;
     border-radius: 5px;
 }
-.TopButton:hover{
+.TopButton:hover {
     background-color: rgb(196, 191, 191);
 }
-.UnfoldableBox:hover{
-    background-color:rgb(255, 113, 189);
-    border-radius: 10px;   
+.UnfoldableBox:hover {
+    background-color: rgb(247, 213, 231);
+    border-radius: 10px;
 }
 /* For mobile: */
-.LeafCard{
+.LeafCard {
     width: 97.5vw;
     margin: 0.1em 0.4vw;
     padding: 0.4vw;
-    border-width: 2px
+    border-width: 2px;
 }
-.ItemBox{
+.ItemBox {
     width: 97.5vw;
     margin: 0.1em 0.4vw;
     padding: 0.4vw;
-    border-width: 2px
+    border-width: 2px;
 }
-.PackageBoxes{
+.PackageBoxes {
     display: flex;
     flex-direction: column;
 }
-.PackageBox{
+.PackageBox {
     width: 97.5vw;
     margin: 0.1em 0.4vw;
     padding: 0.4vw;
-    border-width: 2px
+    border-width: 2px;
 }
-.DisplayItemName#Leaf{
+.DisplayItemName#Leaf {
     width: calc(96vw - 82px);
 }
-.DisplayItemName#Box{
+.DisplayItemName#Box {
     width: calc(92vw - 97px);
 }
-.DisplayItemName#BoxStratified{
+.DisplayItemName#BoxStratified {
     width: calc(90vw - 97px);
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-    .PackageCard{
+    .PackageCard {
         width: 260px;
     }
-    .ItemBox{
+    .ItemBox {
         width: 250px;
         margin: 1px;
         padding: 2px;
         border-width: 1px;
     }
-    .LeafCard{
+    .LeafCard {
         width: 250px;
         margin: 2px;
         padding: 2px;
         border-width: 1px;
     }
-    .PackageBoxes{
+    .PackageBoxes {
         display: flex;
         flex-direction: row;
         margin: 2px 0px;
     }
-    .PackageBox{
+    .PackageBox {
         width: fit-content;
         margin: 2px;
         padding: 2px;
         border-width: 1px;
     }
 
-
-    .DisplayItemName#Leaf{
+    .DisplayItemName#Leaf {
         width: 165px;
     }
-    .DisplayItemName#Box{
+    .DisplayItemName#Box {
         width: 230px;
     }
 }
