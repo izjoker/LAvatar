@@ -4,6 +4,7 @@ import LostarkAPI from "../lostarkAPI/LostarkAPI";
 import CacheLocal from "../../cache/cache";
 import config from "../../utils/config";
 import logger from "../../utils/logger";
+import LAItem from "../../models/lavatar/LAItem.model";
 
 const classIdMap = JSON.parse(
 	fs.readFileSync("assets/constants/classIdMap.json", "utf-8")
@@ -15,9 +16,6 @@ const partsMap = JSON.parse(
 	fs.readFileSync("assets/constants/avatarPartsIdMap.json", "utf-8")
 );
 
-function sleep(ms: number) {
-	return new Promise((resolve) => setTimeout(resolve, ms));
-}
 const normalizeWhitespaces = (str) => {
 	return str.replace(/\xA0/g, " ").trim();
 };
@@ -41,59 +39,17 @@ export class PackageDict {
 	lostarkAPI: typeof LostarkAPI;
 	constItems: object;
 	pricedItems: object;
+	dailyMinPrices: object;
+	registeredIds: Number[];
 
 	constructor() {
 		this.lostarkAPI = LostarkAPI;
 
 		this.constItems = require("./../../../assets/packageDict/packageItems_const.json");
-		// await this.debug()
+		this.dailyMinPrices = {};
 		this.pricedItems = CacheLocal.get("pricedItems") || {};
 	}
 
-	async debug() {
-		// 획득한 가격정보, 입력 안된 아이템들, string id - number id 맵 파일출력
-		// 입력 안된 아이템, id맵은 누적, 가격정보는 갱신
-		//
-		function writeNotPricedItems(rests) {
-			console.log(
-				"length of not priced items:",
-				Object.keys(rests).length
-			);
-			fs.writeFileSync(
-				__dirname + "/../../../assets/debug/notPricedItems.json",
-				JSON.stringify(rests, null, 4)
-			);
-		}
-		function writeIdMap(prices) {
-			const idMap = {};
-			for (const id in prices) {
-				if ({}.hasOwnProperty.call(prices, id)) {
-					idMap[id] = prices[id]["id_num"];
-				}
-			}
-			fs.writeFileSync(
-				__dirname + "/../../../assets/debug/idMap.json",
-				JSON.stringify(idMap, null, 4)
-			);
-		}
-		function writeMergedItems(mergedItems) {
-			fs.writeFileSync(
-				__dirname + "/../../../assets/debug/merged.json",
-				JSON.stringify(mergedItems, null, 4)
-			);
-		}
-		const prices = JSON.parse(
-			fs.readFileSync("assets/debug/prices_dummy.json", "utf-8")
-		);
-		const { mergedItems, rests } = await this.assignmentItems_debug(
-			this.constItems,
-			prices
-		);
-		writeNotPricedItems(rests);
-		writeIdMap(prices);
-		writeMergedItems(mergedItems);
-		this.pricedItems = mergedItems;
-	}
 	async getItems() {
 		if (_.isEmpty(this.pricedItems)) {
 			console.log("returning constItems");
@@ -106,6 +62,7 @@ export class PackageDict {
 	async mainRoutine() {
 		// 60분마다 LostarkAPI에 요청하여 가격정보 획득 - 파일, 캐시로 출력
 		try {
+			this.registeredIds = await LAItem.getAllIdNums();
 			const prices = await this.getItemPriceData();
 			this.pricedItems["datas"] = await this.assignmentItems(
 				this.constItems["datas"],
@@ -177,6 +134,7 @@ export class PackageDict {
 						page
 					);
 					data = data.concat(lastResp["Items"]);
+					this.setDailyMinPrice(lastResp["Items"]);
 					if (lastResp["Items"].length === 0) {
 						break;
 					} else {
@@ -224,6 +182,40 @@ export class PackageDict {
 		}, {});
 	}
 
+	async setDailyMinPrice(itemLst: Array<Object>) {
+		for (const itemObj of itemLst) {
+			const trc = itemObj["TradeRemainCount"] || 0;
+			if (!this.dailyMinPrices[`${itemObj["Id"]}`]) {
+				this.dailyMinPrices[`${itemObj["Id"]}`] = {};
+			}
+			if (this.dailyMinPrices[`${itemObj["Id"]}`][`sale_price_${trc}`]) {
+				this.dailyMinPrices[`${itemObj["Id"]}`][`sale_price_${trc}`] =
+					Math.min(
+						itemObj["CurrentMinPrice"],
+						this.dailyMinPrices[`${itemObj["Id"]}`][
+							`sale_price_${trc}`
+						]
+					);
+			} else {
+				this.dailyMinPrices[`${itemObj["Id"]}`][`sale_price_${trc}`] =
+					itemObj["CurrentMinPrice"];
+			}
+		}
+	}
+
+	async registerIds(rawItems) {
+		for (const rawItem of rawItems) {
+			if (!this.registeredIds.includes(rawItem["Id"])) {
+				let row = new LAItem();
+				row.id = getStringId(rawItem["Id"], rawItem["Name"]);
+				row.id_num = rawItem["Id"];
+				row.icon = rawItem["Icon"];
+				row.trade_count = rawItem["TradeCount"];
+				row.name = rawItem["Name"];
+				LAItem.addRow(row);
+			}
+		}
+	}
 	async getItemPriceData() {
 		/*
             주요 아이템 카테고리 코드
@@ -235,6 +227,8 @@ export class PackageDict {
 		const categoryCodes = [160000, 140000, 20000];
 		const lists = await this.getBulkMarketItemList(categoryCodes);
 		const digested = await this.digestMarketItemList(lists);
+		CacheLocal.set("dailyMinPrices", this.dailyMinPrices);
+		await this.registerIds(lists);
 		console.log("Price Datas Received.");
 
 		return digested;

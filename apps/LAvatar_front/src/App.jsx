@@ -2,7 +2,6 @@ import { RecoilRoot } from 'recoil';
 import { Link, Navigate, BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Avatarpage from './components/avatarpage/avatarpage';
-import GoogleAd from './components/GoogleAd/GoogleAd';
 
 function App() {
     return (
@@ -25,7 +24,6 @@ function App() {
                         </Routes>
                     </div>
                 </BrowserRouter>
-                {/* <GoogleAd data-ad-slot='3631939853'/> */}
                 <div className="footer">
                     <a
                         href="https://open.kakao.com/o/glkOZj6e"

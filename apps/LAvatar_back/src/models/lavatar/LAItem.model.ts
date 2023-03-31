@@ -17,9 +17,10 @@ export default class LAItem extends BaseEntity {
 	@Column({ nullable: true })
 	name: string;
 
-	// static async addRow(laItem: LAItem) {
-	// 	db.manager.insert(LAItem, laItem);
-	// }
+	static async addRow(laItem: LAItem) {
+		this.upsert(laItem, ["id"]);
+	}
+
 	static async getAllIdNums() {
 		const r = [];
 		let idLst_obj = await this.find({

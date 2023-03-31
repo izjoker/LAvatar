@@ -11,6 +11,8 @@ import logger from "./utils/logger";
 
 import priceHistory from "./core/priceHistory/PriceHistory";
 import db from "./core/dbConnection";
+import AppDataSource from "./core/dbConnection";
+
 if (!process.env.NODE_ENV) {
 	process.env.NODE_ENV = "development";
 }
@@ -23,8 +25,6 @@ const app = express();
 //*debugging*//
 //***********//
 
-// priceHistory.mainRoutine();
-// packageDict.mainRoutine();
 app.use(cors());
 
 const jsonParser = bodyParser.json();
@@ -37,6 +37,15 @@ app.use("/", rootRouter);
 
 const port = process.env.PORT || config.get("port") || 7000;
 
-server.listen(port);
+AppDataSource.initialize()
+	.then(async () => {
+		console.log("Data Source has been initialized!");
+		server.listen(port);
+		priceHistory.mainRoutine();
+		packageDict.mainRoutine();
+	})
+	.catch((err) => {
+		console.error("Error during Data Source initialization", err);
+	});
 
 export default app;

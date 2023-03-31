@@ -79,33 +79,29 @@ export default function PackageItemBoxes({ type }) {
             if (depth === 0) {
             }
             let children = _.compact(_.flatten(getChild(itemSpec)));
+            let style = depth == 0 ? {} : { marginLeft: `15px` };
             children = [...new Set(children)];
 
             return (
                 <div
+                    className={`ItemView_${depth}`}
                     onClick={(e) => {
                         onPackageId(itemSpec.id);
                         e.stopPropagation();
                     }}
+                    style={style}
                 >
-                    <div>
-                        <ItemCard
-                            fontSize={'12px'}
-                            {...(checkSetCondition(itemSpec['id'])
-                                ? { className: 'UnfoldableBox' }
-                                : {})}
-                            id={'Box'}
-                            itemSpec={itemSpec}
-                        />
-                        {_.map(children, (c) => (
-                            <div
-                                key={`${c['id']}_${itemSpec['id']}`}
-                                style={{ marginLeft: '15px' }}
-                            >
-                                <ItemView itemSpec={c} depth={depth + 1} />
-                            </div>
-                        ))}
-                    </div>
+                    <ItemCard
+                        fontSize={'12px'}
+                        {...(checkSetCondition(itemSpec['id'])
+                            ? { className: 'UnfoldableBox' }
+                            : {})}
+                        id={'Box'}
+                        itemSpec={itemSpec}
+                    />
+                    {_.map(children, (c) => (
+                        <ItemView itemSpec={c} depth={depth + 1} />
+                    ))}
                 </div>
             );
         } catch (e) {
