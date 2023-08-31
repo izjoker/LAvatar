@@ -2,11 +2,11 @@ log/
 dist/
 test/
 
-# datas
-assets/logs/
 
 # datas
 assets/debug/
+assets/logs/
 
 # local config
 config/config.development.yaml
+config/config.production.yaml
