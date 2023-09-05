@@ -44,7 +44,6 @@ export class PackageDict {
 
 	constructor() {
 		this.lostarkAPI = LostarkAPI;
-
 		this.constItems = require("./../../../assets/packageDict/packageItems_const.json");
 		this.dailyMinPrices = {};
 		this.pricedItems = CacheLocal.get("pricedItems") || {};
