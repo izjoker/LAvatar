@@ -6,9 +6,9 @@ import {
     selectedLeafItemIdState,
     selectedPackageIdState,
 } from '../../stores/itemPackageStore.atom';
-import PackageItemList from './packageitems/PackageItemList';
+import PackageItemList from '../../components/avatarpage/packageitems/PackageItemList';
 import './avatarpage.css';
-import PackageList from './PackageList/PackageList';
+import PackageList from '../../components/avatarpage/PackageList/PackageList';
 import { convertMsToTime } from '../../utils/utils.js';
 import { httpClient } from '../../utils/http.js';
 

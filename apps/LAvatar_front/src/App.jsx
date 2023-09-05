@@ -1,7 +1,7 @@
 import { RecoilRoot } from 'recoil';
 import { Link, Navigate, BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Avatarpage from './components/avatarpage/avatarpage';
+import Avatarpage from './pages/avatarpage/avatarpage';
 
 function App() {
     return (
