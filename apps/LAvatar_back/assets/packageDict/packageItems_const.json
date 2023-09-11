@@ -1,5 +1,3518 @@
 {
     "datas": {
+        "2023 수영복: 미드나잇 썸머": {
+            "name": "2023 수영복: 미드나잇 썸머",
+            "type": "package_type1",
+            "target": [],
+            "contain": [
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "미드나잇 썸머 아바타 선택 상자"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "미드나잇 썸머 무기 선택 상자"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "소울이터 미드나잇 썸머 무기 선택 상자"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "instrument",
+                    "itemIdLst": [
+                        "미드나잇 썸머 악기 선택 상자"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "mount",
+                    "itemIdLst": [
+                        "오리 튜브 선택 상자"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "pet",
+                    "itemIdLst": [
+                        "해달 선택 상자"
+                    ]
+                }
+            ],
+            "tradable": false,
+            "id": "2023 수영복: 미드나잇 썸머"
+        },
+        "미드나잇 썸머 아바타 선택 상자": {
+            "name": "미드나잇 썸머 아바타 선택 상자",
+            "type": "avatarSetPackage",
+            "target": [],
+            "contain": [
+                {
+                    "className": "",
+                    "design": "스윔 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "스윔 웨어 아바타 세트"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "서핑 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "서핑 웨어 아바타 세트"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "나이트 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "나이트 웨어 아바타 세트"
+                    ]
+                }
+            ],
+            "tradable": true,
+            "id": "미드나잇 썸머 아바타 선택 상자",
+            "design": ""
+        },
+        "스윔 웨어 아바타 세트": {
+            "name": "스윔 웨어 아바타 세트",
+            "type": "avatarPackage",
+            "target": [
+                "전사",
+                "마법사",
+                "무도가-여",
+                "무도가-남",
+                "암살자",
+                "헌터-남",
+                "헌터-여",
+                "스페셜리스트",
+                "전사-여"
+            ],
+            "contain": [
+                {
+                    "className": "전사",
+                    "design": "스윔 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "스윔 웨어 머리_전사",
+                        "스윔 웨어 얼굴2_전사",
+                        "스윔 웨어 상의_전사",
+                        "스윔 웨어 하의_전사"
+                    ]
+                },
+                {
+                    "className": "마법사",
+                    "design": "스윔 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "스윔 웨어 머리_마법사",
+                        "스윔 웨어 얼굴2_마법사",
+                        "스윔 웨어 상의_마법사",
+                        "스윔 웨어 하의_마법사"
+                    ]
+                },
+                {
+                    "className": "무도가-여",
+                    "design": "스윔 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "스윔 웨어 머리_무도가-여",
+                        "스윔 웨어 얼굴2_무도가-여",
+                        "스윔 웨어 상의_무도가-여",
+                        "스윔 웨어 하의_무도가-여"
+                    ]
+                },
+                {
+                    "className": "무도가-남",
+                    "design": "스윔 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "스윔 웨어 머리_무도가-남",
+                        "스윔 웨어 얼굴2_무도가-남",
+                        "스윔 웨어 상의_무도가-남",
+                        "스윔 웨어 하의_무도가-남"
+                    ]
+                },
+                {
+                    "className": "암살자",
+                    "design": "스윔 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "스윔 웨어 머리_암살자",
+                        "스윔 웨어 얼굴2_암살자",
+                        "스윔 웨어 상의_암살자",
+                        "스윔 웨어 하의_암살자"
+                    ]
+                },
+                {
+                    "className": "헌터-남",
+                    "design": "스윔 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "스윔 웨어 머리_헌터-남",
+                        "스윔 웨어 얼굴2_헌터-남",
+                        "스윔 웨어 상의_헌터-남",
+                        "스윔 웨어 하의_헌터-남"
+                    ]
+                },
+                {
+                    "className": "헌터-여",
+                    "design": "스윔 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "스윔 웨어 머리_헌터-여",
+                        "스윔 웨어 얼굴2_헌터-여",
+                        "스윔 웨어 상의_헌터-여",
+                        "스윔 웨어 하의_헌터-여"
+                    ]
+                },
+                {
+                    "className": "스페셜리스트",
+                    "design": "스윔 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "스윔 웨어 머리_스페셜리스트",
+                        "스윔 웨어 얼굴2_스페셜리스트",
+                        "스윔 웨어 상의_스페셜리스트",
+                        "스윔 웨어 하의_스페셜리스트"
+                    ]
+                },
+                {
+                    "className": "전사-여",
+                    "design": "스윔 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "스윔 웨어 머리_전사-여",
+                        "스윔 웨어 얼굴2_전사-여",
+                        "스윔 웨어 상의_전사-여",
+                        "스윔 웨어 하의_전사-여"
+                    ]
+                }
+            ],
+            "tradable": true,
+            "id": "스윔 웨어 아바타 세트",
+            "design": "스윔 웨어"
+        },
+        "서핑 웨어 아바타 세트": {
+            "name": "서핑 웨어 아바타 세트",
+            "type": "avatarPackage",
+            "target": [
+                "전사",
+                "마법사",
+                "무도가-여",
+                "무도가-남",
+                "암살자",
+                "헌터-남",
+                "헌터-여",
+                "스페셜리스트",
+                "전사-여"
+            ],
+            "contain": [
+                {
+                    "className": "전사",
+                    "design": "서핑 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "서핑 웨어 머리_전사",
+                        "서핑 웨어 얼굴2_전사",
+                        "서핑 웨어 상의_전사",
+                        "서핑 웨어 하의_전사"
+                    ]
+                },
+                {
+                    "className": "마법사",
+                    "design": "서핑 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "서핑 웨어 머리_마법사",
+                        "서핑 웨어 얼굴2_마법사",
+                        "서핑 웨어 상의_마법사",
+                        "서핑 웨어 하의_마법사"
+                    ]
+                },
+                {
+                    "className": "무도가-여",
+                    "design": "서핑 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "서핑 웨어 머리_무도가-여",
+                        "서핑 웨어 얼굴2_무도가-여",
+                        "서핑 웨어 상의_무도가-여",
+                        "서핑 웨어 하의_무도가-여"
+                    ]
+                },
+                {
+                    "className": "무도가-남",
+                    "design": "서핑 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "서핑 웨어 머리_무도가-남",
+                        "서핑 웨어 얼굴2_무도가-남",
+                        "서핑 웨어 상의_무도가-남",
+                        "서핑 웨어 하의_무도가-남"
+                    ]
+                },
+                {
+                    "className": "암살자",
+                    "design": "서핑 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "서핑 웨어 머리_암살자",
+                        "서핑 웨어 얼굴2_암살자",
+                        "서핑 웨어 상의_암살자",
+                        "서핑 웨어 하의_암살자"
+                    ]
+                },
+                {
+                    "className": "헌터-남",
+                    "design": "서핑 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "서핑 웨어 머리_헌터-남",
+                        "서핑 웨어 얼굴2_헌터-남",
+                        "서핑 웨어 상의_헌터-남",
+                        "서핑 웨어 하의_헌터-남"
+                    ]
+                },
+                {
+                    "className": "헌터-여",
+                    "design": "서핑 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "서핑 웨어 머리_헌터-여",
+                        "서핑 웨어 얼굴2_헌터-여",
+                        "서핑 웨어 상의_헌터-여",
+                        "서핑 웨어 하의_헌터-여"
+                    ]
+                },
+                {
+                    "className": "스페셜리스트",
+                    "design": "서핑 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "서핑 웨어 머리_스페셜리스트",
+                        "서핑 웨어 얼굴2_스페셜리스트",
+                        "서핑 웨어 상의_스페셜리스트",
+                        "서핑 웨어 하의_스페셜리스트"
+                    ]
+                },
+                {
+                    "className": "전사-여",
+                    "design": "서핑 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "서핑 웨어 머리_전사-여",
+                        "서핑 웨어 얼굴2_전사-여",
+                        "서핑 웨어 상의_전사-여",
+                        "서핑 웨어 하의_전사-여"
+                    ]
+                }
+            ],
+            "tradable": true,
+            "id": "서핑 웨어 아바타 세트",
+            "design": "서핑 웨어"
+        },
+        "나이트 웨어 아바타 세트": {
+            "name": "나이트 웨어 아바타 세트",
+            "type": "avatarPackage",
+            "target": [
+                "전사",
+                "마법사",
+                "무도가-여",
+                "무도가-남",
+                "암살자",
+                "헌터-남",
+                "헌터-여",
+                "스페셜리스트",
+                "전사-여"
+            ],
+            "contain": [
+                {
+                    "className": "전사",
+                    "design": "나이트 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "나이트 웨어 머리_전사",
+                        "나이트 웨어 얼굴2_전사",
+                        "나이트 웨어 상하의_전사"
+                    ]
+                },
+                {
+                    "className": "마법사",
+                    "design": "나이트 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "나이트 웨어 머리_마법사",
+                        "나이트 웨어 얼굴2_마법사",
+                        "나이트 웨어 상하의_마법사"
+                    ]
+                },
+                {
+                    "className": "무도가-여",
+                    "design": "나이트 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "나이트 웨어 머리_무도가-여",
+                        "나이트 웨어 얼굴2_무도가-여",
+                        "나이트 웨어 상하의_무도가-여"
+                    ]
+                },
+                {
+                    "className": "무도가-남",
+                    "design": "나이트 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "나이트 웨어 머리_무도가-남",
+                        "나이트 웨어 얼굴2_무도가-남",
+                        "나이트 웨어 상하의_무도가-남"
+                    ]
+                },
+                {
+                    "className": "암살자",
+                    "design": "나이트 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "나이트 웨어 머리_암살자",
+                        "나이트 웨어 얼굴2_암살자",
+                        "나이트 웨어 상하의_암살자"
+                    ]
+                },
+                {
+                    "className": "헌터-남",
+                    "design": "나이트 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "나이트 웨어 머리_헌터-남",
+                        "나이트 웨어 얼굴2_헌터-남",
+                        "나이트 웨어 상하의_헌터-남"
+                    ]
+                },
+                {
+                    "className": "헌터-여",
+                    "design": "나이트 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "나이트 웨어 머리_헌터-여",
+                        "나이트 웨어 얼굴2_헌터-여",
+                        "나이트 웨어 상하의_헌터-여"
+                    ]
+                },
+                {
+                    "className": "스페셜리스트",
+                    "design": "나이트 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "나이트 웨어 머리_스페셜리스트",
+                        "나이트 웨어 얼굴2_스페셜리스트",
+                        "나이트 웨어 상하의_스페셜리스트"
+                    ]
+                },
+                {
+                    "className": "전사-여",
+                    "design": "나이트 웨어",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "나이트 웨어 머리_전사-여",
+                        "나이트 웨어 얼굴2_전사-여",
+                        "나이트 웨어 상하의_전사-여"
+                    ]
+                }
+            ],
+            "tradable": true,
+            "id": "나이트 웨어 아바타 세트",
+            "design": "나이트 웨어"
+        },
+        "스윔 웨어 머리_전사": {
+            "name": "스윔 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "전사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 머리_전사",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 얼굴2_전사": {
+            "name": "스윔 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "전사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 얼굴2_전사",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 상의_전사": {
+            "name": "스윔 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "전사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 상의_전사",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 하의_전사": {
+            "name": "스윔 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "전사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 하의_전사",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 머리_마법사": {
+            "name": "스윔 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "마법사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 머리_마법사",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 얼굴2_마법사": {
+            "name": "스윔 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "마법사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 얼굴2_마법사",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 상의_마법사": {
+            "name": "스윔 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "마법사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 상의_마법사",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 하의_마법사": {
+            "name": "스윔 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "마법사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 하의_마법사",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 머리_무도가-여": {
+            "name": "스윔 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "무도가-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 머리_무도가-여",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 얼굴2_무도가-여": {
+            "name": "스윔 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "무도가-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 얼굴2_무도가-여",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 상의_무도가-여": {
+            "name": "스윔 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "무도가-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 상의_무도가-여",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 하의_무도가-여": {
+            "name": "스윔 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "무도가-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 하의_무도가-여",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 머리_무도가-남": {
+            "name": "스윔 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "무도가-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 머리_무도가-남",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 얼굴2_무도가-남": {
+            "name": "스윔 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "무도가-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 얼굴2_무도가-남",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 상의_무도가-남": {
+            "name": "스윔 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "무도가-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 상의_무도가-남",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 하의_무도가-남": {
+            "name": "스윔 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "무도가-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 하의_무도가-남",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 머리_암살자": {
+            "name": "스윔 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "암살자"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 머리_암살자",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 얼굴2_암살자": {
+            "name": "스윔 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "암살자"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 얼굴2_암살자",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 상의_암살자": {
+            "name": "스윔 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "암살자"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 상의_암살자",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 하의_암살자": {
+            "name": "스윔 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "암살자"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 하의_암살자",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 머리_헌터-남": {
+            "name": "스윔 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "헌터-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 머리_헌터-남",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 얼굴2_헌터-남": {
+            "name": "스윔 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "헌터-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 얼굴2_헌터-남",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 상의_헌터-남": {
+            "name": "스윔 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "헌터-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 상의_헌터-남",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 하의_헌터-남": {
+            "name": "스윔 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "헌터-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 하의_헌터-남",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 머리_헌터-여": {
+            "name": "스윔 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "헌터-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 머리_헌터-여",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 얼굴2_헌터-여": {
+            "name": "스윔 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "헌터-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 얼굴2_헌터-여",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 상의_헌터-여": {
+            "name": "스윔 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "헌터-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 상의_헌터-여",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 하의_헌터-여": {
+            "name": "스윔 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "헌터-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 하의_헌터-여",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 머리_스페셜리스트": {
+            "name": "스윔 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "스페셜리스트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 머리_스페셜리스트",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 얼굴2_스페셜리스트": {
+            "name": "스윔 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "스페셜리스트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 얼굴2_스페셜리스트",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 상의_스페셜리스트": {
+            "name": "스윔 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "스페셜리스트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 상의_스페셜리스트",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 하의_스페셜리스트": {
+            "name": "스윔 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "스페셜리스트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 하의_스페셜리스트",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 머리_전사-여": {
+            "name": "스윔 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "전사-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 머리_전사-여",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 얼굴2_전사-여": {
+            "name": "스윔 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "전사-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 얼굴2_전사-여",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 상의_전사-여": {
+            "name": "스윔 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "전사-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 상의_전사-여",
+            "design": "스윔 웨어"
+        },
+        "스윔 웨어 하의_전사-여": {
+            "name": "스윔 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "전사-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "스윔 웨어 하의_전사-여",
+            "design": "스윔 웨어"
+        },
+        "서핑 웨어 머리_전사": {
+            "name": "서핑 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "전사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 머리_전사",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 얼굴2_전사": {
+            "name": "서핑 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "전사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 얼굴2_전사",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 상의_전사": {
+            "name": "서핑 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "전사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 상의_전사",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 하의_전사": {
+            "name": "서핑 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "전사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 하의_전사",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 머리_마법사": {
+            "name": "서핑 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "마법사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 머리_마법사",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 얼굴2_마법사": {
+            "name": "서핑 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "마법사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 얼굴2_마법사",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 상의_마법사": {
+            "name": "서핑 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "마법사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 상의_마법사",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 하의_마법사": {
+            "name": "서핑 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "마법사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 하의_마법사",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 머리_무도가-여": {
+            "name": "서핑 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "무도가-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 머리_무도가-여",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 얼굴2_무도가-여": {
+            "name": "서핑 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "무도가-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 얼굴2_무도가-여",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 상의_무도가-여": {
+            "name": "서핑 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "무도가-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 상의_무도가-여",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 하의_무도가-여": {
+            "name": "서핑 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "무도가-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 하의_무도가-여",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 머리_무도가-남": {
+            "name": "서핑 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "무도가-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 머리_무도가-남",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 얼굴2_무도가-남": {
+            "name": "서핑 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "무도가-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 얼굴2_무도가-남",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 상의_무도가-남": {
+            "name": "서핑 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "무도가-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 상의_무도가-남",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 하의_무도가-남": {
+            "name": "서핑 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "무도가-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 하의_무도가-남",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 머리_암살자": {
+            "name": "서핑 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "암살자"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 머리_암살자",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 얼굴2_암살자": {
+            "name": "서핑 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "암살자"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 얼굴2_암살자",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 상의_암살자": {
+            "name": "서핑 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "암살자"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 상의_암살자",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 하의_암살자": {
+            "name": "서핑 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "암살자"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 하의_암살자",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 머리_헌터-남": {
+            "name": "서핑 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "헌터-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 머리_헌터-남",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 얼굴2_헌터-남": {
+            "name": "서핑 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "헌터-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 얼굴2_헌터-남",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 상의_헌터-남": {
+            "name": "서핑 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "헌터-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 상의_헌터-남",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 하의_헌터-남": {
+            "name": "서핑 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "헌터-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 하의_헌터-남",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 머리_헌터-여": {
+            "name": "서핑 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "헌터-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 머리_헌터-여",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 얼굴2_헌터-여": {
+            "name": "서핑 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "헌터-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 얼굴2_헌터-여",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 상의_헌터-여": {
+            "name": "서핑 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "헌터-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 상의_헌터-여",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 하의_헌터-여": {
+            "name": "서핑 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "헌터-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 하의_헌터-여",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 머리_스페셜리스트": {
+            "name": "서핑 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "스페셜리스트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 머리_스페셜리스트",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 얼굴2_스페셜리스트": {
+            "name": "서핑 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "스페셜리스트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 얼굴2_스페셜리스트",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 상의_스페셜리스트": {
+            "name": "서핑 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "스페셜리스트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 상의_스페셜리스트",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 하의_스페셜리스트": {
+            "name": "서핑 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "스페셜리스트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 하의_스페셜리스트",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 머리_전사-여": {
+            "name": "서핑 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "전사-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 머리_전사-여",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 얼굴2_전사-여": {
+            "name": "서핑 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "전사-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 얼굴2_전사-여",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 상의_전사-여": {
+            "name": "서핑 웨어 상의",
+            "type": "avatar-top",
+            "target": [
+                "전사-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 상의_전사-여",
+            "design": "서핑 웨어"
+        },
+        "서핑 웨어 하의_전사-여": {
+            "name": "서핑 웨어 하의",
+            "type": "avatar-pants",
+            "target": [
+                "전사-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "서핑 웨어 하의_전사-여",
+            "design": "서핑 웨어"
+        },
+        "나이트 웨어 머리_전사": {
+            "name": "나이트 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "전사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 머리_전사",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 얼굴2_전사": {
+            "name": "나이트 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "전사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 얼굴2_전사",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 상하의_전사": {
+            "name": "나이트 웨어 상하의",
+            "type": "avatar-onepiece",
+            "target": [
+                "전사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 상하의_전사",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 머리_마법사": {
+            "name": "나이트 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "마법사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 머리_마법사",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 얼굴2_마법사": {
+            "name": "나이트 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "마법사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 얼굴2_마법사",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 상하의_마법사": {
+            "name": "나이트 웨어 상하의",
+            "type": "avatar-onepiece",
+            "target": [
+                "마법사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 상하의_마법사",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 머리_무도가-여": {
+            "name": "나이트 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "무도가-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 머리_무도가-여",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 얼굴2_무도가-여": {
+            "name": "나이트 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "무도가-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 얼굴2_무도가-여",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 상하의_무도가-여": {
+            "name": "나이트 웨어 상하의",
+            "type": "avatar-onepiece",
+            "target": [
+                "무도가-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 상하의_무도가-여",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 머리_무도가-남": {
+            "name": "나이트 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "무도가-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 머리_무도가-남",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 얼굴2_무도가-남": {
+            "name": "나이트 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "무도가-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 얼굴2_무도가-남",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 상하의_무도가-남": {
+            "name": "나이트 웨어 상하의",
+            "type": "avatar-onepiece",
+            "target": [
+                "무도가-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 상하의_무도가-남",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 머리_암살자": {
+            "name": "나이트 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "암살자"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 머리_암살자",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 얼굴2_암살자": {
+            "name": "나이트 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "암살자"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 얼굴2_암살자",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 상하의_암살자": {
+            "name": "나이트 웨어 상하의",
+            "type": "avatar-onepiece",
+            "target": [
+                "암살자"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 상하의_암살자",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 머리_헌터-남": {
+            "name": "나이트 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "헌터-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 머리_헌터-남",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 얼굴2_헌터-남": {
+            "name": "나이트 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "헌터-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 얼굴2_헌터-남",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 상하의_헌터-남": {
+            "name": "나이트 웨어 상하의",
+            "type": "avatar-onepiece",
+            "target": [
+                "헌터-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 상하의_헌터-남",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 머리_헌터-여": {
+            "name": "나이트 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "헌터-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 머리_헌터-여",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 얼굴2_헌터-여": {
+            "name": "나이트 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "헌터-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 얼굴2_헌터-여",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 상하의_헌터-여": {
+            "name": "나이트 웨어 상하의",
+            "type": "avatar-onepiece",
+            "target": [
+                "헌터-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 상하의_헌터-여",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 머리_스페셜리스트": {
+            "name": "나이트 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "스페셜리스트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 머리_스페셜리스트",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 얼굴2_스페셜리스트": {
+            "name": "나이트 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "스페셜리스트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 얼굴2_스페셜리스트",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 상하의_스페셜리스트": {
+            "name": "나이트 웨어 상하의",
+            "type": "avatar-onepiece",
+            "target": [
+                "스페셜리스트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 상하의_스페셜리스트",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 머리_전사-여": {
+            "name": "나이트 웨어 머리",
+            "type": "avatar-hat",
+            "target": [
+                "전사-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 머리_전사-여",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 얼굴2_전사-여": {
+            "name": "나이트 웨어 얼굴2",
+            "type": "avatar-face2",
+            "target": [
+                "전사-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 얼굴2_전사-여",
+            "design": "나이트 웨어"
+        },
+        "나이트 웨어 상하의_전사-여": {
+            "name": "나이트 웨어 상하의",
+            "type": "avatar-onepiece",
+            "target": [
+                "전사-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "나이트 웨어 상하의_전사-여",
+            "design": "나이트 웨어"
+        },
+        "미드나잇 썸머 무기 선택 상자": {
+            "name": "미드나잇 썸머 무기 선택 상자",
+            "type": "weaponPackage",
+            "target": [
+                "버서커",
+                "디스트로이어",
+                "워로드",
+                "홀리나이트",
+                "아르카나",
+                "서머너",
+                "바드",
+                "소서리스",
+                "배틀마스터",
+                "인파이터",
+                "기공사",
+                "창술사",
+                "스트라이커",
+                "블레이드",
+                "데모닉",
+                "리퍼",
+                "호크아이",
+                "데빌헌터",
+                "블래스터",
+                "스카우터",
+                "건슬링어",
+                "도화가",
+                "기상술사"
+            ],
+            "contain": [
+                {
+                    "className": "버서커",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 대검_버서커"
+                    ]
+                },
+                {
+                    "className": "버서커",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 대검_버서커"
+                    ]
+                },
+                {
+                    "className": "디스트로이어",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 전투망치_디스트로이어"
+                    ]
+                },
+                {
+                    "className": "디스트로이어",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 전투망치_디스트로이어"
+                    ]
+                },
+                {
+                    "className": "워로드",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 랜스_워로드"
+                    ]
+                },
+                {
+                    "className": "워로드",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 랜스_워로드"
+                    ]
+                },
+                {
+                    "className": "홀리나이트",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 한손검_홀리나이트"
+                    ]
+                },
+                {
+                    "className": "홀리나이트",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 한손검_홀리나이트"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "아르카나",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 마법 덱_아르카나"
+                    ]
+                },
+                {
+                    "className": "아르카나",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 마법 덱_아르카나"
+                    ]
+                },
+                {
+                    "className": "서머너",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 스태프_서머너"
+                    ]
+                },
+                {
+                    "className": "서머너",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 스태프_서머너"
+                    ]
+                },
+                {
+                    "className": "바드",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 리아네 하프_바드"
+                    ]
+                },
+                {
+                    "className": "바드",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 리아네 하프_바드"
+                    ]
+                },
+                {
+                    "className": "소서리스",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 롱 스태프_소서리스"
+                    ]
+                },
+                {
+                    "className": "소서리스",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 롱 스태프_소서리스"
+                    ]
+                },
+                {
+                    "className": "배틀마스터",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 건틀릿_배틀마스터"
+                    ]
+                },
+                {
+                    "className": "배틀마스터",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 건틀릿_배틀마스터"
+                    ]
+                },
+                {
+                    "className": "인파이터",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 헤비 건틀릿_인파이터"
+                    ]
+                },
+                {
+                    "className": "인파이터",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 헤비 건틀릿_인파이터"
+                    ]
+                },
+                {
+                    "className": "기공사",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 기공패_기공사"
+                    ]
+                },
+                {
+                    "className": "기공사",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 기공패_기공사"
+                    ]
+                },
+                {
+                    "className": "창술사",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 창_창술사"
+                    ]
+                },
+                {
+                    "className": "창술사",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 창_창술사"
+                    ]
+                },
+                {
+                    "className": "스트라이커",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 건틀릿_스트라이커"
+                    ]
+                },
+                {
+                    "className": "스트라이커",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 건틀릿_스트라이커"
+                    ]
+                },
+                {
+                    "className": "블레이드",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 검_블레이드"
+                    ]
+                },
+                {
+                    "className": "블레이드",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 검_블레이드"
+                    ]
+                },
+                {
+                    "className": "데모닉",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 데모닉웨폰_데모닉"
+                    ]
+                },
+                {
+                    "className": "데모닉",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 데모닉웨폰_데모닉"
+                    ]
+                },
+                {
+                    "className": "리퍼",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 대거_리퍼"
+                    ]
+                },
+                {
+                    "className": "리퍼",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 대거_리퍼"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "호크아이",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 활_호크아이"
+                    ]
+                },
+                {
+                    "className": "호크아이",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 활_호크아이"
+                    ]
+                },
+                {
+                    "className": "데빌헌터",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 총_데빌헌터"
+                    ]
+                },
+                {
+                    "className": "데빌헌터",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 총_데빌헌터"
+                    ]
+                },
+                {
+                    "className": "블래스터",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 런처_블래스터"
+                    ]
+                },
+                {
+                    "className": "블래스터",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 런처_블래스터"
+                    ]
+                },
+                {
+                    "className": "스카우터",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 서브 머신건_스카우터"
+                    ]
+                },
+                {
+                    "className": "스카우터",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 서브 머신건_스카우터"
+                    ]
+                },
+                {
+                    "className": "건슬링어",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 총_건슬링어"
+                    ]
+                },
+                {
+                    "className": "건슬링어",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 총_건슬링어"
+                    ]
+                },
+                {
+                    "className": "도화가",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 붓_도화가"
+                    ]
+                },
+                {
+                    "className": "도화가",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 붓_도화가"
+                    ]
+                },
+                {
+                    "className": "기상술사",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 우산_기상술사"
+                    ]
+                },
+                {
+                    "className": "기상술사",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 우산_기상술사"
+                    ]
+                }
+            ],
+            "tradable": true,
+            "id": "미드나잇 썸머 무기 선택 상자",
+            "design": ""
+        },
+        "블루 네온 대검_버서커": {
+            "name": "블루 네온 대검",
+            "type": "weapon",
+            "target": [
+                "버서커"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 대검_버서커",
+            "design": "design"
+        },
+        "핑크 네온 대검_버서커": {
+            "name": "핑크 네온 대검",
+            "type": "weapon",
+            "target": [
+                "버서커"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 대검_버서커",
+            "design": "design"
+        },
+        "블루 네온 전투망치_디스트로이어": {
+            "name": "블루 네온 전투망치",
+            "type": "weapon",
+            "target": [
+                "디스트로이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 전투망치_디스트로이어",
+            "design": "design"
+        },
+        "핑크 네온 전투망치_디스트로이어": {
+            "name": "핑크 네온 전투망치",
+            "type": "weapon",
+            "target": [
+                "디스트로이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 전투망치_디스트로이어",
+            "design": "design"
+        },
+        "블루 네온 랜스_워로드": {
+            "name": "블루 네온 랜스",
+            "type": "weapon",
+            "target": [
+                "워로드"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 랜스_워로드",
+            "design": "design"
+        },
+        "핑크 네온 랜스_워로드": {
+            "name": "핑크 네온 랜스",
+            "type": "weapon",
+            "target": [
+                "워로드"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 랜스_워로드",
+            "design": "design"
+        },
+        "블루 네온 한손검_홀리나이트": {
+            "name": "블루 네온 한손검",
+            "type": "weapon",
+            "target": [
+                "홀리나이트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 한손검_홀리나이트",
+            "design": "design"
+        },
+        "핑크 네온 한손검_홀리나이트": {
+            "name": "핑크 네온 한손검",
+            "type": "weapon",
+            "target": [
+                "홀리나이트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 한손검_홀리나이트",
+            "design": "design"
+        },
+        "블루 네온 대검_슬레이어": {
+            "name": "블루 네온 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 대검_슬레이어",
+            "design": "design"
+        },
+        "핑크 네온 대검_슬레이어": {
+            "name": "핑크 네온 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 대검_슬레이어",
+            "design": "design"
+        },
+        "블루 네온 마법 덱_아르카나": {
+            "name": "블루 네온 마법 덱",
+            "type": "weapon",
+            "target": [
+                "아르카나"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 마법 덱_아르카나",
+            "design": "design"
+        },
+        "핑크 네온 마법 덱_아르카나": {
+            "name": "핑크 네온 마법 덱",
+            "type": "weapon",
+            "target": [
+                "아르카나"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 마법 덱_아르카나",
+            "design": "design"
+        },
+        "블루 네온 스태프_서머너": {
+            "name": "블루 네온 스태프",
+            "type": "weapon",
+            "target": [
+                "서머너"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 스태프_서머너",
+            "design": "design"
+        },
+        "핑크 네온 스태프_서머너": {
+            "name": "핑크 네온 스태프",
+            "type": "weapon",
+            "target": [
+                "서머너"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 스태프_서머너",
+            "design": "design"
+        },
+        "블루 네온 리아네 하프_바드": {
+            "name": "블루 네온 리아네 하프",
+            "type": "weapon",
+            "target": [
+                "바드"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 리아네 하프_바드",
+            "design": "design"
+        },
+        "핑크 네온 리아네 하프_바드": {
+            "name": "핑크 네온 리아네 하프",
+            "type": "weapon",
+            "target": [
+                "바드"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 리아네 하프_바드",
+            "design": "design"
+        },
+        "블루 네온 롱 스태프_소서리스": {
+            "name": "블루 네온 롱 스태프",
+            "type": "weapon",
+            "target": [
+                "소서리스"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 롱 스태프_소서리스",
+            "design": "design"
+        },
+        "핑크 네온 롱 스태프_소서리스": {
+            "name": "핑크 네온 롱 스태프",
+            "type": "weapon",
+            "target": [
+                "소서리스"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 롱 스태프_소서리스",
+            "design": "design"
+        },
+        "블루 네온 건틀릿_배틀마스터": {
+            "name": "블루 네온 건틀릿",
+            "type": "weapon",
+            "target": [
+                "배틀마스터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 건틀릿_배틀마스터",
+            "design": "design"
+        },
+        "핑크 네온 건틀릿_배틀마스터": {
+            "name": "핑크 네온 건틀릿",
+            "type": "weapon",
+            "target": [
+                "배틀마스터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 건틀릿_배틀마스터",
+            "design": "design"
+        },
+        "블루 네온 헤비 건틀릿_인파이터": {
+            "name": "블루 네온 헤비 건틀릿",
+            "type": "weapon",
+            "target": [
+                "인파이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 헤비 건틀릿_인파이터",
+            "design": "design"
+        },
+        "핑크 네온 헤비 건틀릿_인파이터": {
+            "name": "핑크 네온 헤비 건틀릿",
+            "type": "weapon",
+            "target": [
+                "인파이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 헤비 건틀릿_인파이터",
+            "design": "design"
+        },
+        "블루 네온 기공패_기공사": {
+            "name": "블루 네온 기공패",
+            "type": "weapon",
+            "target": [
+                "기공사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 기공패_기공사",
+            "design": "design"
+        },
+        "핑크 네온 기공패_기공사": {
+            "name": "핑크 네온 기공패",
+            "type": "weapon",
+            "target": [
+                "기공사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 기공패_기공사",
+            "design": "design"
+        },
+        "블루 네온 창_창술사": {
+            "name": "블루 네온 창",
+            "type": "weapon",
+            "target": [
+                "창술사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 창_창술사",
+            "design": "design"
+        },
+        "핑크 네온 창_창술사": {
+            "name": "핑크 네온 창",
+            "type": "weapon",
+            "target": [
+                "창술사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 창_창술사",
+            "design": "design"
+        },
+        "블루 네온 건틀릿_스트라이커": {
+            "name": "블루 네온 건틀릿",
+            "type": "weapon",
+            "target": [
+                "스트라이커"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 건틀릿_스트라이커",
+            "design": "design"
+        },
+        "핑크 네온 건틀릿_스트라이커": {
+            "name": "핑크 네온 건틀릿",
+            "type": "weapon",
+            "target": [
+                "스트라이커"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 건틀릿_스트라이커",
+            "design": "design"
+        },
+        "블루 네온 검_블레이드": {
+            "name": "블루 네온 검",
+            "type": "weapon",
+            "target": [
+                "블레이드"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 검_블레이드",
+            "design": "design"
+        },
+        "핑크 네온 검_블레이드": {
+            "name": "핑크 네온 검",
+            "type": "weapon",
+            "target": [
+                "블레이드"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 검_블레이드",
+            "design": "design"
+        },
+        "블루 네온 데모닉웨폰_데모닉": {
+            "name": "블루 네온 데모닉웨폰",
+            "type": "weapon",
+            "target": [
+                "데모닉"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 데모닉웨폰_데모닉",
+            "design": "design"
+        },
+        "핑크 네온 데모닉웨폰_데모닉": {
+            "name": "핑크 네온 데모닉웨폰",
+            "type": "weapon",
+            "target": [
+                "데모닉"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 데모닉웨폰_데모닉",
+            "design": "design"
+        },
+        "블루 네온 대거_리퍼": {
+            "name": "블루 네온 대거",
+            "type": "weapon",
+            "target": [
+                "리퍼"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 대거_리퍼",
+            "design": "design"
+        },
+        "핑크 네온 대거_리퍼": {
+            "name": "핑크 네온 대거",
+            "type": "weapon",
+            "target": [
+                "리퍼"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 대거_리퍼",
+            "design": "design"
+        },
+        "블루 네온 데스사이드_소울이터": {
+            "name": "블루 네온 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 데스사이드_소울이터",
+            "design": "design"
+        },
+        "핑크 네온 데스사이드_소울이터": {
+            "name": "핑크 네온 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 데스사이드_소울이터",
+            "design": "design"
+        },
+        "블루 네온 활_호크아이": {
+            "name": "블루 네온 활",
+            "type": "weapon",
+            "target": [
+                "호크아이"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 활_호크아이",
+            "design": "design"
+        },
+        "핑크 네온 활_호크아이": {
+            "name": "핑크 네온 활",
+            "type": "weapon",
+            "target": [
+                "호크아이"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 활_호크아이",
+            "design": "design"
+        },
+        "블루 네온 총_데빌헌터": {
+            "name": "블루 네온 총",
+            "type": "weapon",
+            "target": [
+                "데빌헌터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 총_데빌헌터",
+            "design": "design"
+        },
+        "핑크 네온 총_데빌헌터": {
+            "name": "핑크 네온 총",
+            "type": "weapon",
+            "target": [
+                "데빌헌터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 총_데빌헌터",
+            "design": "design"
+        },
+        "블루 네온 런처_블래스터": {
+            "name": "블루 네온 런처",
+            "type": "weapon",
+            "target": [
+                "블래스터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 런처_블래스터",
+            "design": "design"
+        },
+        "핑크 네온 런처_블래스터": {
+            "name": "핑크 네온 런처",
+            "type": "weapon",
+            "target": [
+                "블래스터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 런처_블래스터",
+            "design": "design"
+        },
+        "블루 네온 서브 머신건_스카우터": {
+            "name": "블루 네온 서브 머신건",
+            "type": "weapon",
+            "target": [
+                "스카우터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 서브 머신건_스카우터",
+            "design": "design"
+        },
+        "핑크 네온 서브 머신건_스카우터": {
+            "name": "핑크 네온 서브 머신건",
+            "type": "weapon",
+            "target": [
+                "스카우터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 서브 머신건_스카우터",
+            "design": "design"
+        },
+        "블루 네온 총_건슬링어": {
+            "name": "블루 네온 총",
+            "type": "weapon",
+            "target": [
+                "건슬링어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 총_건슬링어",
+            "design": "design"
+        },
+        "핑크 네온 총_건슬링어": {
+            "name": "핑크 네온 총",
+            "type": "weapon",
+            "target": [
+                "건슬링어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 총_건슬링어",
+            "design": "design"
+        },
+        "블루 네온 붓_도화가": {
+            "name": "블루 네온 붓",
+            "type": "weapon",
+            "target": [
+                "도화가"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 붓_도화가",
+            "design": "design"
+        },
+        "핑크 네온 붓_도화가": {
+            "name": "핑크 네온 붓",
+            "type": "weapon",
+            "target": [
+                "도화가"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 붓_도화가",
+            "design": "design"
+        },
+        "블루 네온 우산_기상술사": {
+            "name": "블루 네온 우산",
+            "type": "weapon",
+            "target": [
+                "기상술사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "블루 네온 우산_기상술사",
+            "design": "design"
+        },
+        "핑크 네온 우산_기상술사": {
+            "name": "핑크 네온 우산",
+            "type": "weapon",
+            "target": [
+                "기상술사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "핑크 네온 우산_기상술사",
+            "design": "design"
+        },
+        "소울이터 미드나잇 썸머 무기 선택 상자": {
+            "name": "소울이터 미드나잇 썸머 무기 선택 상자",
+            "type": "weaponPackage",
+            "target": [
+                "버서커",
+                "디스트로이어",
+                "워로드",
+                "홀리나이트",
+                "아르카나",
+                "서머너",
+                "바드",
+                "소서리스",
+                "배틀마스터",
+                "인파이터",
+                "기공사",
+                "창술사",
+                "스트라이커",
+                "블레이드",
+                "데모닉",
+                "리퍼",
+                "호크아이",
+                "데빌헌터",
+                "블래스터",
+                "스카우터",
+                "건슬링어",
+                "도화가",
+                "기상술사"
+            ],
+            "contain": [
+                {
+                    "className": "소울이터",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "블루 네온 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "design",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "핑크 네온 데스사이드_소울이터"
+                    ]
+                }
+            ],
+            "tradable": true,
+            "id": "소울이터 미드나잇 썸머 무기 선택 상자",
+            "design": ""
+        },
+        "미드나잇 썸머 악기 선택 상자": {
+            "name": "미드나잇 썸머 악기 선택 상자",
+            "type": "instrumentPackage",
+            "target": [
+                "전사",
+                "마법사",
+                "무도가-여",
+                "무도가-남",
+                "암살자",
+                "헌터-남",
+                "헌터-여",
+                "스페셜리스트",
+                "전사-여"
+            ],
+            "contain": [
+                {
+                    "className": "전사",
+                    "design": "초코 소프트콘",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "초코 소프트콘 악기_전사"
+                    ]
+                },
+                {
+                    "className": "전사",
+                    "design": "딸기 소프트콘",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "딸기 소프트콘 악기_전사"
+                    ]
+                },
+                {
+                    "className": "전사",
+                    "design": "녹차 소프트콘",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "녹차 소프트콘 악기_전사"
+                    ]
+                },
+                {
+                    "className": "마법사",
+                    "design": "바닐라 와플",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "바닐라 와플 악기_마법사"
+                    ]
+                },
+                {
+                    "className": "마법사",
+                    "design": "딸기 와플",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "딸기 와플 악기_마법사"
+                    ]
+                },
+                {
+                    "className": "마법사",
+                    "design": "녹차 와플",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "녹차 와플 악기_마법사"
+                    ]
+                },
+                {
+                    "className": "무도가-여",
+                    "design": "민트 초코 스프링클",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "민트 초코 스프링클 악기_무도가-여"
+                    ]
+                },
+                {
+                    "className": "무도가-여",
+                    "design": "딸기 스프링클",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "딸기 스프링클 악기_무도가-여"
+                    ]
+                },
+                {
+                    "className": "무도가-여",
+                    "design": "라즈베리 스프링클",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "라즈베리 스프링클 악기_무도가-여"
+                    ]
+                },
+                {
+                    "className": "무도가-남",
+                    "design": "민트 초코 스프링클",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "민트 초코 스프링클 악기_무도가-남"
+                    ]
+                },
+                {
+                    "className": "무도가-남",
+                    "design": "딸기 스프링클",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "딸기 스프링클 악기_무도가-남"
+                    ]
+                },
+                {
+                    "className": "무도가-남",
+                    "design": "라즈베리 스프링클",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "라즈베리 스프링클 악기_무도가-남"
+                    ]
+                },
+                {
+                    "className": "암살자",
+                    "design": "화이트 츄러스",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "화이트 츄러스 악기_암살자"
+                    ]
+                },
+                {
+                    "className": "암살자",
+                    "design": "딸기 츄러스",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "딸기 츄러스 악기_암살자"
+                    ]
+                },
+                {
+                    "className": "암살자",
+                    "design": "초코 츄러스",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "초코 츄러스 악기_암살자"
+                    ]
+                },
+                {
+                    "className": "헌터-남",
+                    "design": "민트 초코 도넛",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "민트 초코 도넛 악기_헌터-남"
+                    ]
+                },
+                {
+                    "className": "헌터-남",
+                    "design": "딸기 도넛",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "딸기 도넛 악기_헌터-남"
+                    ]
+                },
+                {
+                    "className": "헌터-남",
+                    "design": "라즈베리 도넛",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "라즈베리 도넛 악기_헌터-남"
+                    ]
+                },
+                {
+                    "className": "헌터-여",
+                    "design": "민트 초코 도넛",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "민트 초코 도넛 악기_헌터-여"
+                    ]
+                },
+                {
+                    "className": "헌터-여",
+                    "design": "딸기 도넛",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "딸기 도넛 악기_헌터-여"
+                    ]
+                },
+                {
+                    "className": "헌터-여",
+                    "design": "라즈베리 도넛",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "라즈베리 도넛 악기_헌터-여"
+                    ]
+                },
+                {
+                    "className": "스페셜리스트",
+                    "design": "화이트 쿠키",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "화이트 쿠키 악기_스페셜리스트"
+                    ]
+                },
+                {
+                    "className": "스페셜리스트",
+                    "design": "딸기 쿠키",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "딸기 쿠키 악기_스페셜리스트"
+                    ]
+                },
+                {
+                    "className": "스페셜리스트",
+                    "design": "솔트 쿠키",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "솔트 쿠키 악기_스페셜리스트"
+                    ]
+                },
+                {
+                    "className": "전사-여",
+                    "design": "초코 소프트콘",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "초코 소프트콘 악기_전사-여"
+                    ]
+                },
+                {
+                    "className": "전사-여",
+                    "design": "딸기 소프트콘",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "딸기 소프트콘 악기_전사-여"
+                    ]
+                },
+                {
+                    "className": "전사-여",
+                    "design": "녹차 소프트콘",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "녹차 소프트콘 악기_전사-여"
+                    ]
+                }
+            ],
+            "tradable": true,
+            "id": "미드나잇 썸머 악기 선택 상자",
+            "design": ""
+        },
+        "초코 소프트콘 악기_전사": {
+            "name": "초코 소프트콘 악기",
+            "type": "instrument",
+            "target": [
+                "전사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "초코 소프트콘 악기_전사",
+            "design": "초코 소프트콘"
+        },
+        "딸기 소프트콘 악기_전사": {
+            "name": "딸기 소프트콘 악기",
+            "type": "instrument",
+            "target": [
+                "전사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "딸기 소프트콘 악기_전사",
+            "design": "딸기 소프트콘"
+        },
+        "녹차 소프트콘 악기_전사": {
+            "name": "녹차 소프트콘 악기",
+            "type": "instrument",
+            "target": [
+                "전사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "녹차 소프트콘 악기_전사",
+            "design": "녹차 소프트콘"
+        },
+        "바닐라 와플 악기_마법사": {
+            "name": "바닐라 와플 악기",
+            "type": "instrument",
+            "target": [
+                "마법사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "바닐라 와플 악기_마법사",
+            "design": "바닐라 와플"
+        },
+        "딸기 와플 악기_마법사": {
+            "name": "딸기 와플 악기",
+            "type": "instrument",
+            "target": [
+                "마법사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "딸기 와플 악기_마법사",
+            "design": "딸기 와플"
+        },
+        "녹차 와플 악기_마법사": {
+            "name": "녹차 와플 악기",
+            "type": "instrument",
+            "target": [
+                "마법사"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "녹차 와플 악기_마법사",
+            "design": "녹차 와플"
+        },
+        "민트 초코 스프링클 악기_무도가-여": {
+            "name": "민트 초코 스프링클 악기",
+            "type": "instrument",
+            "target": [
+                "무도가-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "민트 초코 스프링클 악기_무도가-여",
+            "design": "민트 초코 스프링클"
+        },
+        "딸기 스프링클 악기_무도가-여": {
+            "name": "딸기 스프링클 악기",
+            "type": "instrument",
+            "target": [
+                "무도가-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "딸기 스프링클 악기_무도가-여",
+            "design": "딸기 스프링클"
+        },
+        "라즈베리 스프링클 악기_무도가-여": {
+            "name": "라즈베리 스프링클 악기",
+            "type": "instrument",
+            "target": [
+                "무도가-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "라즈베리 스프링클 악기_무도가-여",
+            "design": "라즈베리 스프링클"
+        },
+        "민트 초코 스프링클 악기_무도가-남": {
+            "name": "민트 초코 스프링클 악기",
+            "type": "instrument",
+            "target": [
+                "무도가-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "민트 초코 스프링클 악기_무도가-남",
+            "design": "민트 초코 스프링클"
+        },
+        "딸기 스프링클 악기_무도가-남": {
+            "name": "딸기 스프링클 악기",
+            "type": "instrument",
+            "target": [
+                "무도가-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "딸기 스프링클 악기_무도가-남",
+            "design": "딸기 스프링클"
+        },
+        "라즈베리 스프링클 악기_무도가-남": {
+            "name": "라즈베리 스프링클 악기",
+            "type": "instrument",
+            "target": [
+                "무도가-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "라즈베리 스프링클 악기_무도가-남",
+            "design": "라즈베리 스프링클"
+        },
+        "화이트 츄러스 악기_암살자": {
+            "name": "화이트 츄러스 악기",
+            "type": "instrument",
+            "target": [
+                "암살자"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "화이트 츄러스 악기_암살자",
+            "design": "화이트 츄러스"
+        },
+        "딸기 츄러스 악기_암살자": {
+            "name": "딸기 츄러스 악기",
+            "type": "instrument",
+            "target": [
+                "암살자"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "딸기 츄러스 악기_암살자",
+            "design": "딸기 츄러스"
+        },
+        "초코 츄러스 악기_암살자": {
+            "name": "초코 츄러스 악기",
+            "type": "instrument",
+            "target": [
+                "암살자"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "초코 츄러스 악기_암살자",
+            "design": "초코 츄러스"
+        },
+        "민트 초코 도넛 악기_헌터-남": {
+            "name": "민트 초코 도넛 악기",
+            "type": "instrument",
+            "target": [
+                "헌터-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "민트 초코 도넛 악기_헌터-남",
+            "design": "민트 초코 도넛"
+        },
+        "딸기 도넛 악기_헌터-남": {
+            "name": "딸기 도넛 악기",
+            "type": "instrument",
+            "target": [
+                "헌터-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "딸기 도넛 악기_헌터-남",
+            "design": "딸기 도넛"
+        },
+        "라즈베리 도넛 악기_헌터-남": {
+            "name": "라즈베리 도넛 악기",
+            "type": "instrument",
+            "target": [
+                "헌터-남"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "라즈베리 도넛 악기_헌터-남",
+            "design": "라즈베리 도넛"
+        },
+        "민트 초코 도넛 악기_헌터-여": {
+            "name": "민트 초코 도넛 악기",
+            "type": "instrument",
+            "target": [
+                "헌터-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "민트 초코 도넛 악기_헌터-여",
+            "design": "민트 초코 도넛"
+        },
+        "딸기 도넛 악기_헌터-여": {
+            "name": "딸기 도넛 악기",
+            "type": "instrument",
+            "target": [
+                "헌터-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "딸기 도넛 악기_헌터-여",
+            "design": "딸기 도넛"
+        },
+        "라즈베리 도넛 악기_헌터-여": {
+            "name": "라즈베리 도넛 악기",
+            "type": "instrument",
+            "target": [
+                "헌터-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "라즈베리 도넛 악기_헌터-여",
+            "design": "라즈베리 도넛"
+        },
+        "화이트 쿠키 악기_스페셜리스트": {
+            "name": "화이트 쿠키 악기",
+            "type": "instrument",
+            "target": [
+                "스페셜리스트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "화이트 쿠키 악기_스페셜리스트",
+            "design": "화이트 쿠키"
+        },
+        "딸기 쿠키 악기_스페셜리스트": {
+            "name": "딸기 쿠키 악기",
+            "type": "instrument",
+            "target": [
+                "스페셜리스트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "딸기 쿠키 악기_스페셜리스트",
+            "design": "딸기 쿠키"
+        },
+        "솔트 쿠키 악기_스페셜리스트": {
+            "name": "솔트 쿠키 악기",
+            "type": "instrument",
+            "target": [
+                "스페셜리스트"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "솔트 쿠키 악기_스페셜리스트",
+            "design": "솔트 쿠키"
+        },
+        "초코 소프트콘 악기_전사-여": {
+            "name": "초코 소프트콘 악기",
+            "type": "instrument",
+            "target": [
+                "전사-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "초코 소프트콘 악기_전사-여",
+            "design": "초코 소프트콘"
+        },
+        "딸기 소프트콘 악기_전사-여": {
+            "name": "딸기 소프트콘 악기",
+            "type": "instrument",
+            "target": [
+                "전사-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "딸기 소프트콘 악기_전사-여",
+            "design": "딸기 소프트콘"
+        },
+        "녹차 소프트콘 악기_전사-여": {
+            "name": "녹차 소프트콘 악기",
+            "type": "instrument",
+            "target": [
+                "전사-여"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "녹차 소프트콘 악기_전사-여",
+            "design": "녹차 소프트콘"
+        },
+        "펫 : 나른한 달곰": {
+            "name": "펫 : 나른한 달곰",
+            "type": "pet",
+            "target": [],
+            "contain": [],
+            "tradable": true,
+            "id": "펫 : 나른한 달곰",
+            "design": ""
+        },
+        "펫 : 호기심 많은 달이": {
+            "name": "펫 : 호기심 많은 달이",
+            "type": "pet",
+            "target": [],
+            "contain": [],
+            "tradable": true,
+            "id": "펫 : 호기심 많은 달이",
+            "design": ""
+        },
+        "펫 : 사랑스러운 달콩": {
+            "name": "펫 : 사랑스러운 달콩",
+            "type": "pet",
+            "target": [],
+            "contain": [],
+            "tradable": true,
+            "id": "펫 : 사랑스러운 달콩",
+            "design": ""
+        },
+        "펫 : 보드레한 달봄": {
+            "name": "펫 : 보드레한 달봄",
+            "type": "pet",
+            "target": [],
+            "contain": [],
+            "tradable": true,
+            "id": "펫 : 보드레한 달봄",
+            "design": ""
+        },
+        "펫 : 멍 때리는 달구": {
+            "name": "펫 : 멍 때리는 달구",
+            "type": "pet",
+            "target": [],
+            "contain": [],
+            "tradable": true,
+            "id": "펫 : 멍 때리는 달구",
+            "design": ""
+        },
+        "펫 : 개구쟁이 달비": {
+            "name": "펫 : 개구쟁이 달비",
+            "type": "pet",
+            "target": [],
+            "contain": [],
+            "tradable": true,
+            "id": "펫 : 개구쟁이 달비",
+            "design": ""
+        },
+        "해달 선택 상자": {
+            "name": "해달 선택 상자",
+            "type": "petPackage",
+            "target": [],
+            "contain": [
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "pet",
+                    "itemIdLst": [
+                        "펫 : 나른한 달곰"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "pet",
+                    "itemIdLst": [
+                        "펫 : 호기심 많은 달이"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "pet",
+                    "itemIdLst": [
+                        "펫 : 사랑스러운 달콩"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "pet",
+                    "itemIdLst": [
+                        "펫 : 보드레한 달봄"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "pet",
+                    "itemIdLst": [
+                        "펫 : 멍 때리는 달구"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "pet",
+                    "itemIdLst": [
+                        "펫 : 개구쟁이 달비"
+                    ]
+                }
+            ],
+            "tradable": true,
+            "id": "해달 선택 상자",
+            "design": ""
+        },
+        "탈 것 : 삐딱한 오리 튜브": {
+            "name": "탈 것 : 삐딱한 오리 튜브",
+            "type": "mount",
+            "target": [],
+            "contain": [],
+            "tradable": true,
+            "id": "탈 것 : 삐딱한 오리 튜브",
+            "design": ""
+        },
+        "탈 것 : 카우보이 오리 튜브": {
+            "name": "탈 것 : 카우보이 오리 튜브",
+            "type": "mount",
+            "target": [],
+            "contain": [],
+            "tradable": true,
+            "id": "탈 것 : 카우보이 오리 튜브",
+            "design": ""
+        },
+        "탈 것 : 어린이 오리 튜브": {
+            "name": "탈 것 : 어린이 오리 튜브",
+            "type": "mount",
+            "target": [],
+            "contain": [],
+            "tradable": true,
+            "id": "탈 것 : 어린이 오리 튜브",
+            "design": ""
+        },
+        "탈 것 : 마린 오리 튜브": {
+            "name": "탈 것 : 마린 오리 튜브",
+            "type": "mount",
+            "target": [],
+            "contain": [],
+            "tradable": true,
+            "id": "탈 것 : 마린 오리 튜브",
+            "design": ""
+        },
+        "탈 것 : 플라워 오리 튜브": {
+            "name": "탈 것 : 플라워 오리 튜브",
+            "type": "mount",
+            "target": [],
+            "contain": [],
+            "tradable": true,
+            "id": "탈 것 : 플라워 오리 튜브",
+            "design": ""
+        },
+        "오리 튜브 선택 상자": {
+            "name": "오리 튜브 선택 상자",
+            "type": "mountPackage",
+            "target": [],
+            "contain": [
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "mount",
+                    "itemIdLst": [
+                        "탈 것 : 삐딱한 오리 튜브"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "mount",
+                    "itemIdLst": [
+                        "탈 것 : 카우보이 오리 튜브"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "mount",
+                    "itemIdLst": [
+                        "탈 것 : 어린이 오리 튜브"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "mount",
+                    "itemIdLst": [
+                        "탈 것 : 마린 오리 튜브"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "mount",
+                    "itemIdLst": [
+                        "탈 것 : 플라워 오리 튜브"
+                    ]
+                }
+            ],
+            "tradable": true,
+            "id": "오리 튜브 선택 상자",
+            "design": ""
+        },
+        "소울이터 런칭": {
+            "name": "소울이터 런칭",
+            "type": "package_type1",
+            "target": [],
+            "contain": [
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "사신 아바타 선택 상자"
+                    ]
+                },
+                {
+                    "className": "",
+                    "design": "",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "사신 무기 선택 상자"
+                    ]
+                }
+            ],
+            "tradable": false,
+            "id": "소울이터 런칭"
+        },
+        "사신 아바타 선택 상자": {
+            "name": "사신 아바타 선택 상자",
+            "type": "avatarSetPackage",
+            "target": [],
+            "contain": [
+                {
+                    "className": "슬레이어",
+                    "design": "영혼의 사신",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "영혼의 사신 세트"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "종말의 사신",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "종말의 사신 세트"
+                    ]
+                }
+            ],
+            "tradable": true,
+            "id": "사신 아바타 선택 상자",
+            "design": ""
+        },
+        "영혼의 사신 세트": {
+            "name": "영혼의 사신 세트",
+            "type": "avatarPackage",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [
+                {
+                    "className": "소울이터",
+                    "design": "영혼의 사신",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "영혼의 사신 머리_소울이터",
+                        "영혼의 사신 상의_소울이터",
+                        "영혼의 사신 하의_소울이터"
+                    ]
+                }
+            ],
+            "tradable": true,
+            "id": "영혼의 사신 세트",
+            "design": "영혼의 사신"
+        },
+        "종말의 사신 세트": {
+            "name": "종말의 사신 세트",
+            "type": "avatarPackage",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [
+                {
+                    "className": "소울이터",
+                    "design": "종말의 사신",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "종말의 사신 머리_소울이터",
+                        "종말의 사신 상의_소울이터",
+                        "종말의 사신 하의_소울이터"
+                    ]
+                }
+            ],
+            "tradable": true,
+            "id": "종말의 사신 세트",
+            "design": "종말의 사신"
+        },
+        "영혼의 사신 머리_소울이터": {
+            "name": "영혼의 사신 머리",
+            "type": "avatar-hat",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "영혼의 사신 머리_소울이터",
+            "design": "영혼의 사신"
+        },
+        "영혼의 사신 상의_소울이터": {
+            "name": "영혼의 사신 상의",
+            "type": "avatar-top",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "영혼의 사신 상의_소울이터",
+            "design": "영혼의 사신"
+        },
+        "영혼의 사신 하의_소울이터": {
+            "name": "영혼의 사신 하의",
+            "type": "avatar-pants",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "영혼의 사신 하의_소울이터",
+            "design": "영혼의 사신"
+        },
+        "종말의 사신 머리_소울이터": {
+            "name": "종말의 사신 머리",
+            "type": "avatar-hat",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "종말의 사신 머리_소울이터",
+            "design": "종말의 사신"
+        },
+        "종말의 사신 상의_소울이터": {
+            "name": "종말의 사신 상의",
+            "type": "avatar-top",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "종말의 사신 상의_소울이터",
+            "design": "종말의 사신"
+        },
+        "종말의 사신 하의_소울이터": {
+            "name": "종말의 사신 하의",
+            "type": "avatar-pants",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "종말의 사신 하의_소울이터",
+            "design": "종말의 사신"
+        },
+        "사신 무기 선택 상자": {
+            "name": "사신 무기 선택 상자",
+            "type": "weaponPackage",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [
+                {
+                    "className": "소울이터",
+                    "design": "영혼의 사신",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "영혼의 사신 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "종말의 사신",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "종말의 사신 데스사이드_소울이터"
+                    ]
+                }
+            ],
+            "tradable": true,
+            "id": "사신 무기 선택 상자",
+            "design": ""
+        },
+        "영혼의 사신 데스사이드_소울이터": {
+            "name": "영혼의 사신 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "영혼의 사신 데스사이드_소울이터",
+            "design": "영혼의 사신"
+        },
+        "종말의 사신 데스사이드_소울이터": {
+            "name": "종말의 사신 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "종말의 사신 데스사이드_소울이터",
+            "design": "종말의 사신"
+        },
         "2023 1st 네리아의 드레스룸": {
             "name": "2023 1st 네리아의 드레스룸",
             "type": "package_type3",
@@ -6038,6 +9551,7 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -6050,6 +9564,7 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -6089,6 +9604,14 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "위쳐의 한손검_홀리나이트"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "위쳐",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "위쳐의 대검_슬레이어"
                     ]
                 },
                 {
@@ -6185,6 +9708,14 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "위쳐의 대거_리퍼"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "위쳐",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "위쳐의 데스사이드_소울이터"
                     ]
                 },
                 {
@@ -6290,6 +9821,17 @@
             "contain": [],
             "tradable": true,
             "id": "위쳐의 한손검_홀리나이트",
+            "design": "위쳐"
+        },
+        "위쳐의 대검_슬레이어": {
+            "name": "위쳐의 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "위쳐의 대검_슬레이어",
             "design": "위쳐"
         },
         "위쳐의 마법 덱_아르카나": {
@@ -6422,6 +9964,17 @@
             "contain": [],
             "tradable": true,
             "id": "위쳐의 대거_리퍼",
+            "design": "위쳐"
+        },
+        "위쳐의 데스사이드_소울이터": {
+            "name": "위쳐의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "위쳐의 데스사이드_소울이터",
             "design": "위쳐"
         },
         "위쳐의 활_호크아이": {
@@ -8006,6 +11559,22 @@
                     ]
                 },
                 {
+                    "className": "슬레이어",
+                    "design": "4주년 용기 아바타",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "4주년 용기 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "4주년 마음 아바타",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "4주년 마음 대검_슬레이어"
+                    ]
+                },
+                {
                     "className": "아르카나",
                     "design": "4주년 용기 아바타",
                     "category": "weapon",
@@ -8195,6 +11764,22 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "4주년 마음 대거_리퍼"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "4주년 용기 아바타",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "4주년 용기 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "4주년 마음 아바타",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "4주년 마음 데스사이드_소울이터"
                     ]
                 },
                 {
@@ -8400,6 +11985,28 @@
             "contain": [],
             "tradable": true,
             "id": "4주년 마음 한손검_홀리나이트",
+            "design": "4주년 마음 아바타"
+        },
+        "4주년 용기 대검_슬레이어": {
+            "name": "4주년 용기 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "4주년 용기 대검_슬레이어",
+            "design": "4주년 용기 아바타"
+        },
+        "4주년 마음 대검_슬레이어": {
+            "name": "4주년 마음 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "4주년 마음 대검_슬레이어",
             "design": "4주년 마음 아바타"
         },
         "4주년 용기 마법 덱_아르카나": {
@@ -8664,6 +12271,28 @@
             "contain": [],
             "tradable": true,
             "id": "4주년 마음 대거_리퍼",
+            "design": "4주년 마음 아바타"
+        },
+        "4주년 용기 데스사이드_소울이터": {
+            "name": "4주년 용기 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "4주년 용기 데스사이드_소울이터",
+            "design": "4주년 용기 아바타"
+        },
+        "4주년 마음 데스사이드_소울이터": {
+            "name": "4주년 마음 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "4주년 마음 데스사이드_소울이터",
             "design": "4주년 마음 아바타"
         },
         "4주년 용기 활_호크아이": {
@@ -9163,28 +12792,6 @@
             "tradable": true,
             "id": "모험의 노래 무기 선택 상자 [슬레이어]",
             "design": ""
-        },
-        "4주년 용기 대검_슬레이어": {
-            "name": "4주년 용기 undefined",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "4주년 용기 대검_슬레이어",
-            "design": "4주년 용기 아바타"
-        },
-        "4주년 마음 대검_슬레이어": {
-            "name": "4주년 마음 undefined",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "4주년 마음 대검_슬레이어",
-            "design": "4주년 마음 아바타"
         },
         "고딕 아바타": {
             "name": "고딕 아바타",
@@ -14200,6 +17807,30 @@
                     ]
                 },
                 {
+                    "className": "슬레이어",
+                    "design": "라일라이 비치웨어",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "라일라이 비치웨어 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "티카티카 비치웨어",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "티카티카 비치웨어 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "테돈바드 비치웨어",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "테돈바드 비치웨어 대검_슬레이어"
+                    ]
+                },
+                {
                     "className": "아르카나",
                     "design": "라일라이 비치웨어",
                     "category": "weapon",
@@ -14485,6 +18116,30 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "테돈바드 비치웨어 대거_리퍼"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "라일라이 비치웨어",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "라일라이 비치웨어 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "티카티카 비치웨어",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "티카티카 비치웨어 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "테돈바드 비치웨어",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "테돈바드 비치웨어 데스사이드_소울이터"
                     ]
                 },
                 {
@@ -14790,6 +18445,39 @@
             "contain": [],
             "tradable": true,
             "id": "테돈바드 비치웨어 한손검_홀리나이트",
+            "design": "테돈바드 비치웨어"
+        },
+        "라일라이 비치웨어 대검_슬레이어": {
+            "name": "라일라이 비치웨어 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "라일라이 비치웨어 대검_슬레이어",
+            "design": "라일라이 비치웨어"
+        },
+        "티카티카 비치웨어 대검_슬레이어": {
+            "name": "티카티카 비치웨어 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "티카티카 비치웨어 대검_슬레이어",
+            "design": "티카티카 비치웨어"
+        },
+        "테돈바드 비치웨어 대검_슬레이어": {
+            "name": "테돈바드 비치웨어 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "테돈바드 비치웨어 대검_슬레이어",
             "design": "테돈바드 비치웨어"
         },
         "라일라이 비치웨어 마법 덱_아르카나": {
@@ -15186,6 +18874,39 @@
             "contain": [],
             "tradable": true,
             "id": "테돈바드 비치웨어 대거_리퍼",
+            "design": "테돈바드 비치웨어"
+        },
+        "라일라이 비치웨어 데스사이드_소울이터": {
+            "name": "라일라이 비치웨어 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "라일라이 비치웨어 데스사이드_소울이터",
+            "design": "라일라이 비치웨어"
+        },
+        "티카티카 비치웨어 데스사이드_소울이터": {
+            "name": "티카티카 비치웨어 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "티카티카 비치웨어 데스사이드_소울이터",
+            "design": "티카티카 비치웨어"
+        },
+        "테돈바드 비치웨어 데스사이드_소울이터": {
+            "name": "테돈바드 비치웨어 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "테돈바드 비치웨어 데스사이드_소울이터",
             "design": "테돈바드 비치웨어"
         },
         "라일라이 비치웨어 활_호크아이": {
@@ -16480,6 +20201,22 @@
                     ]
                 },
                 {
+                    "className": "슬레이어",
+                    "design": "단죄의 프리스트",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "단죄의 프리스트 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "심판의 프리스트",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "심판의 프리스트 대검_슬레이어"
+                    ]
+                },
+                {
                     "className": "아르카나",
                     "design": "단죄의 프리스트",
                     "category": "weapon",
@@ -16669,6 +20406,22 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "심판의 프리스트 대거_리퍼"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "단죄의 프리스트",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "단죄의 프리스트 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "심판의 프리스트",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "심판의 프리스트 데스사이드_소울이터"
                     ]
                 },
                 {
@@ -16874,6 +20627,28 @@
             "contain": [],
             "tradable": true,
             "id": "심판의 프리스트 한손검_홀리나이트",
+            "design": "심판의 프리스트"
+        },
+        "단죄의 프리스트 대검_슬레이어": {
+            "name": "단죄의 프리스트 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "단죄의 프리스트 대검_슬레이어",
+            "design": "단죄의 프리스트"
+        },
+        "심판의 프리스트 대검_슬레이어": {
+            "name": "심판의 프리스트 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "심판의 프리스트 대검_슬레이어",
             "design": "심판의 프리스트"
         },
         "단죄의 프리스트 마법 덱_아르카나": {
@@ -17138,6 +20913,28 @@
             "contain": [],
             "tradable": true,
             "id": "심판의 프리스트 대거_리퍼",
+            "design": "심판의 프리스트"
+        },
+        "단죄의 프리스트 데스사이드_소울이터": {
+            "name": "단죄의 프리스트 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "단죄의 프리스트 데스사이드_소울이터",
+            "design": "단죄의 프리스트"
+        },
+        "심판의 프리스트 데스사이드_소울이터": {
+            "name": "심판의 프리스트 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "심판의 프리스트 데스사이드_소울이터",
             "design": "심판의 프리스트"
         },
         "단죄의 프리스트 활_호크아이": {
@@ -20156,6 +23953,7 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -20168,6 +23966,7 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -20238,6 +24037,22 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "천공의 능력 한손검_홀리나이트"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "천공의 권세",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "천공의 권세 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "천공의 능력",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "천공의 능력 대검_슬레이어"
                     ]
                 },
                 {
@@ -20433,6 +24248,22 @@
                     ]
                 },
                 {
+                    "className": "소울이터",
+                    "design": "천공의 권세",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "천공의 권세 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "천공의 능력",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "천공의 능력 데스사이드_소울이터"
+                    ]
+                },
+                {
                     "className": "호크아이",
                     "design": "천공의 권세",
                     "category": "weapon",
@@ -20619,6 +24450,28 @@
             "contain": [],
             "tradable": true,
             "id": "천공의 능력 한손검_홀리나이트",
+            "design": "천공의 능력"
+        },
+        "천공의 권세 대검_슬레이어": {
+            "name": "천공의 권세 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "천공의 권세 대검_슬레이어",
+            "design": "천공의 권세"
+        },
+        "천공의 능력 대검_슬레이어": {
+            "name": "천공의 능력 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "천공의 능력 대검_슬레이어",
             "design": "천공의 능력"
         },
         "천공의 권세 마법 덱_아르카나": {
@@ -20883,6 +24736,28 @@
             "contain": [],
             "tradable": true,
             "id": "천공의 능력 대거_리퍼",
+            "design": "천공의 능력"
+        },
+        "천공의 권세 데스사이드_소울이터": {
+            "name": "천공의 권세 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "천공의 권세 데스사이드_소울이터",
+            "design": "천공의 권세"
+        },
+        "천공의 능력 데스사이드_소울이터": {
+            "name": "천공의 능력 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "천공의 능력 데스사이드_소울이터",
             "design": "천공의 능력"
         },
         "천공의 권세 활_호크아이": {
@@ -24023,6 +27898,7 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -24035,6 +27911,7 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -24105,6 +27982,22 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "새해의 애정 한손검_홀리나이트"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "새해의 행복",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "새해의 행복 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "새해의 애정",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "새해의 애정 대검_슬레이어"
                     ]
                 },
                 {
@@ -24300,6 +28193,22 @@
                     ]
                 },
                 {
+                    "className": "소울이터",
+                    "design": "새해의 행복",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "새해의 행복 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "새해의 애정",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "새해의 애정 데스사이드_소울이터"
+                    ]
+                },
+                {
                     "className": "호크아이",
                     "design": "새해의 행복",
                     "category": "weapon",
@@ -24486,6 +28395,28 @@
             "contain": [],
             "tradable": true,
             "id": "새해의 애정 한손검_홀리나이트",
+            "design": "새해의 애정"
+        },
+        "새해의 행복 대검_슬레이어": {
+            "name": "새해의 행복 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "새해의 행복 대검_슬레이어",
+            "design": "새해의 행복"
+        },
+        "새해의 애정 대검_슬레이어": {
+            "name": "새해의 애정 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "새해의 애정 대검_슬레이어",
             "design": "새해의 애정"
         },
         "새해의 행복 마법 덱_아르카나": {
@@ -24750,6 +28681,28 @@
             "contain": [],
             "tradable": true,
             "id": "새해의 애정 대거_리퍼",
+            "design": "새해의 애정"
+        },
+        "새해의 행복 데스사이드_소울이터": {
+            "name": "새해의 행복 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "새해의 행복 데스사이드_소울이터",
+            "design": "새해의 행복"
+        },
+        "새해의 애정 데스사이드_소울이터": {
+            "name": "새해의 애정 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "새해의 애정 데스사이드_소울이터",
             "design": "새해의 애정"
         },
         "새해의 행복 활_호크아이": {
@@ -25053,6 +29006,7 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -25065,6 +29019,7 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -25267,7 +29222,7 @@
         },
         "마법 침대 탈 것 선택 상자": {
             "name": "마법 침대 탈 것 선택 상자",
-            "type": "petPackage",
+            "type": "mountPackage",
             "target": [],
             "contain": [
                 {
@@ -28741,6 +32696,7 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -28753,6 +32709,7 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -28822,6 +32779,22 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "3주년 미래 한손검_홀리나이트"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "3주년 추억",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "3주년 추억 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "3주년 미래",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "3주년 미래 대검_슬레이어"
                     ]
                 },
                 {
@@ -29017,6 +32990,22 @@
                     ]
                 },
                 {
+                    "className": "소울이터",
+                    "design": "3주년 추억",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "3주년 추억 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "3주년 미래",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "3주년 미래 데스사이드_소울이터"
+                    ]
+                },
+                {
                     "className": "호크아이",
                     "design": "3주년 추억",
                     "category": "weapon",
@@ -29187,6 +33176,28 @@
             "contain": [],
             "tradable": true,
             "id": "3주년 미래 한손검_홀리나이트",
+            "design": "3주년 미래"
+        },
+        "3주년 추억 대검_슬레이어": {
+            "name": "3주년 추억 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "3주년 추억 대검_슬레이어",
+            "design": "3주년 추억"
+        },
+        "3주년 미래 대검_슬레이어": {
+            "name": "3주년 미래 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "3주년 미래 대검_슬레이어",
             "design": "3주년 미래"
         },
         "3주년 추억 마법 덱_아르카나": {
@@ -29451,6 +33462,28 @@
             "contain": [],
             "tradable": true,
             "id": "3주년 미래 대거_리퍼",
+            "design": "3주년 미래"
+        },
+        "3주년 추억 데스사이드_소울이터": {
+            "name": "3주년 추억 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "3주년 추억 데스사이드_소울이터",
+            "design": "3주년 추억"
+        },
+        "3주년 미래 데스사이드_소울이터": {
+            "name": "3주년 미래 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "3주년 미래 데스사이드_소울이터",
             "design": "3주년 미래"
         },
         "3주년 추억 활_호크아이": {
@@ -32499,6 +36532,7 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -32511,6 +36545,7 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -32612,6 +36647,30 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "네온 W 한손검_홀리나이트"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "네온 G",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "네온 G 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "네온 R",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "네온 R 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "네온 W",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "네온 W 대검_슬레이어"
                     ]
                 },
                 {
@@ -32903,6 +36962,30 @@
                     ]
                 },
                 {
+                    "className": "소울이터",
+                    "design": "네온 G",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "네온 G 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "네온 R",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "네온 R 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "네온 W",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "네온 W 데스사이드_소울이터"
+                    ]
+                },
+                {
                     "className": "호크아이",
                     "design": "네온 G",
                     "category": "weapon",
@@ -33157,6 +37240,39 @@
             "contain": [],
             "tradable": true,
             "id": "네온 W 한손검_홀리나이트",
+            "design": "네온 W"
+        },
+        "네온 G 대검_슬레이어": {
+            "name": "네온 G 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "네온 G 대검_슬레이어",
+            "design": "네온 G"
+        },
+        "네온 R 대검_슬레이어": {
+            "name": "네온 R 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "네온 R 대검_슬레이어",
+            "design": "네온 R"
+        },
+        "네온 W 대검_슬레이어": {
+            "name": "네온 W 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "네온 W 대검_슬레이어",
             "design": "네온 W"
         },
         "네온 G 마법 덱_아르카나": {
@@ -33553,6 +37669,39 @@
             "contain": [],
             "tradable": true,
             "id": "네온 W 대거_리퍼",
+            "design": "네온 W"
+        },
+        "네온 G 데스사이드_소울이터": {
+            "name": "네온 G 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "네온 G 데스사이드_소울이터",
+            "design": "네온 G"
+        },
+        "네온 R 데스사이드_소울이터": {
+            "name": "네온 R 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "네온 R 데스사이드_소울이터",
+            "design": "네온 R"
+        },
+        "네온 W 데스사이드_소울이터": {
+            "name": "네온 W 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "네온 W 데스사이드_소울이터",
             "design": "네온 W"
         },
         "네온 G 활_호크아이": {
@@ -36576,6 +40725,7 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -36587,6 +40737,7 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -36688,6 +40839,30 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "파도의 소년 한손검_홀리나이트"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "태양",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "태양의 소녀 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "모래",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "모래의 소녀 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "파도",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "파도의 소녀 대검_슬레이어"
                     ]
                 },
                 {
@@ -36955,6 +41130,30 @@
                     ]
                 },
                 {
+                    "className": "소울이터",
+                    "design": "태양",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "태양의 소녀 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "모래",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "모래의 소녀 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "파도",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "파도의 소녀 데스사이드_소울이터"
+                    ]
+                },
+                {
                     "className": "호크아이",
                     "design": "태양",
                     "category": "weapon",
@@ -37209,6 +41408,39 @@
             "contain": [],
             "tradable": true,
             "id": "파도의 소년 한손검_홀리나이트",
+            "design": "파도"
+        },
+        "태양의 소녀 대검_슬레이어": {
+            "name": "태양의 소녀 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "태양의 소녀 대검_슬레이어",
+            "design": "태양"
+        },
+        "모래의 소녀 대검_슬레이어": {
+            "name": "모래의 소녀 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "모래의 소녀 대검_슬레이어",
+            "design": "모래"
+        },
+        "파도의 소녀 대검_슬레이어": {
+            "name": "파도의 소녀 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "파도의 소녀 대검_슬레이어",
             "design": "파도"
         },
         "태양의 소녀 마법 덱_아르카나": {
@@ -37572,6 +41804,39 @@
             "contain": [],
             "tradable": true,
             "id": "파도의 소녀 대거_리퍼",
+            "design": "파도"
+        },
+        "태양의 소녀 데스사이드_소울이터": {
+            "name": "태양의 소녀 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "태양의 소녀 데스사이드_소울이터",
+            "design": "태양"
+        },
+        "모래의 소녀 데스사이드_소울이터": {
+            "name": "모래의 소녀 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "모래의 소녀 데스사이드_소울이터",
+            "design": "모래"
+        },
+        "파도의 소녀 데스사이드_소울이터": {
+            "name": "파도의 소녀 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "파도의 소녀 데스사이드_소울이터",
             "design": "파도"
         },
         "태양의 소년 활_호크아이": {
@@ -39439,6 +43704,7 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -39450,6 +43716,7 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -39551,6 +43818,30 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "잿빛의 명성 한손검_홀리나이트"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "홍염의 명성",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "홍염의 명성 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "혼돈의 명성",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "혼돈의 명성 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "잿빛의 명성",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "잿빛의 명성 대검_슬레이어"
                     ]
                 },
                 {
@@ -39818,6 +44109,30 @@
                     ]
                 },
                 {
+                    "className": "소울이터",
+                    "design": "홍염의 명성",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "홍염의 명성 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "혼돈의 명성",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "혼돈의 명성 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "잿빛의 명성",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "잿빛의 명성 데스사이드_소울이터"
+                    ]
+                },
+                {
                     "className": "호크아이",
                     "design": "홍염의 명성",
                     "category": "weapon",
@@ -40072,6 +44387,39 @@
             "contain": [],
             "tradable": true,
             "id": "잿빛의 명성 한손검_홀리나이트",
+            "design": "잿빛의 명성"
+        },
+        "홍염의 명성 대검_슬레이어": {
+            "name": "홍염의 명성 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "홍염의 명성 대검_슬레이어",
+            "design": "홍염의 명성"
+        },
+        "혼돈의 명성 대검_슬레이어": {
+            "name": "혼돈의 명성 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "혼돈의 명성 대검_슬레이어",
+            "design": "혼돈의 명성"
+        },
+        "잿빛의 명성 대검_슬레이어": {
+            "name": "잿빛의 명성 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "잿빛의 명성 대검_슬레이어",
             "design": "잿빛의 명성"
         },
         "홍염의 명성 마법 덱_아르카나": {
@@ -40435,6 +44783,39 @@
             "contain": [],
             "tradable": true,
             "id": "잿빛의 명성 대거_리퍼",
+            "design": "잿빛의 명성"
+        },
+        "홍염의 명성 데스사이드_소울이터": {
+            "name": "홍염의 명성 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "홍염의 명성 데스사이드_소울이터",
+            "design": "홍염의 명성"
+        },
+        "혼돈의 명성 데스사이드_소울이터": {
+            "name": "혼돈의 명성 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "혼돈의 명성 데스사이드_소울이터",
+            "design": "혼돈의 명성"
+        },
+        "잿빛의 명성 데스사이드_소울이터": {
+            "name": "잿빛의 명성 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "잿빛의 명성 데스사이드_소울이터",
             "design": "잿빛의 명성"
         },
         "홍염의 명성 활_호크아이": {
@@ -41475,6 +45856,7 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -41486,6 +45868,7 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -41555,6 +45938,22 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "광휘의 통치자 한손검_홀리나이트"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "심연의 통치자",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "심연의 통치자 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "광휘의 통치자",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "광휘의 통치자 대검_슬레이어"
                     ]
                 },
                 {
@@ -41734,6 +46133,22 @@
                     ]
                 },
                 {
+                    "className": "소울이터",
+                    "design": "심연의 통치자",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "심연의 통치자 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "광휘의 통치자",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "광휘의 통치자 데스사이드_소울이터"
+                    ]
+                },
+                {
                     "className": "호크아이",
                     "design": "심연의 통치자",
                     "category": "weapon",
@@ -41904,6 +46319,28 @@
             "contain": [],
             "tradable": true,
             "id": "광휘의 통치자 한손검_홀리나이트",
+            "design": "광휘의 통치자"
+        },
+        "심연의 통치자 대검_슬레이어": {
+            "name": "심연의 통치자 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "심연의 통치자 대검_슬레이어",
+            "design": "심연의 통치자"
+        },
+        "광휘의 통치자 대검_슬레이어": {
+            "name": "광휘의 통치자 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "광휘의 통치자 대검_슬레이어",
             "design": "광휘의 통치자"
         },
         "심연의 통치자 마법 덱_아르카나": {
@@ -42146,6 +46583,28 @@
             "contain": [],
             "tradable": true,
             "id": "광휘의 통치자 대거_리퍼",
+            "design": "광휘의 통치자"
+        },
+        "심연의 통치자 데스사이드_소울이터": {
+            "name": "심연의 통치자 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "심연의 통치자 데스사이드_소울이터",
+            "design": "심연의 통치자"
+        },
+        "광휘의 통치자 데스사이드_소울이터": {
+            "name": "광휘의 통치자 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "광휘의 통치자 데스사이드_소울이터",
             "design": "광휘의 통치자"
         },
         "심연의 통치자 활_호크아이": {
@@ -42571,6 +47030,7 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -42582,6 +47042,7 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -42683,6 +47144,30 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "침묵하는 요괴 한손검_홀리나이트"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "찬란한",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "찬란한 undefined 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "맹목적인",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "맹목적인 undefined 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "침묵하는",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "침묵하는 undefined 대검_슬레이어"
                     ]
                 },
                 {
@@ -42950,6 +47435,30 @@
                     ]
                 },
                 {
+                    "className": "소울이터",
+                    "design": "찬란한",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "찬란한 undefined 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "맹목적인",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "맹목적인 undefined 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "침묵하는",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "침묵하는 undefined 데스사이드_소울이터"
+                    ]
+                },
+                {
                     "className": "호크아이",
                     "design": "찬란한",
                     "category": "weapon",
@@ -43204,6 +47713,39 @@
             "contain": [],
             "tradable": true,
             "id": "침묵하는 요괴 한손검_홀리나이트",
+            "design": "침묵하는"
+        },
+        "찬란한 undefined 대검_슬레이어": {
+            "name": "찬란한 undefined 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "찬란한 undefined 대검_슬레이어",
+            "design": "찬란한"
+        },
+        "맹목적인 undefined 대검_슬레이어": {
+            "name": "맹목적인 undefined 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "맹목적인 undefined 대검_슬레이어",
+            "design": "맹목적인"
+        },
+        "침묵하는 undefined 대검_슬레이어": {
+            "name": "침묵하는 undefined 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "침묵하는 undefined 대검_슬레이어",
             "design": "침묵하는"
         },
         "찬란한 지혜 마법 덱_아르카나": {
@@ -43567,6 +48109,39 @@
             "contain": [],
             "tradable": true,
             "id": "침묵하는 승천 대거_리퍼",
+            "design": "침묵하는"
+        },
+        "찬란한 undefined 데스사이드_소울이터": {
+            "name": "찬란한 undefined 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "찬란한 undefined 데스사이드_소울이터",
+            "design": "찬란한"
+        },
+        "맹목적인 undefined 데스사이드_소울이터": {
+            "name": "맹목적인 undefined 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "맹목적인 undefined 데스사이드_소울이터",
+            "design": "맹목적인"
+        },
+        "침묵하는 undefined 데스사이드_소울이터": {
+            "name": "침묵하는 undefined 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "침묵하는 undefined 데스사이드_소울이터",
             "design": "침묵하는"
         },
         "찬란한 찰나 활_호크아이": {
@@ -49326,6 +53901,7 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -49336,6 +53912,7 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -49468,6 +54045,38 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "한밤의 별 한손검_홀리나이트"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "눈꽃의 심장",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "눈꽃의 심장 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "오로라의 눈",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "오로라의 눈 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "트리의 영혼",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "트리의 영혼 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "한밤의 별",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "한밤의 별 대검_슬레이어"
                     ]
                 },
                 {
@@ -49791,6 +54400,38 @@
                     ]
                 },
                 {
+                    "className": "소울이터",
+                    "design": "눈꽃의 심장",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "눈꽃의 심장 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "오로라의 눈",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "오로라의 눈 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "트리의 영혼",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "트리의 영혼 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "한밤의 별",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "한밤의 별 데스사이드_소울이터"
+                    ]
+                },
+                {
                     "className": "호크아이",
                     "design": "눈꽃의 심장",
                     "category": "weapon",
@@ -50097,6 +54738,50 @@
             "contain": [],
             "tradable": true,
             "id": "한밤의 별 한손검_홀리나이트",
+            "design": "한밤의 별"
+        },
+        "눈꽃의 심장 대검_슬레이어": {
+            "name": "눈꽃의 심장 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "눈꽃의 심장 대검_슬레이어",
+            "design": "눈꽃의 심장"
+        },
+        "오로라의 눈 대검_슬레이어": {
+            "name": "오로라의 눈 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "오로라의 눈 대검_슬레이어",
+            "design": "오로라의 눈"
+        },
+        "트리의 영혼 대검_슬레이어": {
+            "name": "트리의 영혼 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "트리의 영혼 대검_슬레이어",
+            "design": "트리의 영혼"
+        },
+        "한밤의 별 대검_슬레이어": {
+            "name": "한밤의 별 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "한밤의 별 대검_슬레이어",
             "design": "한밤의 별"
         },
         "눈꽃의 심장 마법 덱_아르카나": {
@@ -50537,6 +55222,50 @@
             "contain": [],
             "tradable": true,
             "id": "한밤의 별 대거_리퍼",
+            "design": "한밤의 별"
+        },
+        "눈꽃의 심장 데스사이드_소울이터": {
+            "name": "눈꽃의 심장 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "눈꽃의 심장 데스사이드_소울이터",
+            "design": "눈꽃의 심장"
+        },
+        "오로라의 눈 데스사이드_소울이터": {
+            "name": "오로라의 눈 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "오로라의 눈 데스사이드_소울이터",
+            "design": "오로라의 눈"
+        },
+        "트리의 영혼 데스사이드_소울이터": {
+            "name": "트리의 영혼 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "트리의 영혼 데스사이드_소울이터",
+            "design": "트리의 영혼"
+        },
+        "한밤의 별 데스사이드_소울이터": {
+            "name": "한밤의 별 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "한밤의 별 데스사이드_소울이터",
             "design": "한밤의 별"
         },
         "눈꽃의 심장 활_호크아이": {
@@ -63171,6 +67900,7 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -63180,6 +67910,7 @@
                 "창술사",
                 "블레이드",
                 "데모닉",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터"
@@ -63279,6 +68010,30 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "새벽빛 한손검_홀리나이트"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "여름빛",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "여름빛 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "노을빛",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "노을빛 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "새벽빛",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "새벽빛 대검_슬레이어"
                     ]
                 },
                 {
@@ -63498,6 +68253,30 @@
                     ]
                 },
                 {
+                    "className": "소울이터",
+                    "design": "여름빛",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "여름빛 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "노을빛",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "노을빛 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "새벽빛",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "새벽빛 데스사이드_소울이터"
+                    ]
+                },
+                {
                     "className": "호크아이",
                     "design": "여름빛",
                     "category": "weapon",
@@ -63704,6 +68483,39 @@
             "contain": [],
             "tradable": true,
             "id": "새벽빛 한손검_홀리나이트",
+            "design": "새벽빛"
+        },
+        "여름빛 대검_슬레이어": {
+            "name": "여름빛 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "여름빛 대검_슬레이어",
+            "design": "여름빛"
+        },
+        "노을빛 대검_슬레이어": {
+            "name": "노을빛 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "노을빛 대검_슬레이어",
+            "design": "노을빛"
+        },
+        "새벽빛 대검_슬레이어": {
+            "name": "새벽빛 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "새벽빛 대검_슬레이어",
             "design": "새벽빛"
         },
         "여름빛 마법 덱_아르카나": {
@@ -64001,6 +68813,39 @@
             "contain": [],
             "tradable": true,
             "id": "새벽빛 데모닉웨폰_데모닉",
+            "design": "새벽빛"
+        },
+        "여름빛 데스사이드_소울이터": {
+            "name": "여름빛 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "여름빛 데스사이드_소울이터",
+            "design": "여름빛"
+        },
+        "노을빛 데스사이드_소울이터": {
+            "name": "노을빛 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "노을빛 데스사이드_소울이터",
+            "design": "노을빛"
+        },
+        "새벽빛 데스사이드_소울이터": {
+            "name": "새벽빛 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "새벽빛 데스사이드_소울이터",
             "design": "새벽빛"
         },
         "여름빛 활_호크아이": {
@@ -65410,6 +70255,7 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -65419,6 +70265,7 @@
                 "창술사",
                 "블레이드",
                 "데모닉",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터"
@@ -65550,6 +70397,38 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "종말의 한손검_홀리나이트"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "어둠의",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "어둠의 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "심연의",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "심연의 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "욕망의",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "욕망의 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "종말의",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "종말의 대검_슬레이어"
                     ]
                 },
                 {
@@ -65841,6 +70720,38 @@
                     ]
                 },
                 {
+                    "className": "소울이터",
+                    "design": "어둠의",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "어둠의 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "심연의",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "심연의 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "욕망의",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "욕망의 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "종말의",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "종말의 데스사이드_소울이터"
+                    ]
+                },
+                {
                     "className": "호크아이",
                     "design": "어둠의",
                     "category": "weapon",
@@ -66115,6 +71026,50 @@
             "contain": [],
             "tradable": true,
             "id": "종말의 한손검_홀리나이트",
+            "design": "종말의"
+        },
+        "어둠의 대검_슬레이어": {
+            "name": "어둠의 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "어둠의 대검_슬레이어",
+            "design": "어둠의"
+        },
+        "심연의 대검_슬레이어": {
+            "name": "심연의 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "심연의 대검_슬레이어",
+            "design": "심연의"
+        },
+        "욕망의 대검_슬레이어": {
+            "name": "욕망의 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "욕망의 대검_슬레이어",
+            "design": "욕망의"
+        },
+        "종말의 대검_슬레이어": {
+            "name": "종말의 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "종말의 대검_슬레이어",
             "design": "종말의"
         },
         "어둠의 마법 덱_아르카나": {
@@ -66511,6 +71466,50 @@
             "contain": [],
             "tradable": true,
             "id": "종말의 데모닉웨폰_데모닉",
+            "design": "종말의"
+        },
+        "어둠의 데스사이드_소울이터": {
+            "name": "어둠의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "어둠의 데스사이드_소울이터",
+            "design": "어둠의"
+        },
+        "심연의 데스사이드_소울이터": {
+            "name": "심연의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "심연의 데스사이드_소울이터",
+            "design": "심연의"
+        },
+        "욕망의 데스사이드_소울이터": {
+            "name": "욕망의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "욕망의 데스사이드_소울이터",
+            "design": "욕망의"
+        },
+        "종말의 데스사이드_소울이터": {
+            "name": "종말의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "종말의 데스사이드_소울이터",
             "design": "종말의"
         },
         "어둠의 활_호크아이": {
@@ -70179,6 +75178,7 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -70188,6 +75188,7 @@
                 "창술사",
                 "블레이드",
                 "데모닉",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터"
@@ -70287,6 +75288,30 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "거룩한 밤의 한손검_홀리나이트"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "고요한 밤",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "고요한 밤의 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "순수한 밤",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "순수한 밤의 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "거룩한 밤",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "거룩한 밤의 대검_슬레이어"
                     ]
                 },
                 {
@@ -70506,6 +75531,30 @@
                     ]
                 },
                 {
+                    "className": "소울이터",
+                    "design": "고요한 밤",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "고요한 밤의 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "순수한 밤",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "순수한 밤의 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "거룩한 밤",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "거룩한 밤의 데스사이드_소울이터"
+                    ]
+                },
+                {
                     "className": "호크아이",
                     "design": "고요한 밤",
                     "category": "weapon",
@@ -70712,6 +75761,39 @@
             "contain": [],
             "tradable": true,
             "id": "거룩한 밤의 한손검_홀리나이트",
+            "design": "거룩한 밤"
+        },
+        "고요한 밤의 대검_슬레이어": {
+            "name": "고요한 밤의 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "고요한 밤의 대검_슬레이어",
+            "design": "고요한 밤"
+        },
+        "순수한 밤의 대검_슬레이어": {
+            "name": "순수한 밤의 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "순수한 밤의 대검_슬레이어",
+            "design": "순수한 밤"
+        },
+        "거룩한 밤의 대검_슬레이어": {
+            "name": "거룩한 밤의 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "거룩한 밤의 대검_슬레이어",
             "design": "거룩한 밤"
         },
         "고요한 밤의 마법 덱_아르카나": {
@@ -71009,6 +76091,39 @@
             "contain": [],
             "tradable": true,
             "id": "거룩한 밤의 데모닉웨폰_데모닉",
+            "design": "거룩한 밤"
+        },
+        "고요한 밤의 데스사이드_소울이터": {
+            "name": "고요한 밤의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "고요한 밤의 데스사이드_소울이터",
+            "design": "고요한 밤"
+        },
+        "순수한 밤의 데스사이드_소울이터": {
+            "name": "순수한 밤의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "순수한 밤의 데스사이드_소울이터",
+            "design": "순수한 밤"
+        },
+        "거룩한 밤의 데스사이드_소울이터": {
+            "name": "거룩한 밤의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "거룩한 밤의 데스사이드_소울이터",
             "design": "거룩한 밤"
         },
         "고요한 밤의 활_호크아이": {
@@ -72212,6 +77327,7 @@
                 "버서커",
                 "디스트로이어",
                 "워로드",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -72221,6 +77337,7 @@
                 "창술사",
                 "블레이드",
                 "데모닉",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터"
@@ -72296,6 +77413,30 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "의지의 랜스_워로드"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "영광",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "영광의 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "명예",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "명예의 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "의지",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "의지의 대검_슬레이어"
                     ]
                 },
                 {
@@ -72515,6 +77656,30 @@
                     ]
                 },
                 {
+                    "className": "소울이터",
+                    "design": "영광",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "영광의 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "명예",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "명예의 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "의지",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "의지의 데스사이드_소울이터"
+                    ]
+                },
+                {
                     "className": "호크아이",
                     "design": "영광",
                     "category": "weapon",
@@ -72688,6 +77853,39 @@
             "contain": [],
             "tradable": true,
             "id": "의지의 랜스_워로드",
+            "design": "의지"
+        },
+        "영광의 대검_슬레이어": {
+            "name": "영광의 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "영광의 대검_슬레이어",
+            "design": "영광"
+        },
+        "명예의 대검_슬레이어": {
+            "name": "명예의 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "명예의 대검_슬레이어",
+            "design": "명예"
+        },
+        "의지의 대검_슬레이어": {
+            "name": "의지의 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "의지의 대검_슬레이어",
             "design": "의지"
         },
         "영광의 마법 덱_아르카나": {
@@ -72985,6 +78183,39 @@
             "contain": [],
             "tradable": true,
             "id": "의지의 데모닉웨폰_데모닉",
+            "design": "의지"
+        },
+        "영광의 데스사이드_소울이터": {
+            "name": "영광의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "영광의 데스사이드_소울이터",
+            "design": "영광"
+        },
+        "명예의 데스사이드_소울이터": {
+            "name": "명예의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "명예의 데스사이드_소울이터",
+            "design": "명예"
+        },
+        "의지의 데스사이드_소울이터": {
+            "name": "의지의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "의지의 데스사이드_소울이터",
             "design": "의지"
         },
         "영광의 활_호크아이": {
@@ -74041,6 +79272,7 @@
                 "버서커",
                 "디스트로이어",
                 "워로드",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -74050,6 +79282,7 @@
                 "창술사",
                 "블레이드",
                 "데모닉",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터"
@@ -74125,6 +79358,30 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "공포의 랜스_워로드"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "광란",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "광란의 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "악몽",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "악몽의 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "공포",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "공포의 대검_슬레이어"
                     ]
                 },
                 {
@@ -74344,6 +79601,30 @@
                     ]
                 },
                 {
+                    "className": "소울이터",
+                    "design": "광란",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "광란의 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "악몽",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "악몽의 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "공포",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "공포의 데스사이드_소울이터"
+                    ]
+                },
+                {
                     "className": "호크아이",
                     "design": "광란",
                     "category": "weapon",
@@ -74517,6 +79798,39 @@
             "contain": [],
             "tradable": true,
             "id": "공포의 랜스_워로드",
+            "design": "공포"
+        },
+        "광란의 대검_슬레이어": {
+            "name": "광란의 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "광란의 대검_슬레이어",
+            "design": "광란"
+        },
+        "악몽의 대검_슬레이어": {
+            "name": "악몽의 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "악몽의 대검_슬레이어",
+            "design": "악몽"
+        },
+        "공포의 대검_슬레이어": {
+            "name": "공포의 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "공포의 대검_슬레이어",
             "design": "공포"
         },
         "광란의 마법 덱_아르카나": {
@@ -74814,6 +80128,39 @@
             "contain": [],
             "tradable": true,
             "id": "공포의 데모닉웨폰_데모닉",
+            "design": "공포"
+        },
+        "광란의 데스사이드_소울이터": {
+            "name": "광란의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "광란의 데스사이드_소울이터",
+            "design": "광란"
+        },
+        "악몽의 데스사이드_소울이터": {
+            "name": "악몽의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "악몽의 데스사이드_소울이터",
+            "design": "악몽"
+        },
+        "공포의 데스사이드_소울이터": {
+            "name": "공포의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "공포의 데스사이드_소울이터",
             "design": "공포"
         },
         "광란의 활_호크아이": {
@@ -79674,6 +85021,7 @@
                 "버서커",
                 "디스트로이어",
                 "워로드",
+                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -79683,6 +85031,7 @@
                 "창술사",
                 "블레이드",
                 "데모닉",
+                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터"
@@ -79758,6 +85107,30 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "여름의 추억 랜스_워로드"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "해변의 연인",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "해변의 연인 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "바다의 청춘",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "바다의 청춘 대검_슬레이어"
+                    ]
+                },
+                {
+                    "className": "슬레이어",
+                    "design": "여름의 추억",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "여름의 추억 대검_슬레이어"
                     ]
                 },
                 {
@@ -79977,6 +85350,30 @@
                     ]
                 },
                 {
+                    "className": "소울이터",
+                    "design": "해변의 연인",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "해변의 연인 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "바다의 청춘",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "바다의 청춘 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "여름의 추억",
+                    "category": "weapon",
+                    "itemIdLst": [
+                        "여름의 추억 데스사이드_소울이터"
+                    ]
+                },
+                {
                     "className": "호크아이",
                     "design": "해변의 연인",
                     "category": "weapon",
@@ -80150,6 +85547,39 @@
             "contain": [],
             "tradable": true,
             "id": "여름의 추억 랜스_워로드",
+            "design": "여름의 추억"
+        },
+        "해변의 연인 대검_슬레이어": {
+            "name": "해변의 연인 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "해변의 연인 대검_슬레이어",
+            "design": "해변의 연인"
+        },
+        "바다의 청춘 대검_슬레이어": {
+            "name": "바다의 청춘 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "바다의 청춘 대검_슬레이어",
+            "design": "바다의 청춘"
+        },
+        "여름의 추억 대검_슬레이어": {
+            "name": "여름의 추억 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "여름의 추억 대검_슬레이어",
             "design": "여름의 추억"
         },
         "해변의 연인 마법 덱_아르카나": {
@@ -80447,6 +85877,39 @@
             "contain": [],
             "tradable": true,
             "id": "여름의 추억 데모닉웨폰_데모닉",
+            "design": "여름의 추억"
+        },
+        "해변의 연인 데스사이드_소울이터": {
+            "name": "해변의 연인 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "해변의 연인 데스사이드_소울이터",
+            "design": "해변의 연인"
+        },
+        "바다의 청춘 데스사이드_소울이터": {
+            "name": "바다의 청춘 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "바다의 청춘 데스사이드_소울이터",
+            "design": "바다의 청춘"
+        },
+        "여름의 추억 데스사이드_소울이터": {
+            "name": "여름의 추억 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "여름의 추억 데스사이드_소울이터",
             "design": "여름의 추억"
         },
         "해변의 연인 활_호크아이": {
@@ -86162,6 +91625,28 @@
                         "복수의 도약 하의_슬레이어",
                         "복수의 도약 대검_슬레이어"
                     ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "탐식하는 도약",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "탐식하는 도약 머리_소울이터",
+                        "탐식하는 도약 상의_소울이터",
+                        "탐식하는 도약 하의_소울이터",
+                        "탐식하는 도약의 데스사이드_소울이터"
+                    ]
+                },
+                {
+                    "className": "소울이터",
+                    "design": "갈망하는 도약",
+                    "category": "avatar",
+                    "itemIdLst": [
+                        "갈망하는 도약 머리_소울이터",
+                        "갈망하는 도약 상의_소울이터",
+                        "갈망하는 도약 하의_소울이터",
+                        "갈망하는 도약의 데스사이드_소울이터"
+                    ]
                 }
             ],
             "tradable": false,
@@ -88278,6 +93763,94 @@
             "tradable": true,
             "id": "복수의 도약 대검_슬레이어",
             "design": "복수의 도약"
+        },
+        "탐식하는 도약 머리_소울이터": {
+            "name": "탐식하는 도약 머리",
+            "type": "avatar-hat",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "탐식하는 도약 머리_소울이터",
+            "design": "탐식하는 도약"
+        },
+        "탐식하는 도약 상의_소울이터": {
+            "name": "탐식하는 도약 상의",
+            "type": "avatar-top",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "탐식하는 도약 상의_소울이터",
+            "design": "탐식하는 도약"
+        },
+        "탐식하는 도약 하의_소울이터": {
+            "name": "탐식하는 도약 하의",
+            "type": "avatar-pants",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "탐식하는 도약 하의_소울이터",
+            "design": "탐식하는 도약"
+        },
+        "탐식하는 도약의 데스사이드_소울이터": {
+            "name": "탐식하는 도약의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "탐식하는 도약의 데스사이드_소울이터",
+            "design": "탐식하는 도약"
+        },
+        "갈망하는 도약 머리_소울이터": {
+            "name": "갈망하는 도약 머리",
+            "type": "avatar-hat",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "갈망하는 도약 머리_소울이터",
+            "design": "갈망하는 도약"
+        },
+        "갈망하는 도약 상의_소울이터": {
+            "name": "갈망하는 도약 상의",
+            "type": "avatar-top",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "갈망하는 도약 상의_소울이터",
+            "design": "갈망하는 도약"
+        },
+        "갈망하는 도약 하의_소울이터": {
+            "name": "갈망하는 도약 하의",
+            "type": "avatar-pants",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "갈망하는 도약 하의_소울이터",
+            "design": "갈망하는 도약"
+        },
+        "갈망하는 도약의 데스사이드_소울이터": {
+            "name": "갈망하는 도약의 데스사이드",
+            "type": "weapon",
+            "target": [
+                "소울이터"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "갈망하는 도약의 데스사이드_소울이터",
+            "design": "갈망하는 도약"
         }
     },
     "updatedAt": null
