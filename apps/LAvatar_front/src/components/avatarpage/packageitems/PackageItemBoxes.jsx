@@ -100,7 +100,11 @@ export default function PackageItemBoxes({ type }) {
                         itemSpec={itemSpec}
                     />
                     {_.map(children, (c) => (
-                        <ItemView itemSpec={c} depth={depth + 1} />
+                        <ItemView
+                            key={`${c.id}_${depth}`}
+                            itemSpec={c}
+                            depth={depth + 1}
+                        />
                     ))}
                 </div>
             );

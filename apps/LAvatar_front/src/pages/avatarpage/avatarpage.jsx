@@ -41,6 +41,7 @@ function Avatarpage(props) {
     const getPackages = (items) => {
         let r = [];
         for (const id in items) {
+            console.log(id, items[id]);
             if (items[id]['type'].split('_')[0] === 'package') {
                 r.push(items[id]['id']);
             }
