@@ -9,7 +9,8 @@
 .pnp.js
 
 # config
-config.*
+config.development.yaml
+config.production.yaml
 
 
 # testing
