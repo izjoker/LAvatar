@@ -9529,7 +9529,6 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -9542,7 +9541,6 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -9582,14 +9580,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "위쳐의 한손검_홀리나이트"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "위쳐",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "위쳐의 대검_슬레이어"
                     ]
                 },
                 {
@@ -9686,14 +9676,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "위쳐의 대거_리퍼"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "위쳐",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "위쳐의 데스사이드_소울이터"
                     ]
                 },
                 {
@@ -9799,17 +9781,6 @@
             "contain": [],
             "tradable": true,
             "id": "위쳐의 한손검_홀리나이트",
-            "design": "위쳐"
-        },
-        "위쳐의 대검_슬레이어": {
-            "name": "위쳐의 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "위쳐의 대검_슬레이어",
             "design": "위쳐"
         },
         "위쳐의 마법 덱_아르카나": {
@@ -9942,17 +9913,6 @@
             "contain": [],
             "tradable": true,
             "id": "위쳐의 대거_리퍼",
-            "design": "위쳐"
-        },
-        "위쳐의 데스사이드_소울이터": {
-            "name": "위쳐의 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "위쳐의 데스사이드_소울이터",
             "design": "위쳐"
         },
         "위쳐의 활_호크아이": {
@@ -11537,22 +11497,6 @@
                     ]
                 },
                 {
-                    "className": "슬레이어",
-                    "design": "4주년 용기 아바타",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "4주년 용기 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "4주년 마음 아바타",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "4주년 마음 대검_슬레이어"
-                    ]
-                },
-                {
                     "className": "아르카나",
                     "design": "4주년 용기 아바타",
                     "category": "weapon",
@@ -11742,22 +11686,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "4주년 마음 대거_리퍼"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "4주년 용기 아바타",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "4주년 용기 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "4주년 마음 아바타",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "4주년 마음 데스사이드_소울이터"
                     ]
                 },
                 {
@@ -11963,28 +11891,6 @@
             "contain": [],
             "tradable": true,
             "id": "4주년 마음 한손검_홀리나이트",
-            "design": "4주년 마음 아바타"
-        },
-        "4주년 용기 대검_슬레이어": {
-            "name": "4주년 용기 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "4주년 용기 대검_슬레이어",
-            "design": "4주년 용기 아바타"
-        },
-        "4주년 마음 대검_슬레이어": {
-            "name": "4주년 마음 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "4주년 마음 대검_슬레이어",
             "design": "4주년 마음 아바타"
         },
         "4주년 용기 마법 덱_아르카나": {
@@ -12249,28 +12155,6 @@
             "contain": [],
             "tradable": true,
             "id": "4주년 마음 대거_리퍼",
-            "design": "4주년 마음 아바타"
-        },
-        "4주년 용기 데스사이드_소울이터": {
-            "name": "4주년 용기 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "4주년 용기 데스사이드_소울이터",
-            "design": "4주년 용기 아바타"
-        },
-        "4주년 마음 데스사이드_소울이터": {
-            "name": "4주년 마음 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "4주년 마음 데스사이드_소울이터",
             "design": "4주년 마음 아바타"
         },
         "4주년 용기 활_호크아이": {
@@ -12770,6 +12654,28 @@
             "tradable": true,
             "id": "모험의 노래 무기 선택 상자 [슬레이어]",
             "design": ""
+        },
+        "4주년 용기 대검_슬레이어": {
+            "name": "4주년 용기 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "4주년 용기 대검_슬레이어",
+            "design": "4주년 용기 아바타"
+        },
+        "4주년 마음 대검_슬레이어": {
+            "name": "4주년 마음 대검",
+            "type": "weapon",
+            "target": [
+                "슬레이어"
+            ],
+            "contain": [],
+            "tradable": true,
+            "id": "4주년 마음 대검_슬레이어",
+            "design": "4주년 마음 아바타"
         },
         "고딕 아바타": {
             "name": "고딕 아바타",
@@ -17785,30 +17691,6 @@
                     ]
                 },
                 {
-                    "className": "슬레이어",
-                    "design": "라일라이 비치웨어",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "라일라이 비치웨어 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "티카티카 비치웨어",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "티카티카 비치웨어 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "테돈바드 비치웨어",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "테돈바드 비치웨어 대검_슬레이어"
-                    ]
-                },
-                {
                     "className": "아르카나",
                     "design": "라일라이 비치웨어",
                     "category": "weapon",
@@ -18094,30 +17976,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "테돈바드 비치웨어 대거_리퍼"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "라일라이 비치웨어",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "라일라이 비치웨어 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "티카티카 비치웨어",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "티카티카 비치웨어 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "테돈바드 비치웨어",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "테돈바드 비치웨어 데스사이드_소울이터"
                     ]
                 },
                 {
@@ -18423,39 +18281,6 @@
             "contain": [],
             "tradable": true,
             "id": "테돈바드 비치웨어 한손검_홀리나이트",
-            "design": "테돈바드 비치웨어"
-        },
-        "라일라이 비치웨어 대검_슬레이어": {
-            "name": "라일라이 비치웨어 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "라일라이 비치웨어 대검_슬레이어",
-            "design": "라일라이 비치웨어"
-        },
-        "티카티카 비치웨어 대검_슬레이어": {
-            "name": "티카티카 비치웨어 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "티카티카 비치웨어 대검_슬레이어",
-            "design": "티카티카 비치웨어"
-        },
-        "테돈바드 비치웨어 대검_슬레이어": {
-            "name": "테돈바드 비치웨어 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "테돈바드 비치웨어 대검_슬레이어",
             "design": "테돈바드 비치웨어"
         },
         "라일라이 비치웨어 마법 덱_아르카나": {
@@ -18852,39 +18677,6 @@
             "contain": [],
             "tradable": true,
             "id": "테돈바드 비치웨어 대거_리퍼",
-            "design": "테돈바드 비치웨어"
-        },
-        "라일라이 비치웨어 데스사이드_소울이터": {
-            "name": "라일라이 비치웨어 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "라일라이 비치웨어 데스사이드_소울이터",
-            "design": "라일라이 비치웨어"
-        },
-        "티카티카 비치웨어 데스사이드_소울이터": {
-            "name": "티카티카 비치웨어 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "티카티카 비치웨어 데스사이드_소울이터",
-            "design": "티카티카 비치웨어"
-        },
-        "테돈바드 비치웨어 데스사이드_소울이터": {
-            "name": "테돈바드 비치웨어 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "테돈바드 비치웨어 데스사이드_소울이터",
             "design": "테돈바드 비치웨어"
         },
         "라일라이 비치웨어 활_호크아이": {
@@ -20179,22 +19971,6 @@
                     ]
                 },
                 {
-                    "className": "슬레이어",
-                    "design": "단죄의 프리스트",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "단죄의 프리스트 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "심판의 프리스트",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "심판의 프리스트 대검_슬레이어"
-                    ]
-                },
-                {
                     "className": "아르카나",
                     "design": "단죄의 프리스트",
                     "category": "weapon",
@@ -20384,22 +20160,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "심판의 프리스트 대거_리퍼"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "단죄의 프리스트",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "단죄의 프리스트 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "심판의 프리스트",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "심판의 프리스트 데스사이드_소울이터"
                     ]
                 },
                 {
@@ -20605,28 +20365,6 @@
             "contain": [],
             "tradable": true,
             "id": "심판의 프리스트 한손검_홀리나이트",
-            "design": "심판의 프리스트"
-        },
-        "단죄의 프리스트 대검_슬레이어": {
-            "name": "단죄의 프리스트 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "단죄의 프리스트 대검_슬레이어",
-            "design": "단죄의 프리스트"
-        },
-        "심판의 프리스트 대검_슬레이어": {
-            "name": "심판의 프리스트 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "심판의 프리스트 대검_슬레이어",
             "design": "심판의 프리스트"
         },
         "단죄의 프리스트 마법 덱_아르카나": {
@@ -20891,28 +20629,6 @@
             "contain": [],
             "tradable": true,
             "id": "심판의 프리스트 대거_리퍼",
-            "design": "심판의 프리스트"
-        },
-        "단죄의 프리스트 데스사이드_소울이터": {
-            "name": "단죄의 프리스트 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "단죄의 프리스트 데스사이드_소울이터",
-            "design": "단죄의 프리스트"
-        },
-        "심판의 프리스트 데스사이드_소울이터": {
-            "name": "심판의 프리스트 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "심판의 프리스트 데스사이드_소울이터",
             "design": "심판의 프리스트"
         },
         "단죄의 프리스트 활_호크아이": {
@@ -23931,7 +23647,6 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -23944,7 +23659,6 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -24015,22 +23729,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "천공의 능력 한손검_홀리나이트"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "천공의 권세",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "천공의 권세 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "천공의 능력",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "천공의 능력 대검_슬레이어"
                     ]
                 },
                 {
@@ -24226,22 +23924,6 @@
                     ]
                 },
                 {
-                    "className": "소울이터",
-                    "design": "천공의 권세",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "천공의 권세 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "천공의 능력",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "천공의 능력 데스사이드_소울이터"
-                    ]
-                },
-                {
                     "className": "호크아이",
                     "design": "천공의 권세",
                     "category": "weapon",
@@ -24428,28 +24110,6 @@
             "contain": [],
             "tradable": true,
             "id": "천공의 능력 한손검_홀리나이트",
-            "design": "천공의 능력"
-        },
-        "천공의 권세 대검_슬레이어": {
-            "name": "천공의 권세 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "천공의 권세 대검_슬레이어",
-            "design": "천공의 권세"
-        },
-        "천공의 능력 대검_슬레이어": {
-            "name": "천공의 능력 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "천공의 능력 대검_슬레이어",
             "design": "천공의 능력"
         },
         "천공의 권세 마법 덱_아르카나": {
@@ -24714,28 +24374,6 @@
             "contain": [],
             "tradable": true,
             "id": "천공의 능력 대거_리퍼",
-            "design": "천공의 능력"
-        },
-        "천공의 권세 데스사이드_소울이터": {
-            "name": "천공의 권세 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "천공의 권세 데스사이드_소울이터",
-            "design": "천공의 권세"
-        },
-        "천공의 능력 데스사이드_소울이터": {
-            "name": "천공의 능력 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "천공의 능력 데스사이드_소울이터",
             "design": "천공의 능력"
         },
         "천공의 권세 활_호크아이": {
@@ -27876,7 +27514,6 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -27889,7 +27526,6 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -27960,22 +27596,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "새해의 애정 한손검_홀리나이트"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "새해의 행복",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "새해의 행복 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "새해의 애정",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "새해의 애정 대검_슬레이어"
                     ]
                 },
                 {
@@ -28171,22 +27791,6 @@
                     ]
                 },
                 {
-                    "className": "소울이터",
-                    "design": "새해의 행복",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "새해의 행복 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "새해의 애정",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "새해의 애정 데스사이드_소울이터"
-                    ]
-                },
-                {
                     "className": "호크아이",
                     "design": "새해의 행복",
                     "category": "weapon",
@@ -28373,28 +27977,6 @@
             "contain": [],
             "tradable": true,
             "id": "새해의 애정 한손검_홀리나이트",
-            "design": "새해의 애정"
-        },
-        "새해의 행복 대검_슬레이어": {
-            "name": "새해의 행복 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "새해의 행복 대검_슬레이어",
-            "design": "새해의 행복"
-        },
-        "새해의 애정 대검_슬레이어": {
-            "name": "새해의 애정 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "새해의 애정 대검_슬레이어",
             "design": "새해의 애정"
         },
         "새해의 행복 마법 덱_아르카나": {
@@ -28659,28 +28241,6 @@
             "contain": [],
             "tradable": true,
             "id": "새해의 애정 대거_리퍼",
-            "design": "새해의 애정"
-        },
-        "새해의 행복 데스사이드_소울이터": {
-            "name": "새해의 행복 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "새해의 행복 데스사이드_소울이터",
-            "design": "새해의 행복"
-        },
-        "새해의 애정 데스사이드_소울이터": {
-            "name": "새해의 애정 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "새해의 애정 데스사이드_소울이터",
             "design": "새해의 애정"
         },
         "새해의 행복 활_호크아이": {
@@ -32674,7 +32234,6 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -32687,7 +32246,6 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -32757,22 +32315,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "3주년 미래 한손검_홀리나이트"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "3주년 추억",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "3주년 추억 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "3주년 미래",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "3주년 미래 대검_슬레이어"
                     ]
                 },
                 {
@@ -32968,22 +32510,6 @@
                     ]
                 },
                 {
-                    "className": "소울이터",
-                    "design": "3주년 추억",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "3주년 추억 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "3주년 미래",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "3주년 미래 데스사이드_소울이터"
-                    ]
-                },
-                {
                     "className": "호크아이",
                     "design": "3주년 추억",
                     "category": "weapon",
@@ -33154,28 +32680,6 @@
             "contain": [],
             "tradable": true,
             "id": "3주년 미래 한손검_홀리나이트",
-            "design": "3주년 미래"
-        },
-        "3주년 추억 대검_슬레이어": {
-            "name": "3주년 추억 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "3주년 추억 대검_슬레이어",
-            "design": "3주년 추억"
-        },
-        "3주년 미래 대검_슬레이어": {
-            "name": "3주년 미래 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "3주년 미래 대검_슬레이어",
             "design": "3주년 미래"
         },
         "3주년 추억 마법 덱_아르카나": {
@@ -33440,28 +32944,6 @@
             "contain": [],
             "tradable": true,
             "id": "3주년 미래 대거_리퍼",
-            "design": "3주년 미래"
-        },
-        "3주년 추억 데스사이드_소울이터": {
-            "name": "3주년 추억 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "3주년 추억 데스사이드_소울이터",
-            "design": "3주년 추억"
-        },
-        "3주년 미래 데스사이드_소울이터": {
-            "name": "3주년 미래 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "3주년 미래 데스사이드_소울이터",
             "design": "3주년 미래"
         },
         "3주년 추억 활_호크아이": {
@@ -36510,7 +35992,6 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -36523,7 +36004,6 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -36625,30 +36105,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "네온 W 한손검_홀리나이트"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "네온 G",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "네온 G 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "네온 R",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "네온 R 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "네온 W",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "네온 W 대검_슬레이어"
                     ]
                 },
                 {
@@ -36940,30 +36396,6 @@
                     ]
                 },
                 {
-                    "className": "소울이터",
-                    "design": "네온 G",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "네온 G 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "네온 R",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "네온 R 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "네온 W",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "네온 W 데스사이드_소울이터"
-                    ]
-                },
-                {
                     "className": "호크아이",
                     "design": "네온 G",
                     "category": "weapon",
@@ -37218,39 +36650,6 @@
             "contain": [],
             "tradable": true,
             "id": "네온 W 한손검_홀리나이트",
-            "design": "네온 W"
-        },
-        "네온 G 대검_슬레이어": {
-            "name": "네온 G 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "네온 G 대검_슬레이어",
-            "design": "네온 G"
-        },
-        "네온 R 대검_슬레이어": {
-            "name": "네온 R 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "네온 R 대검_슬레이어",
-            "design": "네온 R"
-        },
-        "네온 W 대검_슬레이어": {
-            "name": "네온 W 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "네온 W 대검_슬레이어",
             "design": "네온 W"
         },
         "네온 G 마법 덱_아르카나": {
@@ -37647,39 +37046,6 @@
             "contain": [],
             "tradable": true,
             "id": "네온 W 대거_리퍼",
-            "design": "네온 W"
-        },
-        "네온 G 데스사이드_소울이터": {
-            "name": "네온 G 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "네온 G 데스사이드_소울이터",
-            "design": "네온 G"
-        },
-        "네온 R 데스사이드_소울이터": {
-            "name": "네온 R 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "네온 R 데스사이드_소울이터",
-            "design": "네온 R"
-        },
-        "네온 W 데스사이드_소울이터": {
-            "name": "네온 W 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "네온 W 데스사이드_소울이터",
             "design": "네온 W"
         },
         "네온 G 활_호크아이": {
@@ -40703,7 +40069,6 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -40715,7 +40080,6 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -40817,30 +40181,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "파도의 소년 한손검_홀리나이트"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "태양",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "태양의 소녀 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "모래",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "모래의 소녀 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "파도",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "파도의 소녀 대검_슬레이어"
                     ]
                 },
                 {
@@ -41108,30 +40448,6 @@
                     ]
                 },
                 {
-                    "className": "소울이터",
-                    "design": "태양",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "태양의 소녀 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "모래",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "모래의 소녀 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "파도",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "파도의 소녀 데스사이드_소울이터"
-                    ]
-                },
-                {
                     "className": "호크아이",
                     "design": "태양",
                     "category": "weapon",
@@ -41386,39 +40702,6 @@
             "contain": [],
             "tradable": true,
             "id": "파도의 소년 한손검_홀리나이트",
-            "design": "파도"
-        },
-        "태양의 소녀 대검_슬레이어": {
-            "name": "태양의 소녀 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "태양의 소녀 대검_슬레이어",
-            "design": "태양"
-        },
-        "모래의 소녀 대검_슬레이어": {
-            "name": "모래의 소녀 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "모래의 소녀 대검_슬레이어",
-            "design": "모래"
-        },
-        "파도의 소녀 대검_슬레이어": {
-            "name": "파도의 소녀 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "파도의 소녀 대검_슬레이어",
             "design": "파도"
         },
         "태양의 소녀 마법 덱_아르카나": {
@@ -41782,39 +41065,6 @@
             "contain": [],
             "tradable": true,
             "id": "파도의 소녀 대거_리퍼",
-            "design": "파도"
-        },
-        "태양의 소녀 데스사이드_소울이터": {
-            "name": "태양의 소녀 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "태양의 소녀 데스사이드_소울이터",
-            "design": "태양"
-        },
-        "모래의 소녀 데스사이드_소울이터": {
-            "name": "모래의 소녀 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "모래의 소녀 데스사이드_소울이터",
-            "design": "모래"
-        },
-        "파도의 소녀 데스사이드_소울이터": {
-            "name": "파도의 소녀 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "파도의 소녀 데스사이드_소울이터",
             "design": "파도"
         },
         "태양의 소년 활_호크아이": {
@@ -43682,7 +42932,6 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -43694,7 +42943,6 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -43796,30 +43044,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "잿빛의 명성 한손검_홀리나이트"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "홍염의 명성",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "홍염의 명성 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "혼돈의 명성",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "혼돈의 명성 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "잿빛의 명성",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "잿빛의 명성 대검_슬레이어"
                     ]
                 },
                 {
@@ -44087,30 +43311,6 @@
                     ]
                 },
                 {
-                    "className": "소울이터",
-                    "design": "홍염의 명성",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "홍염의 명성 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "혼돈의 명성",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "혼돈의 명성 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "잿빛의 명성",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "잿빛의 명성 데스사이드_소울이터"
-                    ]
-                },
-                {
                     "className": "호크아이",
                     "design": "홍염의 명성",
                     "category": "weapon",
@@ -44365,39 +43565,6 @@
             "contain": [],
             "tradable": true,
             "id": "잿빛의 명성 한손검_홀리나이트",
-            "design": "잿빛의 명성"
-        },
-        "홍염의 명성 대검_슬레이어": {
-            "name": "홍염의 명성 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "홍염의 명성 대검_슬레이어",
-            "design": "홍염의 명성"
-        },
-        "혼돈의 명성 대검_슬레이어": {
-            "name": "혼돈의 명성 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "혼돈의 명성 대검_슬레이어",
-            "design": "혼돈의 명성"
-        },
-        "잿빛의 명성 대검_슬레이어": {
-            "name": "잿빛의 명성 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "잿빛의 명성 대검_슬레이어",
             "design": "잿빛의 명성"
         },
         "홍염의 명성 마법 덱_아르카나": {
@@ -44761,39 +43928,6 @@
             "contain": [],
             "tradable": true,
             "id": "잿빛의 명성 대거_리퍼",
-            "design": "잿빛의 명성"
-        },
-        "홍염의 명성 데스사이드_소울이터": {
-            "name": "홍염의 명성 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "홍염의 명성 데스사이드_소울이터",
-            "design": "홍염의 명성"
-        },
-        "혼돈의 명성 데스사이드_소울이터": {
-            "name": "혼돈의 명성 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "혼돈의 명성 데스사이드_소울이터",
-            "design": "혼돈의 명성"
-        },
-        "잿빛의 명성 데스사이드_소울이터": {
-            "name": "잿빛의 명성 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "잿빛의 명성 데스사이드_소울이터",
             "design": "잿빛의 명성"
         },
         "홍염의 명성 활_호크아이": {
@@ -45834,7 +44968,6 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -45846,7 +44979,6 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -45916,22 +45048,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "광휘의 통치자 한손검_홀리나이트"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "심연의 통치자",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "심연의 통치자 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "광휘의 통치자",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "광휘의 통치자 대검_슬레이어"
                     ]
                 },
                 {
@@ -46111,22 +45227,6 @@
                     ]
                 },
                 {
-                    "className": "소울이터",
-                    "design": "심연의 통치자",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "심연의 통치자 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "광휘의 통치자",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "광휘의 통치자 데스사이드_소울이터"
-                    ]
-                },
-                {
                     "className": "호크아이",
                     "design": "심연의 통치자",
                     "category": "weapon",
@@ -46297,28 +45397,6 @@
             "contain": [],
             "tradable": true,
             "id": "광휘의 통치자 한손검_홀리나이트",
-            "design": "광휘의 통치자"
-        },
-        "심연의 통치자 대검_슬레이어": {
-            "name": "심연의 통치자 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "심연의 통치자 대검_슬레이어",
-            "design": "심연의 통치자"
-        },
-        "광휘의 통치자 대검_슬레이어": {
-            "name": "광휘의 통치자 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "광휘의 통치자 대검_슬레이어",
             "design": "광휘의 통치자"
         },
         "심연의 통치자 마법 덱_아르카나": {
@@ -46561,28 +45639,6 @@
             "contain": [],
             "tradable": true,
             "id": "광휘의 통치자 대거_리퍼",
-            "design": "광휘의 통치자"
-        },
-        "심연의 통치자 데스사이드_소울이터": {
-            "name": "심연의 통치자 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "심연의 통치자 데스사이드_소울이터",
-            "design": "심연의 통치자"
-        },
-        "광휘의 통치자 데스사이드_소울이터": {
-            "name": "광휘의 통치자 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "광휘의 통치자 데스사이드_소울이터",
             "design": "광휘의 통치자"
         },
         "심연의 통치자 활_호크아이": {
@@ -47008,7 +46064,6 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -47020,7 +46075,6 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -47122,30 +46176,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "침묵하는 요괴 한손검_홀리나이트"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "찬란한",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "찬란한 undefined 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "맹목적인",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "맹목적인 undefined 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "침묵하는",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "침묵하는 undefined 대검_슬레이어"
                     ]
                 },
                 {
@@ -47413,30 +46443,6 @@
                     ]
                 },
                 {
-                    "className": "소울이터",
-                    "design": "찬란한",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "찬란한 undefined 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "맹목적인",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "맹목적인 undefined 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "침묵하는",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "침묵하는 undefined 데스사이드_소울이터"
-                    ]
-                },
-                {
                     "className": "호크아이",
                     "design": "찬란한",
                     "category": "weapon",
@@ -47691,39 +46697,6 @@
             "contain": [],
             "tradable": true,
             "id": "침묵하는 요괴 한손검_홀리나이트",
-            "design": "침묵하는"
-        },
-        "찬란한 undefined 대검_슬레이어": {
-            "name": "찬란한 undefined 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "찬란한 undefined 대검_슬레이어",
-            "design": "찬란한"
-        },
-        "맹목적인 undefined 대검_슬레이어": {
-            "name": "맹목적인 undefined 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "맹목적인 undefined 대검_슬레이어",
-            "design": "맹목적인"
-        },
-        "침묵하는 undefined 대검_슬레이어": {
-            "name": "침묵하는 undefined 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "침묵하는 undefined 대검_슬레이어",
             "design": "침묵하는"
         },
         "찬란한 지혜 마법 덱_아르카나": {
@@ -48087,39 +47060,6 @@
             "contain": [],
             "tradable": true,
             "id": "침묵하는 승천 대거_리퍼",
-            "design": "침묵하는"
-        },
-        "찬란한 undefined 데스사이드_소울이터": {
-            "name": "찬란한 undefined 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "찬란한 undefined 데스사이드_소울이터",
-            "design": "찬란한"
-        },
-        "맹목적인 undefined 데스사이드_소울이터": {
-            "name": "맹목적인 undefined 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "맹목적인 undefined 데스사이드_소울이터",
-            "design": "맹목적인"
-        },
-        "침묵하는 undefined 데스사이드_소울이터": {
-            "name": "침묵하는 undefined 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "침묵하는 undefined 데스사이드_소울이터",
             "design": "침묵하는"
         },
         "찬란한 찰나 활_호크아이": {
@@ -53879,7 +52819,6 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -53890,7 +52829,6 @@
                 "블레이드",
                 "데모닉",
                 "리퍼",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터",
@@ -54023,38 +52961,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "한밤의 별 한손검_홀리나이트"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "눈꽃의 심장",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "눈꽃의 심장 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "오로라의 눈",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "오로라의 눈 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "트리의 영혼",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "트리의 영혼 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "한밤의 별",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "한밤의 별 대검_슬레이어"
                     ]
                 },
                 {
@@ -54378,38 +53284,6 @@
                     ]
                 },
                 {
-                    "className": "소울이터",
-                    "design": "눈꽃의 심장",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "눈꽃의 심장 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "오로라의 눈",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "오로라의 눈 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "트리의 영혼",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "트리의 영혼 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "한밤의 별",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "한밤의 별 데스사이드_소울이터"
-                    ]
-                },
-                {
                     "className": "호크아이",
                     "design": "눈꽃의 심장",
                     "category": "weapon",
@@ -54716,50 +53590,6 @@
             "contain": [],
             "tradable": true,
             "id": "한밤의 별 한손검_홀리나이트",
-            "design": "한밤의 별"
-        },
-        "눈꽃의 심장 대검_슬레이어": {
-            "name": "눈꽃의 심장 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "눈꽃의 심장 대검_슬레이어",
-            "design": "눈꽃의 심장"
-        },
-        "오로라의 눈 대검_슬레이어": {
-            "name": "오로라의 눈 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "오로라의 눈 대검_슬레이어",
-            "design": "오로라의 눈"
-        },
-        "트리의 영혼 대검_슬레이어": {
-            "name": "트리의 영혼 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "트리의 영혼 대검_슬레이어",
-            "design": "트리의 영혼"
-        },
-        "한밤의 별 대검_슬레이어": {
-            "name": "한밤의 별 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "한밤의 별 대검_슬레이어",
             "design": "한밤의 별"
         },
         "눈꽃의 심장 마법 덱_아르카나": {
@@ -55200,50 +54030,6 @@
             "contain": [],
             "tradable": true,
             "id": "한밤의 별 대거_리퍼",
-            "design": "한밤의 별"
-        },
-        "눈꽃의 심장 데스사이드_소울이터": {
-            "name": "눈꽃의 심장 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "눈꽃의 심장 데스사이드_소울이터",
-            "design": "눈꽃의 심장"
-        },
-        "오로라의 눈 데스사이드_소울이터": {
-            "name": "오로라의 눈 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "오로라의 눈 데스사이드_소울이터",
-            "design": "오로라의 눈"
-        },
-        "트리의 영혼 데스사이드_소울이터": {
-            "name": "트리의 영혼 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "트리의 영혼 데스사이드_소울이터",
-            "design": "트리의 영혼"
-        },
-        "한밤의 별 데스사이드_소울이터": {
-            "name": "한밤의 별 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "한밤의 별 데스사이드_소울이터",
             "design": "한밤의 별"
         },
         "눈꽃의 심장 활_호크아이": {
@@ -67878,7 +66664,6 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -67888,7 +66673,6 @@
                 "창술사",
                 "블레이드",
                 "데모닉",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터"
@@ -67988,30 +66772,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "새벽빛 한손검_홀리나이트"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "여름빛",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "여름빛 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "노을빛",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "노을빛 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "새벽빛",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "새벽빛 대검_슬레이어"
                     ]
                 },
                 {
@@ -68231,30 +66991,6 @@
                     ]
                 },
                 {
-                    "className": "소울이터",
-                    "design": "여름빛",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "여름빛 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "노을빛",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "노을빛 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "새벽빛",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "새벽빛 데스사이드_소울이터"
-                    ]
-                },
-                {
                     "className": "호크아이",
                     "design": "여름빛",
                     "category": "weapon",
@@ -68461,39 +67197,6 @@
             "contain": [],
             "tradable": true,
             "id": "새벽빛 한손검_홀리나이트",
-            "design": "새벽빛"
-        },
-        "여름빛 대검_슬레이어": {
-            "name": "여름빛 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "여름빛 대검_슬레이어",
-            "design": "여름빛"
-        },
-        "노을빛 대검_슬레이어": {
-            "name": "노을빛 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "노을빛 대검_슬레이어",
-            "design": "노을빛"
-        },
-        "새벽빛 대검_슬레이어": {
-            "name": "새벽빛 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "새벽빛 대검_슬레이어",
             "design": "새벽빛"
         },
         "여름빛 마법 덱_아르카나": {
@@ -68791,39 +67494,6 @@
             "contain": [],
             "tradable": true,
             "id": "새벽빛 데모닉웨폰_데모닉",
-            "design": "새벽빛"
-        },
-        "여름빛 데스사이드_소울이터": {
-            "name": "여름빛 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "여름빛 데스사이드_소울이터",
-            "design": "여름빛"
-        },
-        "노을빛 데스사이드_소울이터": {
-            "name": "노을빛 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "노을빛 데스사이드_소울이터",
-            "design": "노을빛"
-        },
-        "새벽빛 데스사이드_소울이터": {
-            "name": "새벽빛 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "새벽빛 데스사이드_소울이터",
             "design": "새벽빛"
         },
         "여름빛 활_호크아이": {
@@ -70233,7 +68903,6 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -70243,7 +68912,6 @@
                 "창술사",
                 "블레이드",
                 "데모닉",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터"
@@ -70375,38 +69043,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "종말의 한손검_홀리나이트"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "어둠의",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "어둠의 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "심연의",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "심연의 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "욕망의",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "욕망의 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "종말의",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "종말의 대검_슬레이어"
                     ]
                 },
                 {
@@ -70698,38 +69334,6 @@
                     ]
                 },
                 {
-                    "className": "소울이터",
-                    "design": "어둠의",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "어둠의 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "심연의",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "심연의 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "욕망의",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "욕망의 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "종말의",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "종말의 데스사이드_소울이터"
-                    ]
-                },
-                {
                     "className": "호크아이",
                     "design": "어둠의",
                     "category": "weapon",
@@ -71004,50 +69608,6 @@
             "contain": [],
             "tradable": true,
             "id": "종말의 한손검_홀리나이트",
-            "design": "종말의"
-        },
-        "어둠의 대검_슬레이어": {
-            "name": "어둠의 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "어둠의 대검_슬레이어",
-            "design": "어둠의"
-        },
-        "심연의 대검_슬레이어": {
-            "name": "심연의 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "심연의 대검_슬레이어",
-            "design": "심연의"
-        },
-        "욕망의 대검_슬레이어": {
-            "name": "욕망의 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "욕망의 대검_슬레이어",
-            "design": "욕망의"
-        },
-        "종말의 대검_슬레이어": {
-            "name": "종말의 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "종말의 대검_슬레이어",
             "design": "종말의"
         },
         "어둠의 마법 덱_아르카나": {
@@ -71444,50 +70004,6 @@
             "contain": [],
             "tradable": true,
             "id": "종말의 데모닉웨폰_데모닉",
-            "design": "종말의"
-        },
-        "어둠의 데스사이드_소울이터": {
-            "name": "어둠의 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "어둠의 데스사이드_소울이터",
-            "design": "어둠의"
-        },
-        "심연의 데스사이드_소울이터": {
-            "name": "심연의 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "심연의 데스사이드_소울이터",
-            "design": "심연의"
-        },
-        "욕망의 데스사이드_소울이터": {
-            "name": "욕망의 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "욕망의 데스사이드_소울이터",
-            "design": "욕망의"
-        },
-        "종말의 데스사이드_소울이터": {
-            "name": "종말의 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "종말의 데스사이드_소울이터",
             "design": "종말의"
         },
         "어둠의 활_호크아이": {
@@ -75156,7 +73672,6 @@
                 "디스트로이어",
                 "워로드",
                 "홀리나이트",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -75166,7 +73681,6 @@
                 "창술사",
                 "블레이드",
                 "데모닉",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터"
@@ -75266,30 +73780,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "거룩한 밤의 한손검_홀리나이트"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "고요한 밤",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "고요한 밤의 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "순수한 밤",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "순수한 밤의 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "거룩한 밤",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "거룩한 밤의 대검_슬레이어"
                     ]
                 },
                 {
@@ -75509,30 +73999,6 @@
                     ]
                 },
                 {
-                    "className": "소울이터",
-                    "design": "고요한 밤",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "고요한 밤의 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "순수한 밤",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "순수한 밤의 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "거룩한 밤",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "거룩한 밤의 데스사이드_소울이터"
-                    ]
-                },
-                {
                     "className": "호크아이",
                     "design": "고요한 밤",
                     "category": "weapon",
@@ -75739,39 +74205,6 @@
             "contain": [],
             "tradable": true,
             "id": "거룩한 밤의 한손검_홀리나이트",
-            "design": "거룩한 밤"
-        },
-        "고요한 밤의 대검_슬레이어": {
-            "name": "고요한 밤의 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "고요한 밤의 대검_슬레이어",
-            "design": "고요한 밤"
-        },
-        "순수한 밤의 대검_슬레이어": {
-            "name": "순수한 밤의 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "순수한 밤의 대검_슬레이어",
-            "design": "순수한 밤"
-        },
-        "거룩한 밤의 대검_슬레이어": {
-            "name": "거룩한 밤의 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "거룩한 밤의 대검_슬레이어",
             "design": "거룩한 밤"
         },
         "고요한 밤의 마법 덱_아르카나": {
@@ -76069,39 +74502,6 @@
             "contain": [],
             "tradable": true,
             "id": "거룩한 밤의 데모닉웨폰_데모닉",
-            "design": "거룩한 밤"
-        },
-        "고요한 밤의 데스사이드_소울이터": {
-            "name": "고요한 밤의 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "고요한 밤의 데스사이드_소울이터",
-            "design": "고요한 밤"
-        },
-        "순수한 밤의 데스사이드_소울이터": {
-            "name": "순수한 밤의 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "순수한 밤의 데스사이드_소울이터",
-            "design": "순수한 밤"
-        },
-        "거룩한 밤의 데스사이드_소울이터": {
-            "name": "거룩한 밤의 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "거룩한 밤의 데스사이드_소울이터",
             "design": "거룩한 밤"
         },
         "고요한 밤의 활_호크아이": {
@@ -77305,7 +75705,6 @@
                 "버서커",
                 "디스트로이어",
                 "워로드",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -77315,7 +75714,6 @@
                 "창술사",
                 "블레이드",
                 "데모닉",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터"
@@ -77391,30 +75789,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "의지의 랜스_워로드"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "영광",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "영광의 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "명예",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "명예의 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "의지",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "의지의 대검_슬레이어"
                     ]
                 },
                 {
@@ -77634,30 +76008,6 @@
                     ]
                 },
                 {
-                    "className": "소울이터",
-                    "design": "영광",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "영광의 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "명예",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "명예의 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "의지",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "의지의 데스사이드_소울이터"
-                    ]
-                },
-                {
                     "className": "호크아이",
                     "design": "영광",
                     "category": "weapon",
@@ -77831,39 +76181,6 @@
             "contain": [],
             "tradable": true,
             "id": "의지의 랜스_워로드",
-            "design": "의지"
-        },
-        "영광의 대검_슬레이어": {
-            "name": "영광의 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "영광의 대검_슬레이어",
-            "design": "영광"
-        },
-        "명예의 대검_슬레이어": {
-            "name": "명예의 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "명예의 대검_슬레이어",
-            "design": "명예"
-        },
-        "의지의 대검_슬레이어": {
-            "name": "의지의 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "의지의 대검_슬레이어",
             "design": "의지"
         },
         "영광의 마법 덱_아르카나": {
@@ -78161,39 +76478,6 @@
             "contain": [],
             "tradable": true,
             "id": "의지의 데모닉웨폰_데모닉",
-            "design": "의지"
-        },
-        "영광의 데스사이드_소울이터": {
-            "name": "영광의 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "영광의 데스사이드_소울이터",
-            "design": "영광"
-        },
-        "명예의 데스사이드_소울이터": {
-            "name": "명예의 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "명예의 데스사이드_소울이터",
-            "design": "명예"
-        },
-        "의지의 데스사이드_소울이터": {
-            "name": "의지의 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "의지의 데스사이드_소울이터",
             "design": "의지"
         },
         "영광의 활_호크아이": {
@@ -79250,7 +77534,6 @@
                 "버서커",
                 "디스트로이어",
                 "워로드",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -79260,7 +77543,6 @@
                 "창술사",
                 "블레이드",
                 "데모닉",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터"
@@ -79336,30 +77618,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "공포의 랜스_워로드"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "광란",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "광란의 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "악몽",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "악몽의 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "공포",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "공포의 대검_슬레이어"
                     ]
                 },
                 {
@@ -79579,30 +77837,6 @@
                     ]
                 },
                 {
-                    "className": "소울이터",
-                    "design": "광란",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "광란의 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "악몽",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "악몽의 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "공포",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "공포의 데스사이드_소울이터"
-                    ]
-                },
-                {
                     "className": "호크아이",
                     "design": "광란",
                     "category": "weapon",
@@ -79776,39 +78010,6 @@
             "contain": [],
             "tradable": true,
             "id": "공포의 랜스_워로드",
-            "design": "공포"
-        },
-        "광란의 대검_슬레이어": {
-            "name": "광란의 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "광란의 대검_슬레이어",
-            "design": "광란"
-        },
-        "악몽의 대검_슬레이어": {
-            "name": "악몽의 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "악몽의 대검_슬레이어",
-            "design": "악몽"
-        },
-        "공포의 대검_슬레이어": {
-            "name": "공포의 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "공포의 대검_슬레이어",
             "design": "공포"
         },
         "광란의 마법 덱_아르카나": {
@@ -80106,39 +78307,6 @@
             "contain": [],
             "tradable": true,
             "id": "공포의 데모닉웨폰_데모닉",
-            "design": "공포"
-        },
-        "광란의 데스사이드_소울이터": {
-            "name": "광란의 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "광란의 데스사이드_소울이터",
-            "design": "광란"
-        },
-        "악몽의 데스사이드_소울이터": {
-            "name": "악몽의 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "악몽의 데스사이드_소울이터",
-            "design": "악몽"
-        },
-        "공포의 데스사이드_소울이터": {
-            "name": "공포의 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "공포의 데스사이드_소울이터",
             "design": "공포"
         },
         "광란의 활_호크아이": {
@@ -84999,7 +83167,6 @@
                 "버서커",
                 "디스트로이어",
                 "워로드",
-                "슬레이어",
                 "아르카나",
                 "서머너",
                 "바드",
@@ -85009,7 +83176,6 @@
                 "창술사",
                 "블레이드",
                 "데모닉",
-                "소울이터",
                 "호크아이",
                 "데빌헌터",
                 "블래스터"
@@ -85085,30 +83251,6 @@
                     "category": "weapon",
                     "itemIdLst": [
                         "여름의 추억 랜스_워로드"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "해변의 연인",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "해변의 연인 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "바다의 청춘",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "바다의 청춘 대검_슬레이어"
-                    ]
-                },
-                {
-                    "className": "슬레이어",
-                    "design": "여름의 추억",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "여름의 추억 대검_슬레이어"
                     ]
                 },
                 {
@@ -85328,30 +83470,6 @@
                     ]
                 },
                 {
-                    "className": "소울이터",
-                    "design": "해변의 연인",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "해변의 연인 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "바다의 청춘",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "바다의 청춘 데스사이드_소울이터"
-                    ]
-                },
-                {
-                    "className": "소울이터",
-                    "design": "여름의 추억",
-                    "category": "weapon",
-                    "itemIdLst": [
-                        "여름의 추억 데스사이드_소울이터"
-                    ]
-                },
-                {
                     "className": "호크아이",
                     "design": "해변의 연인",
                     "category": "weapon",
@@ -85525,39 +83643,6 @@
             "contain": [],
             "tradable": true,
             "id": "여름의 추억 랜스_워로드",
-            "design": "여름의 추억"
-        },
-        "해변의 연인 대검_슬레이어": {
-            "name": "해변의 연인 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "해변의 연인 대검_슬레이어",
-            "design": "해변의 연인"
-        },
-        "바다의 청춘 대검_슬레이어": {
-            "name": "바다의 청춘 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "바다의 청춘 대검_슬레이어",
-            "design": "바다의 청춘"
-        },
-        "여름의 추억 대검_슬레이어": {
-            "name": "여름의 추억 대검",
-            "type": "weapon",
-            "target": [
-                "슬레이어"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "여름의 추억 대검_슬레이어",
             "design": "여름의 추억"
         },
         "해변의 연인 마법 덱_아르카나": {
@@ -85855,39 +83940,6 @@
             "contain": [],
             "tradable": true,
             "id": "여름의 추억 데모닉웨폰_데모닉",
-            "design": "여름의 추억"
-        },
-        "해변의 연인 데스사이드_소울이터": {
-            "name": "해변의 연인 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "해변의 연인 데스사이드_소울이터",
-            "design": "해변의 연인"
-        },
-        "바다의 청춘 데스사이드_소울이터": {
-            "name": "바다의 청춘 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "바다의 청춘 데스사이드_소울이터",
-            "design": "바다의 청춘"
-        },
-        "여름의 추억 데스사이드_소울이터": {
-            "name": "여름의 추억 데스사이드",
-            "type": "weapon",
-            "target": [
-                "소울이터"
-            ],
-            "contain": [],
-            "tradable": true,
-            "id": "여름의 추억 데스사이드_소울이터",
             "design": "여름의 추억"
         },
         "해변의 연인 활_호크아이": {
