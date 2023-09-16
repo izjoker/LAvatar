@@ -2,6 +2,7 @@ import { RecoilRoot } from 'recoil';
 import { Link, Navigate, BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Avatarpage from './pages/avatarpage/avatarpage';
+import Aboutpage from './pages/aboutpage/aboutpage';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                     </div>
                     <div className="MainContents">
                         <Routes>
+                            <Route path="/about" element={<Aboutpage />} />
                             <Route path="/" element={<Avatarpage />} />
                             <Route
                                 path="/packageDict/"
@@ -25,6 +27,7 @@ function App() {
                     </div>
                 </BrowserRouter>
                 <div className="footer">
+                    <a href="about"> About </a>
                     <a
                         href="https://open.kakao.com/o/glkOZj6e"
                         className="Contact"
