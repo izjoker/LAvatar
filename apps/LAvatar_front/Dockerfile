@@ -8,7 +8,9 @@ RUN npm run build
 
 # Production environment
 FROM nginx:1.19
+EXPOSE 80
+EXPOSE 443
 COPY --from=builder /app/build /usr/share/nginx/html
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
-
+COPY ./cert /etc/cert
 CMD ["nginx", "-g", "daemon off;"]
