@@ -4,6 +4,7 @@ import LostarkAPI from "../lostarkAPI/LostarkAPI";
 import CacheLocal from "../../cache/cache";
 import config from "../../utils/config";
 import logger from "../../utils/logger";
+import LAItem from "../../models/lavatar/LAItem.model";
 
 const classIdMap = JSON.parse(
 	fs.readFileSync("assets/constants/classIdMap.json", "utf-8")
@@ -60,6 +61,7 @@ export class PackageDict {
 	async mainRoutine() {
 		// 60분마다 LostarkAPI에 요청하여 가격정보 획득 - 파일, 캐시로 출력
 		try {
+			this.registeredIds = await LAItem.getAllIdNums();
 			const prices = await this.getItemPriceData();
 			this.pricedItems["datas"] = await this.assignmentItems(
 				this.constItems["datas"],
@@ -200,6 +202,19 @@ export class PackageDict {
 		}
 	}
 
+	async registerIds(rawItems) {
+		for (const rawItem of rawItems) {
+			if (!this.registeredIds.includes(rawItem["Id"])) {
+				let row = new LAItem();
+				row.id = getStringId(rawItem["Id"], rawItem["Name"]);
+				row.id_num = rawItem["Id"];
+				row.icon = rawItem["Icon"];
+				row.trade_count = rawItem["TradeCount"];
+				row.name = rawItem["Name"];
+				LAItem.addRow(row);
+			}
+		}
+	}
 	async getItemPriceData() {
 		/*
             주요 아이템 카테고리 코드
@@ -212,6 +227,7 @@ export class PackageDict {
 		const lists = await this.getBulkMarketItemList(categoryCodes);
 		const digested = await this.digestMarketItemList(lists);
 		CacheLocal.set("dailyMinPrices", this.dailyMinPrices);
+		await this.registerIds(lists);
 		console.log("Price Datas Received.");
 
 		return digested;

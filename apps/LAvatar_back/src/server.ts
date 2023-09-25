@@ -34,7 +34,15 @@ app.use("/", rootRouter);
 
 const port = process.env.PORT || config.get("port") || 7000;
 
-server.listen(port);
-packageDict.mainRoutine();
+AppDataSource.initialize()
+	.then(async () => {
+		console.log("Data Source has been initialized!");
+		server.listen(port);
+		priceHistory.mainRoutine();
+		packageDict.mainRoutine();
+	})
+	.catch((err) => {
+		console.error("Error during Data Source initialization", err);
+	});
 
 export default app;
