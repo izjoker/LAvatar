@@ -36,7 +36,7 @@ export class PriceHistory {
 				logger.info("Failed to get Price Datas");
 			}
 
-			await sleep(60 * 60 * 1000);
+			await sleep(6 * 60 * 60 * 1000);
 		}
 	}
 
@@ -58,7 +58,6 @@ export class PriceHistory {
 		for (const key in dailyMinPrices[idNum.toString()]) {
 			newRow[key] = dailyMinPrices[idNum.toString()][key];
 		}
-		console.log(newRow);
 	}
 
 	async digestRawData(rawData: Array<Object>) {
