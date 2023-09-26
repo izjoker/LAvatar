@@ -12,6 +12,8 @@
 config.development.yaml
 config.production.yaml
 
+# certification
+/cert
 
 # testing
 /test
