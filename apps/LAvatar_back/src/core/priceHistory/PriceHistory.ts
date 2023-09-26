@@ -26,11 +26,12 @@ export class PriceHistory {
 				continue;
 			}
 			const idNums = await LAItem.getAllIdNums();
-
 			try {
 				for (let idNum of idNums) {
 					let rawData = await this.lostarkAPI.getMarketItem(idNum);
-					this.createRow(dailyMinPrices, rawData, idNum);
+					PriceHistoryModel.addRow(
+						await this.createRow(dailyMinPrices, rawData, idNum)
+					);
 				}
 			} catch {
 				logger.info("Failed to get Price Datas");
@@ -49,7 +50,7 @@ export class PriceHistory {
 		idNum: Number
 	) {
 		let newRow = new PriceHistoryModel();
-		newRow["id"] = idNum;
+		newRow["idNum"] = idNum;
 		const digested = await this.digestRawData(rawData);
 
 		for (const key in digested) {
@@ -58,6 +59,7 @@ export class PriceHistory {
 		for (const key in dailyMinPrices[idNum.toString()]) {
 			newRow[key] = dailyMinPrices[idNum.toString()][key];
 		}
+		return newRow;
 	}
 
 	async digestRawData(rawData: Array<Object>) {
@@ -69,11 +71,15 @@ export class PriceHistory {
 				r["tradeCount"] = true;
 			}
 			r[`date`] = v["Stats"][1]["Date"];
-			r[`dealt_price_${i}`] = v["Stats"][1]["AvgPrice"];
+			r[`dealt_price_${i}`] =
+				v["Stats"][1]["AvgPrice"] !== 0
+					? v["Stats"][1]["AvgPrice"]
+					: null;
 			r[`volume_${i}`] = v["Stats"][1]["TradeCount"];
 		}
 		return r;
 	}
+	async getItemPrice(itemId: String) {}
 }
 
 const priceHistory = new PriceHistory();

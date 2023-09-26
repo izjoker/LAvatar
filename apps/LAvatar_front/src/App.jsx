@@ -3,7 +3,7 @@ import { Link, Navigate, BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Avatarpage from './pages/avatarpage/avatarpage';
 import Aboutpage from './pages/aboutpage/aboutpage';
-
+import PriceHistory from './pages/priceHistory/priceHistory';
 function App() {
     return (
         <div className="BodyWrapper">
@@ -21,6 +21,10 @@ function App() {
                             <Route
                                 path="/packageDict/"
                                 element={<Avatarpage />}
+                            />
+                            <Route
+                                path="/priceHistory"
+                                element={<PriceHistory />}
                             />
                             <Route path="*" element={'Not Found'} />
                         </Routes>

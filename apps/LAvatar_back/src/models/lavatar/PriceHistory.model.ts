@@ -1,7 +1,7 @@
 import { BaseEntity, Entity, Column, PrimaryColumn } from "typeorm";
 
 @Entity({ name: "price_history" })
-export default class PriceHistory extends BaseEntity {
+export default class PriceHistoryModel extends BaseEntity {
 	@PrimaryColumn()
 	idNum: Number;
 
@@ -46,4 +46,8 @@ export default class PriceHistory extends BaseEntity {
 
 	@Column({ nullable: true, default: null })
 	volume_3: Number;
+
+	static async addRow(priceHistory: PriceHistoryModel) {
+		this.upsert(priceHistory, ["idNum", "date"]);
+	}
 }
