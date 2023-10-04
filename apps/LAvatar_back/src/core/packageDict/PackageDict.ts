@@ -5,6 +5,7 @@ import CacheLocal from "../../cache/cache";
 import config from "../../utils/config";
 import logger from "../../utils/logger";
 import LAItem from "../../models/lavatar/LAItem.model";
+import schedule from "node-schedule";
 
 const classIdMap = JSON.parse(
 	fs.readFileSync("assets/constants/classIdMap.json", "utf-8")
@@ -49,7 +50,7 @@ export class PackageDict {
 		this.pricedItems = CacheLocal.get("pricedItems") || {};
 	}
 
-	async getItems() {
+	getItems() {
 		if (_.isEmpty(this.pricedItems)) {
 			console.log("returning constItems");
 			return this.constItems;
@@ -61,6 +62,9 @@ export class PackageDict {
 	async mainRoutine() {
 		// 60분마다 LostarkAPI에 요청하여 가격정보 획득 - 파일, 캐시로 출력
 		try {
+			schedule.scheduleJob("0 0 12 * * *", () => {
+				this.dailyMinPrices = {};
+			});
 			this.registeredIds = await LAItem.getAllIdNums();
 			const prices = await this.getItemPriceData();
 			this.pricedItems["datas"] = await this.assignmentItems(
@@ -84,7 +88,6 @@ export class PackageDict {
 			);
 			return;
 		}
-
 		setTimeout(
 			() => this.mainRoutine(),
 			config.get("packageDict.routineInterval")
@@ -149,7 +152,7 @@ export class PackageDict {
 		return data;
 	}
 
-	async digestMarketItemList(marketItemListResp) {
+	digestMarketItemList(marketItemListResp) {
 		return marketItemListResp.reduce((acc, v) => {
 			const itemName = normalizeWhitespaces(v["Name"]);
 			const stringId = getStringId(v["Id"], itemName);
@@ -181,28 +184,29 @@ export class PackageDict {
 		}, {});
 	}
 
-	async setDailyMinPrice(itemLst: Array<Object>) {
+	setDailyMinPrice(itemLst: Array<Object>) {
+		let dailyMinPrices = this.dailyMinPrices;
+
 		for (const itemObj of itemLst) {
 			const trc = itemObj["TradeRemainCount"] || 0;
-			if (!this.dailyMinPrices[`${itemObj["Id"]}`]) {
-				this.dailyMinPrices[`${itemObj["Id"]}`] = {};
+			if (!dailyMinPrices[`${itemObj["Id"]}`]) {
+				dailyMinPrices[`${itemObj["Id"]}`] = {};
 			}
-			if (this.dailyMinPrices[`${itemObj["Id"]}`][`sale_price_${trc}`]) {
-				this.dailyMinPrices[`${itemObj["Id"]}`][`sale_price_${trc}`] =
+			if (dailyMinPrices[`${itemObj["Id"]}`][`sale_price_${trc}`]) {
+				dailyMinPrices[`${itemObj["Id"]}`][`sale_price_${trc}`] =
 					Math.min(
 						itemObj["CurrentMinPrice"],
-						this.dailyMinPrices[`${itemObj["Id"]}`][
-							`sale_price_${trc}`
-						]
+						dailyMinPrices[`${itemObj["Id"]}`][`sale_price_${trc}`]
 					);
 			} else {
-				this.dailyMinPrices[`${itemObj["Id"]}`][`sale_price_${trc}`] =
+				dailyMinPrices[`${itemObj["Id"]}`][`sale_price_${trc}`] =
 					itemObj["CurrentMinPrice"];
 			}
 		}
+		this.dailyMinPrices = dailyMinPrices;
 	}
 
-	async registerIds(rawItems) {
+	registerIds(rawItems) {
 		for (const rawItem of rawItems) {
 			if (!this.registeredIds.includes(rawItem["Id"])) {
 				let row = new LAItem();
@@ -226,7 +230,6 @@ export class PackageDict {
 		const categoryCodes = [160000, 140000, 20000];
 		const lists = await this.getBulkMarketItemList(categoryCodes);
 		const digested = await this.digestMarketItemList(lists);
-		CacheLocal.set("dailyMinPrices", this.dailyMinPrices);
 		await this.registerIds(lists);
 		console.log("Price Datas Received.");
 

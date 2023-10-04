@@ -4,6 +4,7 @@ import './App.css';
 import Avatarpage from './pages/avatarpage/avatarpage';
 import Aboutpage from './pages/aboutpage/aboutpage';
 import PriceHistory from './pages/priceHistory/priceHistory';
+import ItemPriceView from './components/priceHistory/ItemPriceView';
 function App() {
     return (
         <div className="BodyWrapper">
@@ -19,12 +20,16 @@ function App() {
                             <Route path="/about" element={<Aboutpage />} />
                             <Route path="/" element={<Avatarpage />} />
                             <Route
-                                path="/packageDict/"
+                                path="/packageDict"
                                 element={<Avatarpage />}
                             />
                             <Route
                                 path="/priceHistory"
                                 element={<PriceHistory />}
+                            />
+                            <Route
+                                path="/priceHistory/:idNum"
+                                element={<ItemPriceView />}
                             />
                             <Route path="*" element={'Not Found'} />
                         </Routes>

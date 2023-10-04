@@ -1,14 +1,21 @@
-import { BaseEntity, Entity, Column, PrimaryColumn } from "typeorm";
-
+import {
+	BaseEntity,
+	Entity,
+	Column,
+	PrimaryGeneratedColumn,
+	PrimaryColumn,
+	ManyToOne,
+	Unique,
+	JoinColumn,
+} from "typeorm";
+import LAItem from "./LAItem.model";
 @Entity({ name: "price_history" })
+@Unique(["date", "laitem"])
 export default class PriceHistoryModel extends BaseEntity {
-	@PrimaryColumn()
-	idNum: Number;
-
 	@Column({ nullable: true, default: null })
-	tradeCount: boolean;
+	trade_count: boolean;
 
-	@Column({ nullable: false, default: null })
+	@PrimaryColumn()
 	date: Date;
 
 	@Column({ nullable: true, default: null })
@@ -47,7 +54,12 @@ export default class PriceHistoryModel extends BaseEntity {
 	@Column({ nullable: true, default: null })
 	volume_3: Number;
 
-	static async addRow(priceHistory: PriceHistoryModel) {
-		this.upsert(priceHistory, ["idNum", "date"]);
+	@PrimaryColumn({ name: "laitem_id", type: "text" })
+	@ManyToOne(() => LAItem, (laitem) => laitem.id)
+	@JoinColumn({ name: "laitem_id" })
+	laitem: LAItem;
+
+	static addRow(priceHistory: PriceHistoryModel) {
+		this.upsert(priceHistory, ["date", "laitem"]);
 	}
 }

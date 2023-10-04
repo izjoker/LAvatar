@@ -1,21 +1,33 @@
-import { BaseEntity, Entity, Column, PrimaryColumn } from "typeorm";
+import {
+	Not,
+	IsNull,
+	BaseEntity,
+	Entity,
+	Column,
+	PrimaryColumn,
+	OneToMany,
+} from "typeorm";
+import PriceHistoryModel from "./PriceHistory.model";
 
 @Entity({ name: "la_items" })
 export default class LAItem extends BaseEntity {
 	@PrimaryColumn()
-	id: string;
+	id: String;
 
 	@Column({ nullable: true, unique: true })
-	id_num: number;
+	id_num: Number;
 
 	@Column({ nullable: true })
-	icon: string;
+	icon: String;
 
 	@Column({ nullable: true })
-	trade_count: boolean;
+	trade_count: Boolean;
 
 	@Column({ nullable: true })
-	name: string;
+	name: String;
+
+	@OneToMany(() => PriceHistoryModel, (priceHistory) => priceHistory.laitem)
+	prices: PriceHistoryModel[];
 
 	static async addRow(laItem: LAItem) {
 		this.upsert(laItem, ["id"]);
@@ -24,8 +36,8 @@ export default class LAItem extends BaseEntity {
 	static async getAllIdNums() {
 		const r = [];
 		let idLst_obj = await this.find({
-			select: {
-				id_num: true,
+			where: {
+				id_num: Not(IsNull()),
 			},
 		});
 		idLst_obj.map((obj) => {

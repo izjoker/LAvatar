@@ -47,5 +47,4 @@ yarn-error.log*
 /.vscode
 /tmp
 apps/LAvatar_back/test/date.js
-apps/LAvatar_back/client_secret_582297906979-l23th1g0h7k6ovbl2a4n76n703hsh3i2.apps.googleusercontent.com.json=
-
+/LAvatar_back_config
