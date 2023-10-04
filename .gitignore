@@ -47,4 +47,3 @@ yarn-error.log*
 /.vscode
 /tmp
 apps/LAvatar_back/test/date.js
-/LAvatar_back_config
