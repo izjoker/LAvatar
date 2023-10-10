@@ -10,3 +10,6 @@ assets/logs/
 # local config
 config/config.development.yaml
 config/config.production.yaml
+
+# submodules
+/LAvatar_back_config
