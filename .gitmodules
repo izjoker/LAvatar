@@ -1,3 +1,6 @@
 [submodule "apps/LAvatar_back/LAvatar_back_config"]
 	path = apps/LAvatar_back/LAvatar_back_config
 	url = git@github.com:izjoker/LAvatar_back_config.git
+[submodule "apps/LAvatar_front/LAvatar_certification"]
+	path = apps/LAvatar_front/LAvatar_certification
+	url = git@github.com:izjoker/LAvatar_certification.git
