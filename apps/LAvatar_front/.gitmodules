@@ -1,0 +1,3 @@
+[submodule "apps/LAvatar_front/LAvatar_certification"]
+	path = apps/LAvatar_front/LAvatar_certification
+	url = git@github.com:izjoker/LAvatar_certification.git

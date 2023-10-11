@@ -1,3 +1,3 @@
-# [submodule "LAvatar_back_config"]
-# 	path = LAvatar_back_config
-# 	url = git@github.com:izjoker/LAvatar_back_config.git
+[submodule "LAvatar_back_config"]
+	path = LAvatar_back_config
+	url = git@github.com:izjoker/LAvatar_back_config.git
