@@ -5,4 +5,3 @@
 .env.production.local
 /cert
 *.pem
-/LAvatar_certification
