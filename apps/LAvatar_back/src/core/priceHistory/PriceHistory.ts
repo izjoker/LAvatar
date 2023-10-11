@@ -78,15 +78,22 @@ export class PriceHistory {
 		for (const [i, v] of rawData.entries()) {
 			if (v["TradeRemainCount"] === null) {
 				r["trade_count"] = false;
+				r[`date`] = v["Stats"][1]["Date"];
+				r[`dealt_price_0`] =
+					v["Stats"][1]["AvgPrice"] !== 0
+						? v["Stats"][1]["AvgPrice"]
+						: null;
+				r[`volume_0`] = v["Stats"][1]["TradeCount"];
 			} else {
 				r["trade_count"] = true;
+				r[`date`] = v["Stats"][1]["Date"];
+				r[`dealt_price_${v["TradeRemainCount"]}`] =
+					v["Stats"][1]["AvgPrice"] !== 0
+						? v["Stats"][1]["AvgPrice"]
+						: null;
+				r[`volume_${v["TradeRemainCount"]}`] =
+					v["Stats"][1]["TradeCount"];
 			}
-			r[`date`] = v["Stats"][1]["Date"];
-			r[`dealt_price_${i}`] =
-				v["Stats"][1]["AvgPrice"] !== 0
-					? v["Stats"][1]["AvgPrice"]
-					: null;
-			r[`volume_${i}`] = v["Stats"][1]["TradeCount"];
 		}
 		return r;
 	}
