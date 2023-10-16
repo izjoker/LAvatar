@@ -13,28 +13,40 @@ export default function PackageItemBoxes({ type }) {
         selectedPackageIdState
     );
     const selectedPackage = items[selectedPackageId];
-    const categories = ['avatar', 'weapon', 'instrument', 'mount', 'pet'];
+    const categories = [
+        'avatar',
+        'weapon',
+        'instrument',
+        'move',
+        'mount',
+        'pet',
+    ];
     const categorizedBoxes = (function (packageSpec, categories) {
         const r = {};
-        for (const containedItem of packageSpec['contain']) {
-            if (r[containedItem['category']] === undefined) {
-                r[containedItem['category']] = [];
+        for (const containedItem of getChild(packageSpec)) {
+            let category = containedItem['category'];
+            if (!containedItem['type'].includes('Package')) {
+                continue;
             }
-            r[containedItem['category']] = r[containedItem['category']].concat(
-                containedItem['itemIdLst']
-            );
+            if (!(category in r)) {
+                r[category] = [];
+            }
+            r[category].push(containedItem['id']);
         }
-
         return r;
     })(selectedPackage, categories);
 
     function getChild(itemSpec) {
-        return _.map(itemSpec.contain, (container) => {
-            return _.map(container.itemIdLst, (id) => {
-                const itemObj = items[id];
-                return itemObj;
-            });
-        });
+        return _.compact(
+            _.flatten(
+                _.map(itemSpec.contain, (container) => {
+                    return _.map(container.itemIdLst, (id) => {
+                        const itemObj = items[id];
+                        return itemObj;
+                    });
+                })
+            )
+        );
     }
 
     function ItemView({ itemSpec, depth }) {
@@ -58,6 +70,7 @@ export default function PackageItemBoxes({ type }) {
                 items[packageId]['type'] === 'avatarPackage' ||
                 items[packageId]['type'] === 'weaponPackage' ||
                 items[packageId]['type'] === 'instrumentPackage' ||
+                items[packageId]['type'] === 'movePackage' ||
                 items[packageId]['type'] === 'mountPackage' ||
                 items[packageId]['type'] === 'petPackage'
             ) {
@@ -78,7 +91,7 @@ export default function PackageItemBoxes({ type }) {
 
             if (depth === 0) {
             }
-            let children = _.compact(_.flatten(getChild(itemSpec)));
+            let children = getChild(itemSpec);
             let style = depth == 0 ? {} : { marginLeft: `15px` };
             children = [...new Set(children)];
 

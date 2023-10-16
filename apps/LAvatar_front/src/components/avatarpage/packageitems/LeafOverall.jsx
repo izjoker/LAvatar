@@ -6,6 +6,7 @@ import {
 import LeafOverallAvatar from './LeafOverallAvatar';
 import LeafOverallWeapon from './LeafOverallWeapon';
 import LeafOverallInstrument from './LeafOverallInstrument';
+import LeafOverallMove from './LeafOverallMove';
 import LeafOverallMount from './LeafOverallMount';
 import LeafOverallPet from './LeafOverallPet';
 
@@ -42,6 +43,7 @@ function LeafOverall(props) {
             avatar: [],
             weapon: [],
             instrument: [],
+            move: [],
             mount: [],
             pet: [],
         };
@@ -53,6 +55,8 @@ function LeafOverall(props) {
                 r['weapon'].push(leafItem);
             } else if (leafItem['type'] === 'instrument') {
                 r['instrument'].push(leafItem);
+            } else if (leafItem['type'] === 'move') {
+                r['move'].push(leafItem);
             } else if (leafItem['type'] === 'mount') {
                 r['mount'].push(leafItem);
             } else if (leafItem['type'] === 'pet') {
@@ -72,6 +76,9 @@ function LeafOverall(props) {
             )}
             {leafMap['instrument'].length !== 0 && (
                 <LeafOverallInstrument instruments={leafMap['instrument']} />
+            )}
+            {leafMap['move'].length !== 0 && (
+                <LeafOverallMove moves={leafMap['move']} />
             )}
             {leafMap['mount'].length !== 0 && (
                 <LeafOverallMount mounts={leafMap['mount']} />

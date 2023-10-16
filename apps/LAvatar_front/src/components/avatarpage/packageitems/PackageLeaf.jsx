@@ -27,7 +27,8 @@ function ItemBox({ containedItem }) {
         <div className="ItemBox">
             {(containedItem['category'] === 'avatar' ||
                 containedItem['category'] === 'weapon' ||
-                containedItem['category'] === 'instrument') && (
+                containedItem['category'] === 'instrument' ||
+                containedItem['category'] === 'move') && (
                 <div>
                     <span
                         className="ClassName"
