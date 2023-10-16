@@ -129,6 +129,12 @@ pre {
     flex-wrap: wrap;
     border-radius: 10px;
 }
+.LeafOverallCategory#move .Contents {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
 .LeafCardClassName {
     font-weight: bold;
 }
